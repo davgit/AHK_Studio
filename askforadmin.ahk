@@ -1,0 +1,2 @@
+RegWrite,REG_SZ,HKEY_LOCAL_MACHINE,SOFTWARE\Classes\AutoHotkeyScript\Shell\Edit\Command,,"C:\Program Files\AutoHotkey\AutoHotkey.exe" "D:\AHK\Projects\AHK Studio New GUI\AHK Studio.ahk" `%1
+msgbox %errorlevel%
