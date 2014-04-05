@@ -1,5 +1,6 @@
 ﻿#SingleInstance,Off
 ;download complete
+;git only
 DetectHiddenWindows,On
 OnMessage(0x4a,"WM_COPYDATA")
 Sleep,1

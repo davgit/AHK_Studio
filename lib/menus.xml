@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<menus>
+	<main>
+		<menu name="&amp;File" clean="File">
+			<menu name="&amp;New" hotkey="^n" clean="New"></menu>
+			<menu name="New Se&amp;gment" clean="New_Segment"></menu>
+			<menu name="Create S&amp;egment From Selection" hotkey="+^N" clean="Create_Segment_From_Selection"></menu>
+			<menu name="Remove Segmen&amp;t" hotkey="" clean="Remove_Segment"></menu>
+			<menu name="&amp;Open" clean="Open"></menu>
+			<menu name="Open Fol&amp;der" clean="Open_Folder"></menu>
+			<menu name="Co&amp;mpile" clean="Compile"></menu>
+			<menu name="&amp;Save" hotkey="^S" clean="Save"></menu>
+			<menu name="&amp;Full Backup" clean="Full_Backup"></menu>
+			<menu name="&amp;Publish" clean="Publish"></menu>
+			<menu name="Run Se&amp;lected Text" clean="Run_Selected_Text"></menu>
+			<menu name="&amp;Run" clean="Run"></menu>
+			<menu name="&amp;Upload" clean="Upload"></menu>
+			<menu name="&amp;Close" clean="Close"></menu>
+			<menu name="Set &amp;As Default Editor" clean="Set_As_Default_Editor"></menu>
+			<menu name="Chec&amp;k For Update" clean="Check_For_Update"></menu>
+			<menu name="E&amp;xit" clean="Exit"></menu></menu>
+		<menu name="&amp;Edit" clean="Edit">
+			<menu name="&amp;Menu Editor" func="flan" clean="Menu_Editor"></menu>
+			<menu name="&amp;Restore Current File" clean="Restore_Current_File"></menu>
+			<menu name="Personal &amp;Variable List" clean="Personal_Variable_List"></menu>
+			<menu name="&amp;Theme" clean="Theme"></menu>
+			<menu name="&amp;Find" clean="Find"></menu>
+			<menu name="&amp;Next Found" hotkey="F3" clean="Next_Found"></menu>
+			<menu name="Ft&amp;p Servers" clean="Ftp_Servers"></menu>
+			<menu name="Ed&amp;it Replacements" clean="Edit_Replacements"></menu>
+			<menu name="Togg&amp;le Comment Line" hotkey="^J" clean="Toggle_Comment_Line"></menu>
+			<menu name="&amp;Duplicate Line" hotkey="F2" clean="Duplicate_Line"></menu>
+			<menu name="&amp;Undo" clean="Undo"></menu>
+			<menu name="Red&amp;o" clean="Redo"></menu>
+			<menu name="Replace &amp;Selected" hotkey="F1" clean="Replace_Selected"></menu>
+			<menu name="&amp;Quick Find" hotkey="!q" clean="Quick_Find"></menu>
+			<menu name="Jump to Proj&amp;ect" clean="Jump_to_Project" hotkey="!S"></menu>
+			<menu name="&amp;Jump to Segment" hotkey="!j" clean="Jump_to_Segment"></menu>
+			<menu name="Fi&amp;x Indent" hotkey="^F1" clean="Fix_Indent"></menu></menu>
+		<menu name="&amp;Options" clean="Options">
+			<menu name="&amp;Word Wrap" clean="Word_Wrap"></menu>
+			<menu name="Small &amp;Icons" clean="Small_Icons"></menu>
+			<menu name="Show WhiteSpace" clean="Show_WhiteSpace"></menu>
+			<menu name="Show Caret Line" clean="Show_Caret_Line"></menu>
+			<menu name="Show EOL" clean="Show_EOL"></menu></menu>
+		<menu name="Q&amp;uick Find Settings" clean="Quick_Find_Settings">
+			<menu name="&amp;Case Sensitive" clean="Case_Sensitive"></menu>
+			<menu name="&amp;Regex" clean="Regex"></menu>
+			<menu name="&amp;Greed" clean="Greed"></menu>
+			<menu name="&amp;Set Selection" clean="Set_Selection"></menu>
+			<menu name="Cle&amp;ar Selection" clean="Clear_Selection"></menu></menu>
+		<menu name="&amp;Auto Indent" clean="Auto_Indent">
+			<menu name="&amp;Full Auto" clean="Full_Auto"></menu>
+			<menu name="F&amp;ix Next Line" clean="Fix_Next_Line"></menu></menu>
+		<menu name="&amp;Tools" clean="Tools">
+			<menu name="Ms&amp;gBox Creator" clean="MsgBox_Creator"></menu>
+			<menu name="Post &amp;All In One Gist" clean="Post_All_In_One_Gist"></menu>
+			<menu name="Post &amp;Multiple Segment Gist" clean="Post_Multiple_Segment_Gist"></menu></menu>
+		<menu name="&amp;Special Menu" clean="Special_Menu">
+			<menu name="Add Spaces Before Commas" clean="Add_Spaces_Before_Commas"></menu>
+			<menu name="Add Spaces After Commas" clean="Add_Spaces_After_Commas"></menu>
+			<menu name="Remove Spaces From Selected" hotkey="^!U" clean="Remove_Spaces_From_Selected"></menu>
+			<menu name="Code &amp;Vault" clean="Code_Vault"></menu>
+			<menu name="&amp;Find Nearest Brace" clean="Find_Nearest_Brace" hotkey="^!N"></menu>
+			<menu name="S&amp;ort Selected" clean="Sort_Selected"></menu>
+			<menu name="Toggle &amp;Multiple Line Comment" hotkey="+F1" clean="Toggle_Multiple_Line_Comment"></menu>
+			<menu name="Sho&amp;w Scintilla Code In Line" hotkey="F4" clean="Show_Scintilla_Code_In_Line"></menu>
+			<menu name="Move Selected Lines Down" hotkey="+^Down" clean="Move_Selected_Lines_Down"></menu>
+			<menu name="Move Selected Lines Up" hotkey="+^Up" clean="Move_Selected_Lines_Up"></menu>
+			<menu name="&amp;Scintilla Code Lookup" hotkey="F6" clean="Scintilla_Code_Lookup"></menu></menu>
+		<menu name="&amp;Help" clean="Help">
+			<menu name="&amp;Forum"></menu>
+			<menu name="&amp;Social" clean="Social"></menu>
+			<menu name="&amp;About" clean="About"></menu>
+			<menu name="&amp;Help" clean="Help"></menu></menu>
+		<menu name="Scratch &amp;Pad" clean="Scratch_Pad"></menu>
+	</main>
+	<date>20140404</date>
+</menus>
