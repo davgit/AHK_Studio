@@ -69,7 +69,7 @@
 			<menu name="Move Selected Lines Up" hotkey="+^Up" clean="Move_Selected_Lines_Up"></menu>
 			<menu name="&amp;Scintilla Code Lookup" hotkey="F6" clean="Scintilla_Code_Lookup"></menu></menu>
 		<menu name="&amp;Help" clean="Help">
-			<menu name="&amp;Forum"></menu>
+			<menu name="&amp;Forum" clean="Forum"></menu>
 			<menu name="&amp;Social" clean="Social"></menu>
 			<menu name="&amp;About" clean="About"></menu>
 			<menu name="&amp;Help" clean="Help"></menu></menu>
