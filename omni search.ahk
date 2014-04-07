@@ -1,6 +1,7 @@
 ﻿omni_search(start=""){
 	static menulist:=[],searchin
 	Setup(20),hotkeys([20],{up:"omniup",down:"omnidown"})
+	Gui,Margin,0,0
 	list:=menus.sn("//@clean")
 	menulist:=[],menulist.menu:=[],menulist.file:=[]
 	while,mm:=list.item[A_Index-1]{
@@ -15,7 +16,7 @@
 	Gui,-Caption
 	Gui,Add,Edit,w500 gsortmenu,%start%
 	Gui,Add,ListView,w500 h200 -hdr -Multi,Menu Command|Rating
-	Gui,Add,Button,Default gmsgo,Execute Command
+	Gui,Add,Button,Default gmsgo w500,Execute Command
 	Gui,Show,,Menu Command
 	ControlSend,Edit1,^{End},% hwnd([20])
 	goto sortmenu
@@ -71,7 +72,7 @@
 	}
 	for a,b in rated
 		LV_Add("",b.value,b.rating)
-	LV_ModifyCol(1,"AutoHDR"),LV_ModifyCol(2,0),LV_ModifyCol(2,"SortDesc Logical"),LV_Modify(1,"Select Vis Focus")
+	LV_ModifyCol(1,470),LV_ModifyCol(2,0),LV_ModifyCol(2,"SortDesc Logical"),LV_Modify(1,"Select Vis Focus")
 	GuiControl,20:+Redraw,SysListView321
 	Return
 	20GuiEscape:

@@ -314,12 +314,14 @@ Currently it just displays classes and functions</info>
 	<info compile="0" dir="alpha/youtube" file="D:\Projects\Youtube Downloader\download.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
 Initial Upload</info>
 	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
-Initial Upload
-</info>
+Initial Upload</info>
 	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
 	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="19" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.19
 Fixed: Reminded by joedf
 -Default font has been updated to work with the new scheme
+-Add Spaces before, after, and before and after commas
+Changed:
+-Size and look of the Omni Search box
 0.100.18
 Added: Suggested by Run1e (but not complete as of yet)
 -Hotkeys are Control+Alt+O for the Omni Search,Alt+Shift+O for the Menu Search, and Alt+Shift+O for the File Search

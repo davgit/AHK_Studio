@@ -58,12 +58,15 @@
 			<menu name="Post &amp;All In One Gist" clean="Post_All_In_One_Gist"></menu>
 			<menu name="Post &amp;Multiple Segment Gist" clean="Post_Multiple_Segment_Gist"></menu></menu>
 		<menu name="&amp;Special Menu" clean="Special_Menu">
+			<menu name="Show Menu" clean="Show_Menu"></menu>
+			<menu name="Hide Menu" clean="Hide_Menu"></menu>
 			<menu name="Menu Search" hotkey="+^O" clean="Menu_Search"></menu>
 			<menu name="File Search" hotkey="+!O" clean="File_Search"></menu>
 			<menu name="Omni Search" hotkey="^!O" clean="Omni_Search"></menu>
 			<menu name="Split Code" hotkey="!I" clean="Split_Code"></menu>
-			<menu name="Add Spaces Before Commas" clean="Add_Spaces_Before_Commas"></menu>
-			<menu name="Add Spaces After Commas" clean="Add_Spaces_After_Commas"></menu>
+			<menu name="Add Space Before Commas" clean="Add_Spaces_Before_Commas"></menu>
+			<menu name="Add Space Before And After Commas" clean="Add_Spaces_Before_And_After_Commas"></menu>
+			<menu name="Add Space After Commas" clean="Add_Spaces_After_Commas"></menu>
 			<menu name="Remove Spaces From Selected" hotkey="^!U" clean="Remove_Spaces_From_Selected"></menu>
 			<menu name="Code &amp;Vault" clean="Code_Vault"></menu>
 			<menu name="&amp;Find Nearest Brace" clean="Find_Nearest_Brace" hotkey="^!N"></menu>
@@ -80,5 +83,5 @@
 			<menu name="&amp;Help" clean="Help"></menu></menu>
 		<menu name="Scratch &amp;Pad" clean="Scratch_Pad"></menu>
 	</main>
-	<date>20140407</date>
+	<date>20140407033000</date>
 </menus>

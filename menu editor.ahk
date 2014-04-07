@@ -19,6 +19,7 @@
 		Gui,2:Add,Button,xm gmenudefault,Re-Load Defaults
 		Gui,2:Show,,Menu Editor
 	}
+	Gui,1:Menu
 	Gui,2:Default
 	list:=menus.sn("//main/descendant::*")
 	root:=0
