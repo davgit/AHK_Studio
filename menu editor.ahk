@@ -164,6 +164,28 @@
 	98GuiEscape:
 	hwnd({rem:98})
 	WinActivate,% hwnd([2])
+	mm:=menus.sn("//@hotkey/..")
+	duplicate:=[],list:=[]
+	while,dup:=mm.item[A_Index-1]{
+		hotkey:=ssn(dup,"@hotkey").text
+		if (hotkey="")
+			Continue
+		if list[hotkey]{
+			if !IsObject(duplicate[hotkey])
+				duplicate[hotkey]:=[]
+			duplicate[hotkey]:=1
+		}
+		List[hotkey]:=1
+	}
+	for a,b in duplicate{
+		list:=menus.sn("//*[@hotkey='" a "']")
+		duplist.="Hotkey:`n"
+		while,ll:=list.item[A_Index-1]
+			duplist.=ssn(ll,"@name").text " = " ssn(ll,"@hotkey").text "`n"
+		duplist.="`n"
+	}
+	if duplist
+		MsgBox,48,Duplicates Found,Duplicate Hotkeys:`n`n%duplist%
 	menu_editor(1)
 	return
 	addsep:

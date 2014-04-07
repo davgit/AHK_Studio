@@ -316,7 +316,10 @@ Initial Upload</info>
 	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
 Initial Upload</info>
 	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
-	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="19" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.19
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="20" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.20
+Added:
+-Duplicate hotkeys will show a messagebox
+0.100.19
 Fixed: Reminded by joedf
 -Default font has been updated to work with the new scheme
 -Add Spaces before, after, and before and after commas

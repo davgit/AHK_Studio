@@ -1,5 +1,17 @@
 ﻿#SingleInstance,Off
 ;download complete
+/*
+	Ideas:
+	Omni_Search(){
+		background updates of functions, labels, hotkeys, 
+		pre-fetch fun,lab,hk,class info and store it
+		Add timestamps to update() stuff so it knows which files
+		-were indexed
+	}
+	Help(){
+		Context Sensitive Help for individual windows
+	}
+*/
 DetectHiddenWindows,On
 OnMessage(0x4a,"WM_COPYDATA")
 Sleep,1

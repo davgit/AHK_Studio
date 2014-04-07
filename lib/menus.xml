@@ -2,13 +2,13 @@
 <menus>
 	<main>
 		<menu name="&amp;File" clean="File">
-			<menu name="&amp;New" hotkey="^n" clean="New"></menu>
-			<menu name="New Se&amp;gment" clean="New_Segment"></menu>
+			<menu name="&amp;New" hotkey="^N" clean="New"></menu>
+			<menu name="New Se&amp;gment" clean="New_Segment" hotkey=""></menu>
 			<menu name="Create S&amp;egment From Selection" hotkey="+^N" clean="Create_Segment_From_Selection"></menu>
 			<menu name="Remove Segmen&amp;t" hotkey="" clean="Remove_Segment"></menu>
-			<menu name="&amp;Open" clean="Open"></menu>
+			<menu name="&amp;Open" clean="Open" hotkey="^O"></menu>
 			<menu name="Open Fol&amp;der" clean="Open_Folder"></menu>
-			<menu name="Co&amp;mpile" clean="Compile"></menu>
+			<menu name="Co&amp;mpile" clean="Compile" hotkey=""></menu>
 			<menu name="&amp;Save" hotkey="^S" clean="Save"></menu>
 			<menu name="&amp;Full Backup" clean="Full_Backup"></menu>
 			<menu name="&amp;Publish" clean="Publish"></menu>
@@ -24,7 +24,7 @@
 			<menu name="&amp;Restore Current File" clean="Restore_Current_File"></menu>
 			<menu name="Personal &amp;Variable List" clean="Personal_Variable_List"></menu>
 			<menu name="&amp;Theme" clean="Theme"></menu>
-			<menu name="&amp;Find" clean="Find"></menu>
+			<menu name="&amp;Find" clean="Find" hotkey="^F"></menu>
 			<menu name="&amp;Next Found" hotkey="F3" clean="Next_Found"></menu>
 			<menu name="Ft&amp;p Servers" clean="Ftp_Servers"></menu>
 			<menu name="Ed&amp;it Replacements" clean="Edit_Replacements"></menu>
