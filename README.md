@@ -1,4 +1,4 @@
-AHK_Studio
+﻿AHK_Studio
 ==========
 
 An editor specifically build for handling AHK files.

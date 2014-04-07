@@ -37,116 +37,117 @@ return
 GuiDropFiles: ;this is ok
 open(A_GuiEvent)
 return
-#Include D:\AHK Studio\about.ahk
-#Include D:\AHK Studio\addbutton.ahk
-#Include D:\AHK Studio\arrows.ahk
-#Include D:\AHK Studio\auto update.ahk
-#Include D:\AHK Studio\automenu.ahk
-#Include D:\AHK Studio\brace.ahk
-#Include D:\AHK Studio\bracesetup.ahk
-#Include D:\AHK Studio\check id.ahk
-#Include D:\AHK Studio\class ftp.ahk
-#Include D:\AHK Studio\Class s.ahk
-#Include D:\AHK Studio\clean.ahk
-#Include D:\AHK Studio\close.ahk
-#Include D:\AHK Studio\Code Explorer.ahk
-#Include D:\AHK Studio\Code Vault.ahk
-#Include D:\AHK Studio\compile main gist.ahk
-#Include D:\AHK Studio\compile.ahk
-#Include D:\AHK Studio\connect.ahk
-#Include D:\AHK Studio\context.ahk
-#Include D:\AHK Studio\convert_hotkey.ahk
-#Include D:\AHK Studio\Create Multi-Line Comment.ahk
-#Include D:\AHK Studio\Create Segment From Selection.ahk
-#Include D:\AHK Studio\csc.ahk
-#Include D:\AHK Studio\current.ahk
-#Include D:\AHK Studio\debug.ahk
-#Include D:\AHK Studio\defaultfont.ahk
-#Include D:\AHK Studio\delete.ahk
-#Include D:\AHK Studio\display.ahk
-#Include D:\AHK Studio\Dlg_Color.ahk
-#Include D:\AHK Studio\Dlg_font.ahk
-#Include D:\AHK Studio\Duplicate Line.ahk
-#Include D:\AHK Studio\dynarun.ahk
-#Include D:\AHK Studio\edit replacements.ahk
-#Include D:\AHK Studio\exit.ahk
-#Include D:\AHK Studio\filecheck.ahk
-#Include D:\AHK Studio\Find Nearest Brace.ahk
-#Include D:\AHK Studio\find.ahk
-#Include D:\AHK Studio\fix after.ahk
-#Include D:\AHK Studio\fix indent.ahk
-#Include D:\AHK Studio\ftp servers.ahk
-#Include D:\AHK Studio\full backup.ahk
-#Include D:\AHK Studio\get access.ahk
-#Include D:\AHK Studio\getpos.ahk
-#Include D:\AHK Studio\google search selected.ahk
-#Include D:\AHK Studio\gui.ahk
-#Include D:\AHK Studio\help.ahk
-#Include D:\AHK Studio\hotkeys.ahk
-#Include D:\AHK Studio\hwnd.ahk
-#Include D:\AHK Studio\icon browser.ahk
-#Include D:\AHK Studio\json.ahk
-#Include D:\AHK Studio\jump to project.ahk
-#Include D:\AHK Studio\Jump to Segment.ahk
-#Include D:\AHK Studio\keywords.ahk
-#Include D:\AHK Studio\lastfiles.ahk
-#Include D:\AHK Studio\LV_Select.ahk
-#Include D:\AHK Studio\marginwidth.ahk
-#Include D:\AHK Studio\menu creator.ahk
-#Include D:\AHK Studio\menu.ahk
-#Include D:\AHK Studio\Move Selected Lines.ahk
-#Include D:\AHK Studio\msgbox creator.ahk
-#Include D:\AHK Studio\msgbox.ahk
-#Include D:\AHK Studio\multiple file gist.ahk
-#Include D:\AHK Studio\new segment.ahk
-#Include D:\AHK Studio\new.ahk
-#Include D:\AHK Studio\New_Scintilla_Window.ahk
-#Include D:\AHK Studio\Next Found.ahk
-#Include D:\AHK Studio\notify.ahk
-#Include D:\AHK Studio\On Dropfiles.ahk
-#Include D:\AHK Studio\open folder.ahk
-#Include D:\AHK Studio\open.ahk
-#Include D:\AHK Studio\options.ahk
-#Include D:\AHK Studio\paste.ahk
-#Include D:\AHK Studio\Personal Variable List.ahk
-#Include D:\AHK Studio\posinfo.ahk
-#Include D:\AHK Studio\Post All In One Gist.ahk
-#Include D:\AHK Studio\publish.ahk
-#Include D:\AHK Studio\qf.ahk
-#Include D:\AHK Studio\rebar.ahk
-#Include D:\AHK Studio\redo.ahk
-#Include D:\AHK Studio\RefreshThemes.ahk
-#Include D:\AHK Studio\Remove Segment.ahk
-#Include D:\AHK Studio\remove spaces.ahk
-#Include D:\AHK Studio\replace selected.ahk
-#Include D:\AHK Studio\replace.ahk
-#Include D:\AHK Studio\resize.ahk
-#Include D:\AHK Studio\restore current file.ahk
-#Include D:\AHK Studio\rgb.ahk
-#Include D:\AHK Studio\run selected text.ahk
-#Include D:\AHK Studio\run.ahk
-#Include D:\AHK Studio\runfile.ahk
-#Include D:\AHK Studio\save.ahk
-#Include D:\AHK Studio\Scintilla Code Lookup.ahk
-#Include D:\AHK Studio\Scratch Pad.ahk
-#Include D:\AHK Studio\set as default editor.ahk
-#Include D:\AHK Studio\set.ahk
-#Include D:\AHK Studio\setpos.ahk
-#Include D:\AHK Studio\setup.ahk
-#Include D:\AHK Studio\show scintilla codes in line.ahk
-#Include D:\AHK Studio\sn.ahk
-#Include D:\AHK Studio\social.ahk
-#Include D:\AHK Studio\Sort Selected.ahk
-#Include D:\AHK Studio\ssn.ahk
-#Include D:\AHK Studio\testing.ahk
-#Include D:\AHK Studio\theme.ahk
-#Include D:\AHK Studio\themetext.ahk
-#Include D:\AHK Studio\toolbar.ahk
-#Include D:\AHK Studio\traymenu.ahk
-#Include D:\AHK Studio\tv.ahk
-#Include D:\AHK Studio\undo.ahk
-#Include D:\AHK Studio\update.ahk
-#Include D:\AHK Studio\upload.ahk
-#Include D:\AHK Studio\UrlDownloadToVar.ahk
-#Include D:\AHK Studio\window.ahk
-#Include D:\AHK Studio\xml.ahk
+#Include %A_ScriptDir%
+#Include about.ahk
+#Include addbutton.ahk
+#Include arrows.ahk
+#Include auto update.ahk
+#Include automenu.ahk
+#Include brace.ahk
+#Include bracesetup.ahk
+#Include check id.ahk
+#Include class ftp.ahk
+#Include Class s.ahk
+#Include clean.ahk
+#Include close.ahk
+#Include Code Explorer.ahk
+#Include Code Vault.ahk
+#Include compile main gist.ahk
+#Include compile.ahk
+#Include connect.ahk
+#Include context.ahk
+#Include convert_hotkey.ahk
+#Include Create Multi-Line Comment.ahk
+#Include Create Segment From Selection.ahk
+#Include csc.ahk
+#Include current.ahk
+#Include debug.ahk
+#Include defaultfont.ahk
+#Include delete.ahk
+#Include display.ahk
+#Include Dlg_Color.ahk
+#Include Dlg_font.ahk
+#Include Duplicate Line.ahk
+#Include dynarun.ahk
+#Include edit replacements.ahk
+#Include exit.ahk
+#Include filecheck.ahk
+#Include Find Nearest Brace.ahk
+#Include find.ahk
+#Include fix after.ahk
+#Include fix indent.ahk
+#Include ftp servers.ahk
+#Include full backup.ahk
+#Include get access.ahk
+#Include getpos.ahk
+#Include google search selected.ahk
+#Include gui.ahk
+#Include help.ahk
+#Include hotkeys.ahk
+#Include hwnd.ahk
+#Include icon browser.ahk
+#Include json.ahk
+#Include jump to project.ahk
+#Include Jump to Segment.ahk
+#Include keywords.ahk
+#Include lastfiles.ahk
+#Include LV_Select.ahk
+#Include marginwidth.ahk
+#Include menu creator.ahk
+#Include menu.ahk
+#Include Move Selected Lines.ahk
+#Include msgbox creator.ahk
+#Include msgbox.ahk
+#Include multiple file gist.ahk
+#Include new segment.ahk
+#Include new.ahk
+#Include New_Scintilla_Window.ahk
+#Include Next Found.ahk
+#Include notify.ahk
+#Include On Dropfiles.ahk
+#Include open folder.ahk
+#Include open.ahk
+#Include options.ahk
+#Include paste.ahk
+#Include Personal Variable List.ahk
+#Include posinfo.ahk
+#Include Post All In One Gist.ahk
+#Include publish.ahk
+#Include qf.ahk
+#Include rebar.ahk
+#Include redo.ahk
+#Include RefreshThemes.ahk
+#Include Remove Segment.ahk
+#Include remove spaces.ahk
+#Include replace selected.ahk
+#Include replace.ahk
+#Include resize.ahk
+#Include restore current file.ahk
+#Include rgb.ahk
+#Include run selected text.ahk
+#Include run.ahk
+#Include runfile.ahk
+#Include save.ahk
+#Include Scintilla Code Lookup.ahk
+#Include Scratch Pad.ahk
+#Include set as default editor.ahk
+#Include set.ahk
+#Include setpos.ahk
+#Include setup.ahk
+#Include show scintilla codes in line.ahk
+#Include sn.ahk
+#Include social.ahk
+#Include Sort Selected.ahk
+#Include ssn.ahk
+#Include testing.ahk
+#Include theme.ahk
+#Include themetext.ahk
+#Include toolbar.ahk
+#Include traymenu.ahk
+#Include tv.ahk
+#Include undo.ahk
+#Include update.ahk
+#Include upload.ahk
+#Include UrlDownloadToVar.ahk
+#Include window.ahk
+#Include xml.ahk
