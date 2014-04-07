@@ -60,13 +60,3 @@
 	}
 	return
 }
-+!Down::
-+!Up::
-sc:=csc(),line:=sc.2166(sc.2008)
-column:=sc.2129(sc.2008)
-nl:=A_ThisLabel="+!up"?-1:1
-next:=sc.2456(line+nl,column)
-if (next){
-	sc.2573(next,next)
-}
-return

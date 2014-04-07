@@ -1,0 +1,941 @@
+<?xml version="1.0"?>
+<scintilla>
+	<date>20140129</date>
+	<item code="-1" name="INVALID_POSITION"></item>
+	<item code="2000" name="SCI_START"></item>
+	<item code="3000" name="SCI_OPTIONAL_START"></item>
+	<item code="4000" name="SCI_LEXER_START"></item>
+	<item code="2001" name="SCI_ADDTEXT" syntax="(int length,string text)"></item>
+	<item code="2002" name="SCI_ADDSTYLEDTEXT" syntax="(int length,cells c)"></item>
+	<item code="2003" name="SCI_INSERTTEXT" syntax="(position pos,string text)"></item>
+	<item code="2004" name="SCI_CLEARALL"></item>
+	<item code="2645" name="SCI_DELETERANGE" syntax="(position pos,int deleteLength)"></item>
+	<item code="2005" name="SCI_CLEARDOCUMENTSTYLE"></item>
+	<item code="2006" name="SCI_GETLENGTH"></item>
+	<item code="2007" name="SCI_GETCHARAT" syntax="(position pos,NULL)"></item>
+	<item code="2008" name="SCI_GETCURRENTPOS"></item>
+	<item code="2009" name="SCI_GETANCHOR"></item>
+	<item code="2010" name="SCI_GETSTYLEAT" syntax="(position pos,NULL)"></item>
+	<item code="2011" name="SCI_REDO" syntax="(position pos,NULL)"></item>
+	<item code="2012" name="SCI_SETUNDOCOLLECTION" syntax="(bool collectUndo,NULL)"></item>
+	<item code="2013" name="SCI_SELECTALL"></item>
+	<item code="2014" name="SCI_SETSAVEPOINT"></item>
+	<item code="2015" name="SCI_GETSTYLEDTEXT" syntax="(NULL,textrange tr)"></item>
+	<item code="2016" name="SCI_CANREDO"></item>
+	<item code="2017" name="SCI_MARKERLINEFROMHANDLE" syntax="(int handle,NULL)"></item>
+	<item code="2018" name="SCI_MARKERDELETEHANDLE" syntax="(int handle,NULL)"></item>
+	<item code="2019" name="SCI_GETUNDOCOLLECTION"></item>
+	<item code="1" name="SCWS_VISIBLEALWAYS"></item>
+	<item code="2" name="SCWS_VISIBLEAFTERINDENT"></item>
+	<item code="2020" name="SCI_GETVIEWWS"></item>
+	<item code="2021" name="SCI_SETVIEWWS" syntax="(int viewWS,NULL)"></item>
+	<item code="2022" name="SCI_POSITIONFROMPOINT" syntax="(int x,int y)"></item>
+	<item code="2023" name="SCI_POSITIONFROMPOINTCLOSE" syntax="(int x,int y)"></item>
+	<item code="2024" name="SCI_GOTOLINE" syntax="(int line,NULL)"></item>
+	<item code="2025" name="SCI_GOTOPOS" syntax="(position pos,NULL)"></item>
+	<item code="2026" name="SCI_SETANCHOR" syntax="(position posAnchor,NULL)"></item>
+	<item code="2027" name="SCI_GETCURLINE" syntax="(int length,stringresult text)"></item>
+	<item code="2028" name="SCI_GETENDSTYLED"></item>
+	<item code="1" name="SC_EOL_CR"></item>
+	<item code="2" name="SC_EOL_LF"></item>
+	<item code="2029" name="SCI_CONVERTEOLS" syntax="(int eolMode,NULL)"></item>
+	<item code="2030" name="SCI_GETEOLMODE"></item>
+	<item code="2031" name="SCI_SETEOLMODE" syntax="(int eolMode,NULL)"></item>
+	<item code="2032" name="SCI_STARTSTYLING" syntax="(position pos,int mask)"></item>
+	<item code="2033" name="SCI_SETSTYLING" syntax="(int length,int style)"></item>
+	<item code="2034" name="SCI_GETBUFFEREDDRAW"></item>
+	<item code="2035" name="SCI_SETBUFFEREDDRAW" syntax="(bool buffered,NULL)"></item>
+	<item code="2036" name="SCI_SETTABWIDTH" syntax="(int tabWidth,NULL)"></item>
+	<item code="2121" name="SCI_GETTABWIDTH"></item>
+	<item code="65001" name="SC_CP_UTF8"></item>
+	<item code="2037" name="SCI_SETCODEPAGE" syntax="(int codePage,NULL)"></item>
+	<item code="31" name="MARKER_MAX" syntax="(int codePage,NULL)"></item>
+	<item code="1" name="SC_MARK_ROUNDRECT" syntax="(int codePage,NULL)"></item>
+	<item code="2" name="SC_MARK_ARROW" syntax="(int codePage,NULL)"></item>
+	<item code="3" name="SC_MARK_SMALLRECT" syntax="(int codePage,NULL)"></item>
+	<item code="4" name="SC_MARK_SHORTARROW" syntax="(int codePage,NULL)"></item>
+	<item code="5" name="SC_MARK_EMPTY" syntax="(int codePage,NULL)"></item>
+	<item code="6" name="SC_MARK_ARROWDOWN" syntax="(int codePage,NULL)"></item>
+	<item code="7" name="SC_MARK_MINUS" syntax="(int codePage,NULL)"></item>
+	<item code="8" name="SC_MARK_PLUS" syntax="(int codePage,NULL)"></item>
+	<item code="9" name="SC_MARK_VLINE" syntax="(int codePage,NULL)"></item>
+	<item code="10" name="SC_MARK_LCORNER" syntax="(int codePage,NULL)"></item>
+	<item code="11" name="SC_MARK_TCORNER" syntax="(int codePage,NULL)"></item>
+	<item code="12" name="SC_MARK_BOXPLUS" syntax="(int codePage,NULL)"></item>
+	<item code="13" name="SC_MARK_BOXPLUSCONNECTED" syntax="(int codePage,NULL)"></item>
+	<item code="14" name="SC_MARK_BOXMINUS" syntax="(int codePage,NULL)"></item>
+	<item code="15" name="SC_MARK_BOXMINUSCONNECTED" syntax="(int codePage,NULL)"></item>
+	<item code="16" name="SC_MARK_LCORNERCURVE" syntax="(int codePage,NULL)"></item>
+	<item code="17" name="SC_MARK_TCORNERCURVE" syntax="(int codePage,NULL)"></item>
+	<item code="18" name="SC_MARK_CIRCLEPLUS" syntax="(int codePage,NULL)"></item>
+	<item code="19" name="SC_MARK_CIRCLEPLUSCONNECTED" syntax="(int codePage,NULL)"></item>
+	<item code="20" name="SC_MARK_CIRCLEMINUS" syntax="(int codePage,NULL)"></item>
+	<item code="21" name="SC_MARK_CIRCLEMINUSCONNECTED" syntax="(int codePage,NULL)"></item>
+	<item code="22" name="SC_MARK_BACKGROUND" syntax="(int codePage,NULL)"></item>
+	<item code="23" name="SC_MARK_DOTDOTDOT" syntax="(int codePage,NULL)"></item>
+	<item code="24" name="SC_MARK_ARROWS" syntax="(int codePage,NULL)"></item>
+	<item code="25" name="SC_MARK_PIXMAP" syntax="(int codePage,NULL)"></item>
+	<item code="26" name="SC_MARK_FULLRECT" syntax="(int codePage,NULL)"></item>
+	<item code="27" name="SC_MARK_LEFTRECT" syntax="(int codePage,NULL)"></item>
+	<item code="28" name="SC_MARK_AVAILABLE" syntax="(int codePage,NULL)"></item>
+	<item code="29" name="SC_MARK_UNDERLINE" syntax="(int codePage,NULL)"></item>
+	<item code="30" name="SC_MARK_RGBAIMAGE" syntax="(int codePage,NULL)"></item>
+	<item code="10000" name="SC_MARK_CHARACTER" syntax="(int codePage,NULL)"></item>
+	<item code="25" name="SC_MARKNUM_FOLDEREND" syntax="(int codePage,NULL)"></item>
+	<item code="26" name="SC_MARKNUM_FOLDEROPENMID" syntax="(int codePage,NULL)"></item>
+	<item code="27" name="SC_MARKNUM_FOLDERMIDTAIL" syntax="(int codePage,NULL)"></item>
+	<item code="28" name="SC_MARKNUM_FOLDERTAIL" syntax="(int codePage,NULL)"></item>
+	<item code="29" name="SC_MARKNUM_FOLDERSUB" syntax="(int codePage,NULL)"></item>
+	<item code="30" name="SC_MARKNUM_FOLDER" syntax="(int codePage,NULL)"></item>
+	<item code="31" name="SC_MARKNUM_FOLDEROPEN" syntax="(int codePage,NULL)"></item>
+	<item code="0xFE000000" name="SC_MASK_FOLDERS" syntax="(int codePage,NULL)"></item>
+	<item code="2040" name="SCI_MARKERDEFINE" syntax="(int markerNumber,int markerSymbol)"></item>
+	<item code="2041" name="SCI_MARKERSETFORE" syntax="(int markerNumber,colour fore)"></item>
+	<item code="2042" name="SCI_MARKERSETBACK" syntax="(int markerNumber,colour back)"></item>
+	<item code="2292" name="SCI_MARKERSETBACKSELECTED" syntax="(int markerNumber,colour back)"></item>
+	<item code="2293" name="SCI_MARKERENABLEHIGHLIGHT" syntax="(bool enabled,NULL)"></item>
+	<item code="2043" name="SCI_MARKERADD" syntax="(int line,int markerNumber)"></item>
+	<item code="2044" name="SCI_MARKERDELETE" syntax="(int handle,NULL)"></item>
+	<item code="2045" name="SCI_MARKERDELETEALL" syntax="(int markerNumber,NULL)"></item>
+	<item code="2046" name="SCI_MARKERGET" syntax="(int line,NULL)"></item>
+	<item code="2047" name="SCI_MARKERNEXT" syntax="(int lineStart,int markerMask)"></item>
+	<item code="2048" name="SCI_MARKERPREVIOUS" syntax="(int lineStart,int markerMask)"></item>
+	<item code="2049" name="SCI_MARKERDEFINEPIXMAP" syntax="(int markerNumber,string pixmap)"></item>
+	<item code="2466" name="SCI_MARKERADDSET" syntax="(int line,int set)"></item>
+	<item code="2476" name="SCI_MARKERSETALPHA" syntax="(int markerNumber,int alpha)"></item>
+	<item code="4" name="SC_MAX_MARGIN" syntax="(int markerNumber,int alpha)"></item>
+	<item code="1" name="SC_MARGIN_NUMBER" syntax="(int markerNumber,int alpha)"></item>
+	<item code="2" name="SC_MARGIN_BACK" syntax="(int markerNumber,int alpha)"></item>
+	<item code="3" name="SC_MARGIN_FORE" syntax="(int markerNumber,int alpha)"></item>
+	<item code="4" name="SC_MARGIN_TEXT" syntax="(int markerNumber,int alpha)"></item>
+	<item code="5" name="SC_MARGIN_RTEXT" syntax="(int markerNumber,int alpha)"></item>
+	<item code="2240" name="SCI_SETMARGINTYPEN" syntax="(int margin,int marginType)"></item>
+	<item code="2241" name="SCI_GETMARGINTYPEN" syntax="(int margin,NULL)"></item>
+	<item code="2242" name="SCI_SETMARGINWIDTHN" syntax="(int margin,int pixelWidth)"></item>
+	<item code="2243" name="SCI_GETMARGINWIDTHN" syntax="(int margin,NULL)"></item>
+	<item code="2244" name="SCI_SETMARGINMASKN" syntax="(int margin,int mask)"></item>
+	<item code="2245" name="SCI_GETMARGINMASKN" syntax="(int margin,NULL)"></item>
+	<item code="2246" name="SCI_SETMARGINSENSITIVEN" syntax="(int margin,bool sensitive)"></item>
+	<item code="2247" name="SCI_GETMARGINSENSITIVEN" syntax="(int margin,NULL)"></item>
+	<item code="2248" name="SCI_SETMARGINCURSORN" syntax="(int margin,int cursor)"></item>
+	<item code="2249" name="SCI_GETMARGINCURSORN" syntax="(int margin,NULL)"></item>
+	<item code="32" name="STYLE_DEFAULT" syntax="(int margin,NULL)"></item>
+	<item code="33" name="STYLE_LINENUMBER" syntax="(int margin,NULL)"></item>
+	<item code="34" name="STYLE_BRACELIGHT" syntax="(int margin,NULL)"></item>
+	<item code="35" name="STYLE_BRACEBAD" syntax="(int margin,NULL)"></item>
+	<item code="36" name="STYLE_CONTROLCHAR" syntax="(int margin,NULL)"></item>
+	<item code="37" name="STYLE_INDENTGUIDE" syntax="(int margin,NULL)"></item>
+	<item code="38" name="STYLE_CALLTIP" syntax="(int margin,NULL)"></item>
+	<item code="39" name="STYLE_LASTPREDEFINED" syntax="(int margin,NULL)"></item>
+	<item code="255" name="STYLE_MAX" syntax="(int margin,NULL)"></item>
+	<item code="1" name="SC_CHARSET_DEFAULT" syntax="(int margin,NULL)"></item>
+	<item code="186" name="SC_CHARSET_BALTIC" syntax="(int margin,NULL)"></item>
+	<item code="136" name="SC_CHARSET_CHINESEBIG5" syntax="(int margin,NULL)"></item>
+	<item code="238" name="SC_CHARSET_EASTEUROPE" syntax="(int margin,NULL)"></item>
+	<item code="134" name="SC_CHARSET_GB2312" syntax="(int margin,NULL)"></item>
+	<item code="161" name="SC_CHARSET_GREEK" syntax="(int margin,NULL)"></item>
+	<item code="129" name="SC_CHARSET_HANGUL" syntax="(int margin,NULL)"></item>
+	<item code="77" name="SC_CHARSET_MAC" syntax="(int margin,NULL)"></item>
+	<item code="255" name="SC_CHARSET_OEM" syntax="(int margin,NULL)"></item>
+	<item code="204" name="SC_CHARSET_RUSSIAN" syntax="(int margin,NULL)"></item>
+	<item code="1251" name="SC_CHARSET_CYRILLIC" syntax="(int margin,NULL)"></item>
+	<item code="128" name="SC_CHARSET_SHIFTJIS" syntax="(int margin,NULL)"></item>
+	<item code="2" name="SC_CHARSET_SYMBOL" syntax="(int margin,NULL)"></item>
+	<item code="162" name="SC_CHARSET_TURKISH" syntax="(int margin,NULL)"></item>
+	<item code="130" name="SC_CHARSET_JOHAB" syntax="(int margin,NULL)"></item>
+	<item code="177" name="SC_CHARSET_HEBREW" syntax="(int margin,NULL)"></item>
+	<item code="178" name="SC_CHARSET_ARABIC" syntax="(int margin,NULL)"></item>
+	<item code="163" name="SC_CHARSET_VIETNAMESE" syntax="(int margin,NULL)"></item>
+	<item code="222" name="SC_CHARSET_THAI" syntax="(int margin,NULL)"></item>
+	<item code="1000" name="SC_CHARSET_8859_15" syntax="(int margin,NULL)"></item>
+	<item code="2050" name="SCI_STYLECLEARALL"></item>
+	<item code="2051" name="SCI_STYLESETFORE" syntax="(int style,colour fore)"></item>
+	<item code="2052" name="SCI_STYLESETBACK" syntax="(int style,colour back)"></item>
+	<item code="2053" name="SCI_STYLESETBOLD" syntax="(int style,bool bold)"></item>
+	<item code="2054" name="SCI_STYLESETITALIC" syntax="(int style,bool italic)"></item>
+	<item code="2055" name="SCI_STYLESETSIZE" syntax="(int style,int sizePoints)"></item>
+	<item code="2056" name="SCI_STYLESETFONT" syntax="(int style,string fontName)"></item>
+	<item code="2057" name="SCI_STYLESETEOLFILLED" syntax="(int style,bool filled)"></item>
+	<item code="2058" name="SCI_STYLERESETDEFAULT"></item>
+	<item code="2059" name="SCI_STYLESETUNDERLINE" syntax="(int style,bool underline)"></item>
+	<item code="1" name="SC_CASE_UPPER" syntax="(int style,bool underline)"></item>
+	<item code="2" name="SC_CASE_LOWER" syntax="(int style,bool underline)"></item>
+	<item code="2481" name="SCI_STYLEGETFORE" syntax="(int style,NULL)"></item>
+	<item code="2482" name="SCI_STYLEGETBACK" syntax="(int style,NULL)"></item>
+	<item code="2483" name="SCI_STYLEGETBOLD" syntax="(int style,NULL)"></item>
+	<item code="2484" name="SCI_STYLEGETITALIC" syntax="(int style,NULL)"></item>
+	<item code="2485" name="SCI_STYLEGETSIZE" syntax="(int style,NULL)"></item>
+	<item code="2486" name="SCI_STYLEGETFONT" syntax="(int style,stringresult fontName)"></item>
+	<item code="2487" name="SCI_STYLEGETEOLFILLED" syntax="(int style,NULL)"></item>
+	<item code="2488" name="SCI_STYLEGETUNDERLINE" syntax="(int style,NULL)"></item>
+	<item code="2489" name="SCI_STYLEGETCASE" syntax="(int style,NULL)"></item>
+	<item code="2490" name="SCI_STYLEGETCHARACTERSET" syntax="(int style,NULL)"></item>
+	<item code="2491" name="SCI_STYLEGETVISIBLE" syntax="(int style,NULL)"></item>
+	<item code="2492" name="SCI_STYLEGETCHANGEABLE" syntax="(int style,NULL)"></item>
+	<item code="2493" name="SCI_STYLEGETHOTSPOT" syntax="(int style,NULL)"></item>
+	<item code="2060" name="SCI_STYLESETCASE" syntax="(int style,int caseForce)"></item>
+	<item code="100" name="SC_FONT_SIZE_MULTIPLIER" syntax="(int style,int caseForce)"></item>
+	<item code="2061" name="SCI_STYLESETSIZEFRACTIONAL" syntax="(int style,int caseForce)"></item>
+	<item code="2062" name="SCI_STYLEGETSIZEFRACTIONAL" syntax="(int style,NULL)"></item>
+	<item code="400" name="SC_WEIGHT_NORMAL" syntax="(int style,NULL)"></item>
+	<item code="600" name="SC_WEIGHT_SEMIBOLD" syntax="(int style,NULL)"></item>
+	<item code="700" name="SC_WEIGHT_BOLD" syntax="(int style,NULL)"></item>
+	<item code="2063" name="SCI_STYLESETWEIGHT" syntax="(int style,int weight)"></item>
+	<item code="2064" name="SCI_STYLEGETWEIGHT" syntax="(int style,NULL)"></item>
+	<item code="2066" name="SCI_STYLESETCHARACTERSET" syntax="(int style,NULL)"></item>
+	<item code="2409" name="SCI_STYLESETHOTSPOT" syntax="(int style,bool hotspot)"></item>
+	<item code="2067" name="SCI_SETSELFORE" syntax="(bool useSetting,colour fore)"></item>
+	<item code="2068" name="SCI_SETSELBACK" syntax="(bool useSetting,colour back)"></item>
+	<item code="2477" name="SCI_GETSELALPHA"></item>
+	<item code="2478" name="SCI_SETSELALPHA" syntax="(int alpha,NULL)"></item>
+	<item code="2479" name="SCI_GETSELEOLFILLED"></item>
+	<item code="2480" name="SCI_SETSELEOLFILLED" syntax="(bool filled,NULL)"></item>
+	<item code="2069" name="SCI_SETCARETFORE" syntax="(colour fore,NULL)"></item>
+	<item code="2070" name="SCI_ASSIGNCMDKEY" syntax="(keymod km,int msg)"></item>
+	<item code="2071" name="SCI_CLEARCMDKEY" syntax="(keymod km,NULL)"></item>
+	<item code="2072" name="SCI_CLEARALLCMDKEYS"></item>
+	<item code="2073" name="SCI_SETSTYLINGEX" syntax="(int length,string styles)"></item>
+	<item code="2074" name="SCI_STYLESETVISIBLE" syntax="(int style,bool visible)"></item>
+	<item code="2075" name="SCI_GETCARETPERIOD"></item>
+	<item code="2076" name="SCI_SETCARETPERIOD" syntax="(int periodMilliseconds,NULL)"></item>
+	<item code="2077" name="SCI_SETWORDCHARS" syntax="(NULL,string characters)"></item>
+	<item code="2646" name="SCI_GETWORDCHARS" syntax="(NULL,stringresult characters)"></item>
+	<item code="2078" name="SCI_BEGINUNDOACTION"></item>
+	<item code="2079" name="SCI_ENDUNDOACTION"></item>
+	<item code="1" name="INDIC_SQUIGGLE"></item>
+	<item code="2" name="INDIC_TT"></item>
+	<item code="3" name="INDIC_DIAGONAL"></item>
+	<item code="4" name="INDIC_STRIKE"></item>
+	<item code="5" name="INDIC_HIDDEN"></item>
+	<item code="6" name="INDIC_BOX"></item>
+	<item code="7" name="INDIC_ROUNDBOX"></item>
+	<item code="8" name="INDIC_STRAIGHTBOX"></item>
+	<item code="9" name="INDIC_DASH"></item>
+	<item code="10" name="INDIC_DOTS"></item>
+	<item code="11" name="INDIC_SQUIGGLELOW"></item>
+	<item code="12" name="INDIC_DOTBOX"></item>
+	<item code="13" name="INDIC_SQUIGGLEPIXMAP"></item>
+	<item code="14" name="INDIC_COMPOSITIONTHICK"></item>
+	<item code="31" name="INDIC_MAX"></item>
+	<item code="8" name="INDIC_CONTAINER"></item>
+	<item code="0x20" name="INDIC0_MASK"></item>
+	<item code="0x40" name="INDIC1_MASK"></item>
+	<item code="0x80" name="INDIC2_MASK"></item>
+	<item code="0xE0" name="INDICS_MASK"></item>
+	<item code="2080" name="SCI_INDICSETSTYLE" syntax="(int indic,int style)"></item>
+	<item code="2081" name="SCI_INDICGETSTYLE" syntax="(int indic,NULL)"></item>
+	<item code="2082" name="SCI_INDICSETFORE" syntax="(int indic,colour fore)"></item>
+	<item code="2083" name="SCI_INDICGETFORE" syntax="(int indic,NULL)"></item>
+	<item code="2510" name="SCI_INDICSETUNDER" syntax="(int indic,bool under)"></item>
+	<item code="2511" name="SCI_INDICGETUNDER" syntax="(int indic,NULL)"></item>
+	<item code="2084" name="SCI_SETWHITESPACEFORE" syntax="(bool useSetting,colour fore)"></item>
+	<item code="2085" name="SCI_SETWHITESPACEBACK" syntax="(bool useSetting,colour back)"></item>
+	<item code="2086" name="SCI_SETWHITESPACESIZE" syntax="(int size,NULL)"></item>
+	<item code="2087" name="SCI_GETWHITESPACESIZE"></item>
+	<item code="2090" name="SCI_SETSTYLEBITS" syntax="(int bits,NULL)"></item>
+	<item code="2091" name="SCI_GETSTYLEBITS"></item>
+	<item code="2092" name="SCI_SETLINESTATE" syntax="(int line,int state)"></item>
+	<item code="2093" name="SCI_GETLINESTATE" syntax="(int line,NULL)"></item>
+	<item code="2094" name="SCI_GETMAXLINESTATE"></item>
+	<item code="2095" name="SCI_GETCARETLINEVISIBLE"></item>
+	<item code="2096" name="SCI_SETCARETLINEVISIBLE" syntax="(bool show,NULL)"></item>
+	<item code="2097" name="SCI_GETCARETLINEBACK"></item>
+	<item code="2098" name="SCI_SETCARETLINEBACK" syntax="(colour back,NULL)"></item>
+	<item code="2099" name="SCI_STYLESETCHANGEABLE" syntax="(int style,bool changeable)"></item>
+	<item code="2100" name="SCI_AUTOCSHOW" syntax="(int lenEntered,string itemList)"></item>
+	<item code="2101" name="SCI_AUTOCCANCEL"></item>
+	<item code="2102" name="SCI_AUTOCACTIVE"></item>
+	<item code="2103" name="SCI_AUTOCPOSSTART"></item>
+	<item code="2104" name="SCI_AUTOCCOMPLETE"></item>
+	<item code="2105" name="SCI_AUTOCSTOPS" syntax="(NULL,string characterSet)"></item>
+	<item code="2106" name="SCI_AUTOCSETSEPARATOR" syntax="(int separatorCharacter,NULL)"></item>
+	<item code="2107" name="SCI_AUTOCGETSEPARATOR"></item>
+	<item code="2108" name="SCI_AUTOCSELECT" syntax="(NULL,string text)"></item>
+	<item code="2110" name="SCI_AUTOCSETCANCELATSTART" syntax="(bool cancel,NULL)"></item>
+	<item code="2111" name="SCI_AUTOCGETCANCELATSTART"></item>
+	<item code="2112" name="SCI_AUTOCSETFILLUPS" syntax="(NULL,string characterSet)"></item>
+	<item code="2113" name="SCI_AUTOCSETCHOOSESINGLE" syntax="(bool chooseSingle,NULL)"></item>
+	<item code="2114" name="SCI_AUTOCGETCHOOSESINGLE"></item>
+	<item code="2115" name="SCI_AUTOCSETIGNORECASE" syntax="(bool ignoreCase,NULL)"></item>
+	<item code="2116" name="SCI_AUTOCGETIGNORECASE"></item>
+	<item code="2117" name="SCI_USERLISTSHOW" syntax="(int listType,string itemList)"></item>
+	<item code="2118" name="SCI_AUTOCSETAUTOHIDE" syntax="(bool autoHide,NULL)"></item>
+	<item code="2119" name="SCI_AUTOCGETAUTOHIDE"></item>
+	<item code="2270" name="SCI_AUTOCSETDROPRESTOFWORD" syntax="(bool dropRestOfWord,NULL)"></item>
+	<item code="2271" name="SCI_AUTOCGETDROPRESTOFWORD"></item>
+	<item code="2405" name="SCI_REGISTERIMAGE" syntax="(int type,string xpmData)"></item>
+	<item code="2408" name="SCI_CLEARREGISTEREDIMAGES"></item>
+	<item code="2285" name="SCI_AUTOCGETTYPESEPARATOR"></item>
+	<item code="2286" name="SCI_AUTOCSETTYPESEPARATOR" syntax="(int separatorCharacter,NULL)"></item>
+	<item code="2208" name="SCI_AUTOCSETMAXWIDTH" syntax="(int characterCount,NULL)"></item>
+	<item code="2209" name="SCI_AUTOCGETMAXWIDTH"></item>
+	<item code="2210" name="SCI_AUTOCSETMAXHEIGHT" syntax="(int rowCount,NULL)"></item>
+	<item code="2211" name="SCI_AUTOCGETMAXHEIGHT"></item>
+	<item code="2122" name="SCI_SETINDENT" syntax="(int indentSize,NULL)"></item>
+	<item code="2123" name="SCI_GETINDENT"></item>
+	<item code="2124" name="SCI_SETUSETABS" syntax="(bool useTabs,NULL)"></item>
+	<item code="2125" name="SCI_GETUSETABS"></item>
+	<item code="2126" name="SCI_SETLINEINDENTATION" syntax="(int line,int indentSize)"></item>
+	<item code="2127" name="SCI_GETLINEINDENTATION" syntax="(int line,NULL)"></item>
+	<item code="2128" name="SCI_GETLINEINDENTPOSITION" syntax="(int line,NULL)"></item>
+	<item code="2129" name="SCI_GETCOLUMN" syntax="(position pos,NULL)"></item>
+	<item code="2633" name="SCI_COUNTCHARACTERS" syntax="(int startPos,int endPos)"></item>
+	<item code="2130" name="SCI_SETHSCROLLBAR" syntax="(bool show,NULL)"></item>
+	<item code="2131" name="SCI_GETHSCROLLBAR"></item>
+	<item code="1" name="SC_IV_REAL"></item>
+	<item code="2" name="SC_IV_LOOKFORWARD"></item>
+	<item code="3" name="SC_IV_LOOKBOTH"></item>
+	<item code="2132" name="SCI_SETINDENTATIONGUIDES" syntax="(int indentView,NULL)"></item>
+	<item code="2133" name="SCI_GETINDENTATIONGUIDES"></item>
+	<item code="2134" name="SCI_SETHIGHLIGHTGUIDE" syntax="(int column,NULL)"></item>
+	<item code="2135" name="SCI_GETHIGHLIGHTGUIDE"></item>
+	<item code="2136" name="SCI_GETLINEENDPOSITION" syntax="(int line,NULL)"></item>
+	<item code="2137" name="SCI_GETCODEPAGE"></item>
+	<item code="2138" name="SCI_GETCARETFORE"></item>
+	<item code="2140" name="SCI_GETREADONLY"></item>
+	<item code="2141" name="SCI_SETCURRENTPOS" syntax="(position pos,NULL)"></item>
+	<item code="2142" name="SCI_SETSELECTIONSTART" syntax="(position pos,NULL)"></item>
+	<item code="2143" name="SCI_GETSELECTIONSTART"></item>
+	<item code="2144" name="SCI_SETSELECTIONEND" syntax="(position pos,NULL)"></item>
+	<item code="2145" name="SCI_GETSELECTIONEND"></item>
+	<item code="2556" name="SCI_SETEMPTYSELECTION" syntax="(position pos,NULL)"></item>
+	<item code="2146" name="SCI_SETPRINTMAGNIFICATION" syntax="(int magnification,NULL)"></item>
+	<item code="2147" name="SCI_GETPRINTMAGNIFICATION"></item>
+	<item code="1" name="SC_PRINT_INVERTLIGHT"></item>
+	<item code="2" name="SC_PRINT_BLACKONWHITE"></item>
+	<item code="3" name="SC_PRINT_COLOURONWHITE"></item>
+	<item code="4" name="SC_PRINT_COLOURONWHITEDEFAULTBG"></item>
+	<item code="2148" name="SCI_SETPRINTCOLOURMODE" syntax="(int mode,NULL)"></item>
+	<item code="2149" name="SCI_GETPRINTCOLOURMODE"></item>
+	<item code="2" name="SCFIND_WHOLEWORD"></item>
+	<item code="4" name="SCFIND_MATCHCASE"></item>
+	<item code="0x00100000" name="SCFIND_WORDSTART"></item>
+	<item code="0x00200000" name="SCFIND_REGEXP"></item>
+	<item code="0x00400000" name="SCFIND_POSIX"></item>
+	<item code="2150" name="SCI_FINDTEXT"></item>
+	<item code="2151" name="SCI_FORMATRANGE"></item>
+	<item code="2152" name="SCI_GETFIRSTVISIBLELINE"></item>
+	<item code="2153" name="SCI_GETLINE"></item>
+	<item code="2154" name="SCI_GETLINECOUNT"></item>
+	<item code="2155" name="SCI_SETMARGINLEFT" syntax="(NULL,int pixelWidth)"></item>
+	<item code="2156" name="SCI_GETMARGINLEFT"></item>
+	<item code="2157" name="SCI_SETMARGINRIGHT" syntax="(NULL,int pixelWidth)"></item>
+	<item code="2158" name="SCI_GETMARGINRIGHT"></item>
+	<item code="2159" name="SCI_GETMODIFY"></item>
+	<item code="2160" name="SCI_SETSEL" syntax="(bool useSetting,colour fore)"></item>
+	<item code="2161" name="SCI_GETSELTEXT" syntax="(NULL,stringresult text)"></item>
+	<item code="2162" name="SCI_GETTEXTRANGE" syntax="(NULL,textrange tr)"></item>
+	<item code="2163" name="SCI_HIDESELECTION" syntax="(bool normal,NULL)"></item>
+	<item code="2164" name="SCI_POINTXFROMPOSITION" syntax="(NULL,position pos)"></item>
+	<item code="2165" name="SCI_POINTYFROMPOSITION" syntax="(NULL,position pos)"></item>
+	<item code="2166" name="SCI_LINEFROMPOSITION" syntax="(position pos,NULL)"></item>
+	<item code="2167" name="SCI_POSITIONFROMLINE" syntax="(int line,NULL)"></item>
+	<item code="2168" name="SCI_LINESCROLL" syntax="(int columns,int lines)"></item>
+	<item code="2169" name="SCI_SCROLLCARET"></item>
+	<item code="2569" name="SCI_SCROLLRANGE" syntax="(position secondary,position primary)"></item>
+	<item code="2170" name="SCI_REPLACESEL" syntax="(NULL,string text)"></item>
+	<item code="2171" name="SCI_SETREADONLY" syntax="(bool readOnly,NULL)"></item>
+	<item code="2172" name="SCI_NULL" syntax="(bool readOnly,NULL)"></item>
+	<item code="2173" name="SCI_CANPASTE"></item>
+	<item code="2174" name="SCI_CANUNDO"></item>
+	<item code="2175" name="SCI_EMPTYUNDOBUFFER"></item>
+	<item code="2176" name="SCI_UNDO"></item>
+	<item code="2177" name="SCI_CUT"></item>
+	<item code="2178" name="SCI_COPY"></item>
+	<item code="2179" name="SCI_PASTE"></item>
+	<item code="2180" name="SCI_CLEAR"></item>
+	<item code="2181" name="SCI_SETTEXT" syntax="(NULL,string text)"></item>
+	<item code="2182" name="SCI_GETTEXT" syntax="(NULL,textrange tr)"></item>
+	<item code="2183" name="SCI_GETTEXTLENGTH"></item>
+	<item code="2184" name="SCI_GETDIRECTFUNCTION"></item>
+	<item code="2185" name="SCI_GETDIRECTPOINTER"></item>
+	<item code="2186" name="SCI_SETOVERTYPE" syntax="(bool overtype,NULL)"></item>
+	<item code="2187" name="SCI_GETOVERTYPE"></item>
+	<item code="2188" name="SCI_SETCARETWIDTH" syntax="(int pixelWidth,NULL)"></item>
+	<item code="2189" name="SCI_GETCARETWIDTH"></item>
+	<item code="2190" name="SCI_SETTARGETSTART" syntax="(position pos,NULL)"></item>
+	<item code="2191" name="SCI_GETTARGETSTART"></item>
+	<item code="2192" name="SCI_SETTARGETEND" syntax="(position pos,NULL)"></item>
+	<item code="2193" name="SCI_GETTARGETEND"></item>
+	<item code="2194" name="SCI_REPLACETARGET" syntax="(int length,string text)"></item>
+	<item code="2195" name="SCI_REPLACETARGETRE" syntax="(int length,string text)"></item>
+	<item code="2197" name="SCI_SEARCHINTARGET" syntax="(int length,string text)"></item>
+	<item code="2198" name="SCI_SETSEARCHFLAGS" syntax="(int flags,NULL)"></item>
+	<item code="2199" name="SCI_GETSEARCHFLAGS"></item>
+	<item code="2200" name="SCI_CALLTIPSHOW" syntax="(position pos,string definition)"></item>
+	<item code="2201" name="SCI_CALLTIPCANCEL"></item>
+	<item code="2202" name="SCI_CALLTIPACTIVE"></item>
+	<item code="2203" name="SCI_CALLTIPPOSSTART"></item>
+	<item code="2204" name="SCI_CALLTIPSETHLT" syntax="(int start,int end)"></item>
+	<item code="2205" name="SCI_CALLTIPSETBACK" syntax="(colour back,NULL)"></item>
+	<item code="2206" name="SCI_CALLTIPSETFORE" syntax="(colour fore,NULL)"></item>
+	<item code="2207" name="SCI_CALLTIPSETFOREHLT" syntax="(colour fore,NULL)"></item>
+	<item code="2212" name="SCI_CALLTIPUSESTYLE" syntax="(int tabSize,NULL)"></item>
+	<item code="2213" name="SCI_CALLTIPSETPOSITION" syntax="(bool above,NULL)"></item>
+	<item code="2220" name="SCI_VISIBLEFROMDOCLINE" syntax="(int line,NULL)"></item>
+	<item code="2221" name="SCI_DOCLINEFROMVISIBLE" syntax="(int lineDisplay,NULL)"></item>
+	<item code="2235" name="SCI_WRAPCOUNT" syntax="(int line,NULL)"></item>
+	<item code="0x400" name="SC_FOLDLEVELBASE" syntax="(int line,NULL)"></item>
+	<item code="0x1000" name="SC_FOLDLEVELWHITEFLAG" syntax="(int line,NULL)"></item>
+	<item code="0x2000" name="SC_FOLDLEVELHEADERFLAG" syntax="(int line,NULL)"></item>
+	<item code="0x0FFF" name="SC_FOLDLEVELNUMBERMASK" syntax="(int line,NULL)"></item>
+	<item code="2222" name="SCI_SETFOLDLEVEL" syntax="(int line,int level)"></item>
+	<item code="2223" name="SCI_GETFOLDLEVEL" syntax="(int line,NULL)"></item>
+	<item code="2224" name="SCI_GETLASTCHILD" syntax="(int line,int level)"></item>
+	<item code="2225" name="SCI_GETFOLDPARENT" syntax="(int line,NULL)"></item>
+	<item code="2226" name="SCI_SHOWLINES" syntax="(int lineStart,int lineEnd)"></item>
+	<item code="2227" name="SCI_HIDELINES" syntax="(int lineStart,int lineEnd)"></item>
+	<item code="2228" name="SCI_GETLINEVISIBLE" syntax="(int line,NULL)"></item>
+	<item code="2236" name="SCI_GETALLLINESVISIBLE"></item>
+	<item code="2229" name="SCI_SETFOLDEXPANDED" syntax="(int line,bool expanded)"></item>
+	<item code="2230" name="SCI_GETFOLDEXPANDED" syntax="(int line,NULL)"></item>
+	<item code="2231" name="SCI_TOGGLEFOLD" syntax="(int line,NULL)"></item>
+	<item code="1" name="SC_FOLDACTION_EXPAND" syntax="(int line,NULL)"></item>
+	<item code="2" name="SC_FOLDACTION_TOGGLE" syntax="(int line,NULL)"></item>
+	<item code="2237" name="SCI_FOLDLINE" syntax="(int line,int action)"></item>
+	<item code="2238" name="SCI_FOLDCHILDREN" syntax="(int line,int action)"></item>
+	<item code="2239" name="SCI_EXPANDCHILDREN" syntax="(int line,int level)"></item>
+	<item code="2662" name="SCI_FOLDALL" syntax="(int action,NULL)"></item>
+	<item code="2232" name="SCI_ENSUREVISIBLE" syntax="(int line,NULL)"></item>
+	<item code="0x0001" name="SC_AUTOMATICFOLD_SHOW" syntax="(int line,NULL)"></item>
+	<item code="0x0002" name="SC_AUTOMATICFOLD_CLICK" syntax="(int line,NULL)"></item>
+	<item code="0x0004" name="SC_AUTOMATICFOLD_CHANGE" syntax="(int line,NULL)"></item>
+	<item code="2663" name="SCI_SETAUTOMATICFOLD" syntax="(int automaticFold,NULL)"></item>
+	<item code="2664" name="SCI_GETAUTOMATICFOLD"></item>
+	<item code="0x0002" name="SC_FOLDFLAG_LINEBEFORE_EXPANDED"></item>
+	<item code="0x0004" name="SC_FOLDFLAG_LINEBEFORE_CONTRACTED"></item>
+	<item code="0x0008" name="SC_FOLDFLAG_LINEAFTER_EXPANDED"></item>
+	<item code="0x0010" name="SC_FOLDFLAG_LINEAFTER_CONTRACTED"></item>
+	<item code="0x0040" name="SC_FOLDFLAG_LEVELNUMBERS"></item>
+	<item code="2233" name="SCI_SETFOLDFLAGS" syntax="(int flags,NULL)"></item>
+	<item code="2234" name="SCI_ENSUREVISIBLEENFORCEPOLICY" syntax="(int line,NULL)"></item>
+	<item code="2260" name="SCI_SETTABINDENTS" syntax="(bool tabIndents,NULL)"></item>
+	<item code="2261" name="SCI_GETTABINDENTS"></item>
+	<item code="2262" name="SCI_SETBACKSPACEUNINDENTS" syntax="(bool bsUnIndents,NULL)"></item>
+	<item code="2263" name="SCI_GETBACKSPACEUNINDENTS"></item>
+	<item code="10000000" name="SC_TIME_FOREVER"></item>
+	<item code="2264" name="SCI_SETMOUSEDWELLTIME" syntax="(int periodMilliseconds,NULL)"></item>
+	<item code="2265" name="SCI_GETMOUSEDWELLTIME"></item>
+	<item code="2266" name="SCI_WORDSTARTPOSITION" syntax="(position pos,bool onlyWordCharacters)"></item>
+	<item code="2267" name="SCI_WORDENDPOSITION" syntax="(position pos,bool onlyWordCharacters)"></item>
+	<item code="1" name="SC_WRAP_WORD" syntax="(position pos,bool onlyWordCharacters)"></item>
+	<item code="2" name="SC_WRAP_CHAR" syntax="(position pos,bool onlyWordCharacters)"></item>
+	<item code="2268" name="SCI_SETWRAPMODE" syntax="(int mode,NULL)"></item>
+	<item code="2269" name="SCI_GETWRAPMODE"></item>
+	<item code="0x0001" name="SC_WRAPVISUALFLAG_END"></item>
+	<item code="0x0002" name="SC_WRAPVISUALFLAG_START"></item>
+	<item code="0x0004" name="SC_WRAPVISUALFLAG_MARGIN"></item>
+	<item code="2460" name="SCI_SETWRAPVISUALFLAGS" syntax="(int wrapVisualFlags,NULL)"></item>
+	<item code="2461" name="SCI_GETWRAPVISUALFLAGS"></item>
+	<item code="0x0001" name="SC_WRAPVISUALFLAGLOC_END_BY_TEXT"></item>
+	<item code="0x0002" name="SC_WRAPVISUALFLAGLOC_START_BY_TEXT"></item>
+	<item code="2462" name="SCI_SETWRAPVISUALFLAGSLOCATION" syntax="(int wrapVisualFlagsLocation,NULL)"></item>
+	<item code="2463" name="SCI_GETWRAPVISUALFLAGSLOCATION"></item>
+	<item code="2464" name="SCI_SETWRAPSTARTINDENT" syntax="(int indent,NULL)"></item>
+	<item code="2465" name="SCI_GETWRAPSTARTINDENT"></item>
+	<item code="1" name="SC_WRAPINDENT_SAME"></item>
+	<item code="2" name="SC_WRAPINDENT_INDENT"></item>
+	<item code="2472" name="SCI_SETWRAPINDENTMODE" syntax="(int mode,NULL)"></item>
+	<item code="2473" name="SCI_GETWRAPINDENTMODE"></item>
+	<item code="1" name="SC_CACHE_CARET"></item>
+	<item code="2" name="SC_CACHE_PAGE"></item>
+	<item code="3" name="SC_CACHE_DOCUMENT"></item>
+	<item code="2272" name="SCI_SETLAYOUTCACHE" syntax="(int mode,NULL)"></item>
+	<item code="2273" name="SCI_GETLAYOUTCACHE"></item>
+	<item code="2274" name="SCI_SETSCROLLWIDTH" syntax="(int pixelWidth,NULL)"></item>
+	<item code="2275" name="SCI_GETSCROLLWIDTH"></item>
+	<item code="2516" name="SCI_SETSCROLLWIDTHTRACKING" syntax="(bool tracking,NULL)"></item>
+	<item code="2517" name="SCI_GETSCROLLWIDTHTRACKING"></item>
+	<item code="2276" name="SCI_TEXTWIDTH" syntax="(int style,string text)"></item>
+	<item code="2277" name="SCI_SETENDATLASTLINE" syntax="(bool endAtLastLine,NULL)"></item>
+	<item code="2278" name="SCI_GETENDATLASTLINE"></item>
+	<item code="2279" name="SCI_TEXTHEIGHT" syntax="(int line,NULL)"></item>
+	<item code="2280" name="SCI_SETVSCROLLBAR" syntax="(bool show,NULL)"></item>
+	<item code="2281" name="SCI_GETVSCROLLBAR"></item>
+	<item code="2282" name="SCI_APPENDTEXT" syntax="(int length,string text)"></item>
+	<item code="2283" name="SCI_GETTWOPHASEDRAW"></item>
+	<item code="2284" name="SCI_SETTWOPHASEDRAW" syntax="(bool twoPhase,NULL)"></item>
+	<item code="0xF" name="SC_EFF_QUALITY_MASK" syntax="(bool twoPhase,NULL)"></item>
+	<item code="1" name="SC_EFF_QUALITY_NON_ANTIALIASED" syntax="(bool twoPhase,NULL)"></item>
+	<item code="2" name="SC_EFF_QUALITY_ANTIALIASED" syntax="(bool twoPhase,NULL)"></item>
+	<item code="3" name="SC_EFF_QUALITY_LCD_OPTIMIZED" syntax="(bool twoPhase,NULL)"></item>
+	<item code="2611" name="SCI_SETFONTQUALITY" syntax="(int fontQuality,NULL)"></item>
+	<item code="2612" name="SCI_GETFONTQUALITY"></item>
+	<item code="2613" name="SCI_SETFIRSTVISIBLELINE" syntax="(int lineDisplay,NULL)"></item>
+	<item code="1" name="SC_MULTIPASTE_EACH" syntax="(int lineDisplay,NULL)"></item>
+	<item code="2614" name="SCI_SETMULTIPASTE" syntax="(int multiPaste,NULL)"></item>
+	<item code="2615" name="SCI_GETMULTIPASTE"></item>
+	<item code="2616" name="SCI_GETTAG" syntax="(int tagNumber,stringresult tagValue)"></item>
+	<item code="2287" name="SCI_TARGETFROMSELECTION"></item>
+	<item code="2288" name="SCI_LINESJOIN"></item>
+	<item code="2289" name="SCI_LINESSPLIT" syntax="(int pixelWidth,NULL)"></item>
+	<item code="2290" name="SCI_SETFOLDMARGINCOLOUR" syntax="(bool useSetting,colour back)"></item>
+	<item code="2291" name="SCI_SETFOLDMARGINHICOLOUR" syntax="(bool useSetting,colour fore)"></item>
+	<item code="2300" name="SCI_LINEDOWN"></item>
+	<item code="2301" name="SCI_LINEDOWNEXTEND"></item>
+	<item code="2302" name="SCI_LINEUP"></item>
+	<item code="2303" name="SCI_LINEUPEXTEND"></item>
+	<item code="2304" name="SCI_CHARLEFT"></item>
+	<item code="2305" name="SCI_CHARLEFTEXTEND"></item>
+	<item code="2306" name="SCI_CHARRIGHT"></item>
+	<item code="2307" name="SCI_CHARRIGHTEXTEND"></item>
+	<item code="2308" name="SCI_WORDLEFT"></item>
+	<item code="2309" name="SCI_WORDLEFTEXTEND"></item>
+	<item code="2310" name="SCI_WORDRIGHT"></item>
+	<item code="2311" name="SCI_WORDRIGHTEXTEND"></item>
+	<item code="2312" name="SCI_HOME"></item>
+	<item code="2313" name="SCI_HOMEEXTEND"></item>
+	<item code="2314" name="SCI_LINEEND" syntax="(int line,NULL)"></item>
+	<item code="2315" name="SCI_LINEENDEXTEND"></item>
+	<item code="2316" name="SCI_DOCUMENTSTART"></item>
+	<item code="2317" name="SCI_DOCUMENTSTARTEXTEND"></item>
+	<item code="2318" name="SCI_DOCUMENTEND"></item>
+	<item code="2319" name="SCI_DOCUMENTENDEXTEND"></item>
+	<item code="2320" name="SCI_PAGEUP"></item>
+	<item code="2321" name="SCI_PAGEUPEXTEND"></item>
+	<item code="2322" name="SCI_PAGEDOWN"></item>
+	<item code="2323" name="SCI_PAGEDOWNEXTEND"></item>
+	<item code="2324" name="SCI_EDITTOGGLEOVERTYPE"></item>
+	<item code="2325" name="SCI_CANCEL"></item>
+	<item code="2326" name="SCI_DELETEBACK"></item>
+	<item code="2327" name="SCI_TAB"></item>
+	<item code="2328" name="SCI_BACKTAB"></item>
+	<item code="2329" name="SCI_NEWLINE"></item>
+	<item code="2330" name="SCI_FORMFEED"></item>
+	<item code="2331" name="SCI_VCHOME"></item>
+	<item code="2332" name="SCI_VCHOMEEXTEND"></item>
+	<item code="2333" name="SCI_ZOOMIN"></item>
+	<item code="2334" name="SCI_ZOOMOUT"></item>
+	<item code="2335" name="SCI_DELWORDLEFT"></item>
+	<item code="2336" name="SCI_DELWORDRIGHT"></item>
+	<item code="2518" name="SCI_DELWORDRIGHTEND"></item>
+	<item code="2337" name="SCI_LINECUT"></item>
+	<item code="2338" name="SCI_LINEDELETE"></item>
+	<item code="2339" name="SCI_LINETRANSPOSE"></item>
+	<item code="2404" name="SCI_LINEDUPLICATE"></item>
+	<item code="2340" name="SCI_LOWERCASE"></item>
+	<item code="2341" name="SCI_UPPERCASE"></item>
+	<item code="2342" name="SCI_LINESCROLLDOWN"></item>
+	<item code="2343" name="SCI_LINESCROLLUP"></item>
+	<item code="2344" name="SCI_DELETEBACKNOTLINE"></item>
+	<item code="2345" name="SCI_HOMEDISPLAY"></item>
+	<item code="2346" name="SCI_HOMEDISPLAYEXTEND"></item>
+	<item code="2347" name="SCI_LINEENDDISPLAY"></item>
+	<item code="2348" name="SCI_LINEENDDISPLAYEXTEND"></item>
+	<item code="2349" name="SCI_HOMEWRAP"></item>
+	<item code="2450" name="SCI_HOMEWRAPEXTEND"></item>
+	<item code="2451" name="SCI_LINEENDWRAP"></item>
+	<item code="2452" name="SCI_LINEENDWRAPEXTEND"></item>
+	<item code="2453" name="SCI_VCHOMEWRAP"></item>
+	<item code="2454" name="SCI_VCHOMEWRAPEXTEND"></item>
+	<item code="2455" name="SCI_LINECOPY"></item>
+	<item code="2401" name="SCI_MOVECARETINSIDEVIEW"></item>
+	<item code="2350" name="SCI_LINELENGTH" syntax="(int line,NULL)"></item>
+	<item code="2351" name="SCI_BRACEHIGHLIGHT" syntax="(position pos1,position pos2)"></item>
+	<item code="2498" name="SCI_BRACEHIGHLIGHTINDICATOR" syntax="(bool useBraceHighlightIndicator,int indicator)"></item>
+	<item code="2352" name="SCI_BRACEBADLIGHT" syntax="(position pos,NULL)"></item>
+	<item code="2499" name="SCI_BRACEBADLIGHTINDICATOR" syntax="(bool useBraceBadLightIndicator,int indicator)"></item>
+	<item code="2353" name="SCI_BRACEMATCH" syntax="(position pos,NULL)"></item>
+	<item code="2355" name="SCI_GETVIEWEOL"></item>
+	<item code="2356" name="SCI_SETVIEWEOL" syntax="(bool visible,NULL)"></item>
+	<item code="2357" name="SCI_GETDOCPOINTER"></item>
+	<item code="2358" name="SCI_SETDOCPOINTER" syntax="(NULL,int pointer)"></item>
+	<item code="2359" name="SCI_SETMODEVENTMASK" syntax="(int mask,NULL)"></item>
+	<item code="1" name="EDGE_LINE" syntax="(int mask,NULL)"></item>
+	<item code="2" name="EDGE_BACKGROUND" syntax="(int mask,NULL)"></item>
+	<item code="2360" name="SCI_GETEDGECOLUMN"></item>
+	<item code="2361" name="SCI_SETEDGECOLUMN" syntax="(int column,NULL)"></item>
+	<item code="2362" name="SCI_GETEDGEMODE"></item>
+	<item code="2363" name="SCI_SETEDGEMODE" syntax="(int mode,NULL)"></item>
+	<item code="2364" name="SCI_GETEDGECOLOUR"></item>
+	<item code="2365" name="SCI_SETEDGECOLOUR" syntax="(colour edgeColour,NULL)"></item>
+	<item code="2366" name="SCI_SEARCHANCHOR"></item>
+	<item code="2367" name="SCI_SEARCHNEXT" syntax="(int flags,string text)"></item>
+	<item code="2368" name="SCI_SEARCHPREV" syntax="(int flags,string text)"></item>
+	<item code="2370" name="SCI_LINESONSCREEN"></item>
+	<item code="2371" name="SCI_USEPOPUP" syntax="(bool allowPopUp,NULL)"></item>
+	<item code="2372" name="SCI_SELECTIONISRECTANGLE"></item>
+	<item code="2373" name="SCI_SETZOOM" syntax="(int zoom,NULL)"></item>
+	<item code="2374" name="SCI_GETZOOM"></item>
+	<item code="2375" name="SCI_CREATEDOCUMENT"></item>
+	<item code="2376" name="SCI_ADDREFDOCUMENT" syntax="(NULL,int doc)"></item>
+	<item code="2377" name="SCI_RELEASEDOCUMENT" syntax="(NULL,int doc)"></item>
+	<item code="2378" name="SCI_GETMODEVENTMASK"></item>
+	<item code="2380" name="SCI_SETFOCUS" syntax="(bool focus,NULL)"></item>
+	<item code="2381" name="SCI_GETFOCUS"></item>
+	<item code="1" name="SC_STATUS_FAILURE"></item>
+	<item code="2" name="SC_STATUS_BADALLOC"></item>
+	<item code="2382" name="SCI_SETSTATUS" syntax="(int statusCode,NULL)"></item>
+	<item code="2383" name="SCI_GETSTATUS"></item>
+	<item code="2384" name="SCI_SETMOUSEDOWNCAPTURES" syntax="(bool captures,NULL)"></item>
+	<item code="2385" name="SCI_GETMOUSEDOWNCAPTURES"></item>
+	<item code="-1" name="SC_CURSORNORMAL"></item>
+	<item code="2" name="SC_CURSORARROW"></item>
+	<item code="4" name="SC_CURSORWAIT"></item>
+	<item code="7" name="SC_CURSORREVERSEARROW"></item>
+	<item code="2386" name="SCI_SETCURSOR" syntax="(int cursorType,NULL)"></item>
+	<item code="2387" name="SCI_GETCURSOR"></item>
+	<item code="2388" name="SCI_SETCONTROLCHARSYMBOL" syntax="(int symbol,NULL)"></item>
+	<item code="2389" name="SCI_GETCONTROLCHARSYMBOL"></item>
+	<item code="2390" name="SCI_WORDPARTLEFT"></item>
+	<item code="2391" name="SCI_WORDPARTLEFTEXTEND"></item>
+	<item code="2392" name="SCI_WORDPARTRIGHT"></item>
+	<item code="2393" name="SCI_WORDPARTRIGHTEXTEND"></item>
+	<item code="0x01" name="VISIBLE_SLOP"></item>
+	<item code="0x04" name="VISIBLE_STRICT"></item>
+	<item code="2394" name="SCI_SETVISIBLEPOLICY"></item>
+	<item code="2395" name="SCI_DELLINELEFT"></item>
+	<item code="2396" name="SCI_DELLINERIGHT"></item>
+	<item code="2397" name="SCI_SETXOFFSET" syntax="(int newOffset,NULL)"></item>
+	<item code="2398" name="SCI_GETXOFFSET"></item>
+	<item code="2399" name="SCI_CHOOSECARETX"></item>
+	<item code="2400" name="SCI_GRABFOCUS"></item>
+	<item code="0x01" name="CARET_SLOP"></item>
+	<item code="0x04" name="CARET_STRICT"></item>
+	<item code="0x10" name="CARET_JUMPS"></item>
+	<item code="0x08" name="CARET_EVEN"></item>
+	<item code="2402" name="SCI_SETXCARETPOLICY"></item>
+	<item code="2403" name="SCI_SETYCARETPOLICY"></item>
+	<item code="2406" name="SCI_SETPRINTWRAPMODE" syntax="(int mode,NULL)"></item>
+	<item code="2407" name="SCI_GETPRINTWRAPMODE"></item>
+	<item code="2410" name="SCI_SETHOTSPOTACTIVEFORE" syntax="(bool useSetting,colour fore)"></item>
+	<item code="2494" name="SCI_GETHOTSPOTACTIVEFORE"></item>
+	<item code="2411" name="SCI_SETHOTSPOTACTIVEBACK" syntax="(bool useSetting,colour back)"></item>
+	<item code="2495" name="SCI_GETHOTSPOTACTIVEBACK"></item>
+	<item code="2412" name="SCI_SETHOTSPOTACTIVEUNDERLINE" syntax="(bool underline,NULL)"></item>
+	<item code="2496" name="SCI_GETHOTSPOTACTIVEUNDERLINE"></item>
+	<item code="2421" name="SCI_SETHOTSPOTSINGLELINE" syntax="(bool singleLine,NULL)"></item>
+	<item code="2497" name="SCI_GETHOTSPOTSINGLELINE"></item>
+	<item code="2413" name="SCI_PARADOWN"></item>
+	<item code="2414" name="SCI_PARADOWNEXTEND"></item>
+	<item code="2415" name="SCI_PARAUP"></item>
+	<item code="2416" name="SCI_PARAUPEXTEND"></item>
+	<item code="2417" name="SCI_POSITIONBEFORE" syntax="(position pos,NULL)"></item>
+	<item code="2418" name="SCI_POSITIONAFTER" syntax="(position pos,NULL)"></item>
+	<item code="2670" name="SCI_POSITIONRELATIVE" syntax="(position pos,int relative)"></item>
+	<item code="2419" name="SCI_COPYRANGE" syntax="(position start,position end)"></item>
+	<item code="2420" name="SCI_COPYTEXT" syntax="(int length,string text)"></item>
+	<item code="1" name="SC_SEL_RECTANGLE" syntax="(int length,string text)"></item>
+	<item code="2" name="SC_SEL_LINES" syntax="(int length,string text)"></item>
+	<item code="3" name="SC_SEL_THIN" syntax="(int length,string text)"></item>
+	<item code="2422" name="SCI_SETSELECTIONMODE" syntax="(int mode,NULL)"></item>
+	<item code="2423" name="SCI_GETSELECTIONMODE"></item>
+	<item code="2424" name="SCI_GETLINESELSTARTPOSITION" syntax="(int line,NULL)"></item>
+	<item code="2425" name="SCI_GETLINESELENDPOSITION" syntax="(int line,NULL)"></item>
+	<item code="2426" name="SCI_LINEDOWNRECTEXTEND"></item>
+	<item code="2427" name="SCI_LINEUPRECTEXTEND"></item>
+	<item code="2428" name="SCI_CHARLEFTRECTEXTEND"></item>
+	<item code="2429" name="SCI_CHARRIGHTRECTEXTEND"></item>
+	<item code="2430" name="SCI_HOMERECTEXTEND"></item>
+	<item code="2431" name="SCI_VCHOMERECTEXTEND"></item>
+	<item code="2432" name="SCI_LINEENDRECTEXTEND"></item>
+	<item code="2433" name="SCI_PAGEUPRECTEXTEND"></item>
+	<item code="2434" name="SCI_PAGEDOWNRECTEXTEND"></item>
+	<item code="2435" name="SCI_STUTTEREDPAGEUP"></item>
+	<item code="2436" name="SCI_STUTTEREDPAGEUPEXTEND"></item>
+	<item code="2437" name="SCI_STUTTEREDPAGEDOWN"></item>
+	<item code="2438" name="SCI_STUTTEREDPAGEDOWNEXTEND"></item>
+	<item code="2439" name="SCI_WORDLEFTEND"></item>
+	<item code="2440" name="SCI_WORDLEFTENDEXTEND"></item>
+	<item code="2441" name="SCI_WORDRIGHTEND"></item>
+	<item code="2442" name="SCI_WORDRIGHTENDEXTEND"></item>
+	<item code="2443" name="SCI_SETWHITESPACECHARS" syntax="(NULL,string characters)"></item>
+	<item code="2647" name="SCI_GETWHITESPACECHARS" syntax="(NULL,stringresult characters)"></item>
+	<item code="2648" name="SCI_SETPUNCTUATIONCHARS" syntax="(NULL,string characters)"></item>
+	<item code="2649" name="SCI_GETPUNCTUATIONCHARS" syntax="(NULL,stringresult characters)"></item>
+	<item code="2444" name="SCI_SETCHARSDEFAULT" syntax="(NULL,stringresult characters)"></item>
+	<item code="2445" name="SCI_AUTOCGETCURRENT"></item>
+	<item code="2610" name="SCI_AUTOCGETCURRENTTEXT" syntax="(NULL,stringresult s)"></item>
+	<item code="1" name="SC_CASEINSENSITIVEBEHAVIOUR_IGNORECASE" syntax="(NULL,stringresult s)"></item>
+	<item code="2634" name="SCI_AUTOCSETCASEINSENSITIVEBEHAVIOUR" syntax="(int behaviour,NULL)"></item>
+	<item code="2635" name="SCI_AUTOCGETCASEINSENSITIVEBEHAVIOUR"></item>
+	<item code="1" name="SC_ORDER_PERFORMSORT"></item>
+	<item code="2" name="SC_ORDER_CUSTOM"></item>
+	<item code="2660" name="SCI_AUTOCSETORDER" syntax="(int order,NULL)"></item>
+	<item code="2661" name="SCI_AUTOCGETORDER"></item>
+	<item code="2446" name="SCI_ALLOCATE"></item>
+	<item code="2447" name="SCI_TARGETASUTF8" syntax="(NULL,stringresult s)"></item>
+	<item code="2448" name="SCI_SETLENGTHFORENCODE" syntax="(int bytes,NULL)"></item>
+	<item code="2449" name="SCI_ENCODEDFROMUTF8" syntax="(int bytes,NULL)"></item>
+	<item code="2456" name="SCI_FINDCOLUMN" syntax="(int line,int column)"></item>
+	<item code="2457" name="SCI_GETCARETSTICKY"></item>
+	<item code="2458" name="SCI_SETCARETSTICKY" syntax="(int useCaretStickyBehaviour,NULL)"></item>
+	<item code="1" name="SC_CARETSTICKY_ON"></item>
+	<item code="2" name="SC_CARETSTICKY_WHITESPACE"></item>
+	<item code="2459" name="SCI_TOGGLECARETSTICKY"></item>
+	<item code="2467" name="SCI_SETPASTECONVERTENDINGS" syntax="(bool convert,NULL)"></item>
+	<item code="2468" name="SCI_GETPASTECONVERTENDINGS"></item>
+	<item code="2469" name="SCI_SELECTIONDUPLICATE"></item>
+	<item code="255" name="SC_ALPHA_OPAQUE"></item>
+	<item code="256" name="SC_ALPHA_NOALPHA"></item>
+	<item code="2470" name="SCI_SETCARETLINEBACKALPHA" syntax="(int alpha,NULL)"></item>
+	<item code="2471" name="SCI_GETCARETLINEBACKALPHA"></item>
+	<item code="1" name="CARETSTYLE_LINE"></item>
+	<item code="2" name="CARETSTYLE_BLOCK"></item>
+	<item code="2512" name="SCI_SETCARETSTYLE" syntax="(int caretStyle,NULL)"></item>
+	<item code="2513" name="SCI_GETCARETSTYLE"></item>
+	<item code="2500" name="SCI_SETINDICATORCURRENT" syntax="(int indicator,NULL)"></item>
+	<item code="2501" name="SCI_GETINDICATORCURRENT"></item>
+	<item code="2502" name="SCI_SETINDICATORVALUE" syntax="(int value,NULL)"></item>
+	<item code="2503" name="SCI_GETINDICATORVALUE"></item>
+	<item code="2504" name="SCI_INDICATORFILLRANGE"></item>
+	<item code="2505" name="SCI_INDICATORCLEARRANGE"></item>
+	<item code="2506" name="SCI_INDICATORALLONFOR" syntax="(int position,NULL)"></item>
+	<item code="2507" name="SCI_INDICATORVALUEAT" syntax="(int indicator,int position)"></item>
+	<item code="2508" name="SCI_INDICATORSTART" syntax="(int indicator,int position)"></item>
+	<item code="2509" name="SCI_INDICATOREND" syntax="(int indicator,int position)"></item>
+	<item code="2514" name="SCI_SETPOSITIONCACHE" syntax="(int size,NULL)"></item>
+	<item code="2515" name="SCI_GETPOSITIONCACHE"></item>
+	<item code="2519" name="SCI_COPYALLOWLINE"></item>
+	<item code="2520" name="SCI_GETCHARACTERPOINTER"></item>
+	<item code="2643" name="SCI_GETRANGEPOINTER" syntax="(int position,int rangeLength)"></item>
+	<item code="2644" name="SCI_GETGAPPOSITION"></item>
+	<item code="2521" name="SCI_SETKEYSUNICODE" syntax="(bool keysUnicode,NULL)"></item>
+	<item code="2522" name="SCI_GETKEYSUNICODE"></item>
+	<item code="2523" name="SCI_INDICSETALPHA" syntax="(int indicator,int alpha)"></item>
+	<item code="2524" name="SCI_INDICGETALPHA" syntax="(int indicator,NULL)"></item>
+	<item code="2558" name="SCI_INDICSETOUTLINEALPHA" syntax="(int indicator,int alpha)"></item>
+	<item code="2559" name="SCI_INDICGETOUTLINEALPHA" syntax="(int indicator,NULL)"></item>
+	<item code="2525" name="SCI_SETEXTRAASCENT" syntax="(int extraAscent,NULL)"></item>
+	<item code="2526" name="SCI_GETEXTRAASCENT"></item>
+	<item code="2527" name="SCI_SETEXTRADESCENT" syntax="(int extraDescent,NULL)"></item>
+	<item code="2528" name="SCI_GETEXTRADESCENT"></item>
+	<item code="2529" name="SCI_MARKERSYMBOLDEFINED" syntax="(int markerNumber,NULL)"></item>
+	<item code="2530" name="SCI_MARGINSETTEXT" syntax="(int line,string text)"></item>
+	<item code="2531" name="SCI_MARGINGETTEXT" syntax="(int line,stringresult text)"></item>
+	<item code="2532" name="SCI_MARGINSETSTYLE" syntax="(int line,int style)"></item>
+	<item code="2533" name="SCI_MARGINGETSTYLE" syntax="(int line,NULL)"></item>
+	<item code="2534" name="SCI_MARGINSETSTYLES" syntax="(int line,string styles)"></item>
+	<item code="2535" name="SCI_MARGINGETSTYLES" syntax="(int line,stringresult styles)"></item>
+	<item code="2536" name="SCI_MARGINTEXTCLEARALL"></item>
+	<item code="2537" name="SCI_MARGINSETSTYLEOFFSET" syntax="(int style,NULL)"></item>
+	<item code="2538" name="SCI_MARGINGETSTYLEOFFSET"></item>
+	<item code="1" name="SC_MARGINOPTION_SUBLINESELECT"></item>
+	<item code="2539" name="SCI_SETMARGINOPTIONS" syntax="(int marginOptions,NULL)"></item>
+	<item code="2557" name="SCI_GETMARGINOPTIONS"></item>
+	<item code="2540" name="SCI_ANNOTATIONSETTEXT" syntax="(int line,string text)"></item>
+	<item code="2541" name="SCI_ANNOTATIONGETTEXT" syntax="(int line,stringresult text)"></item>
+	<item code="2542" name="SCI_ANNOTATIONSETSTYLE" syntax="(int line,int style)"></item>
+	<item code="2543" name="SCI_ANNOTATIONGETSTYLE" syntax="(int line,NULL)"></item>
+	<item code="2544" name="SCI_ANNOTATIONSETSTYLES" syntax="(int line,string styles)"></item>
+	<item code="2545" name="SCI_ANNOTATIONGETSTYLES" syntax="(int line,stringresult styles)"></item>
+	<item code="2546" name="SCI_ANNOTATIONGETLINES" syntax="(int line,NULL)"></item>
+	<item code="2547" name="SCI_ANNOTATIONCLEARALL"></item>
+	<item code="1" name="ANNOTATION_STANDARD"></item>
+	<item code="2" name="ANNOTATION_BOXED"></item>
+	<item code="2548" name="SCI_ANNOTATIONSETVISIBLE" syntax="(int visible,NULL)"></item>
+	<item code="2549" name="SCI_ANNOTATIONGETVISIBLE"></item>
+	<item code="2550" name="SCI_ANNOTATIONSETSTYLEOFFSET" syntax="(int style,NULL)"></item>
+	<item code="2551" name="SCI_ANNOTATIONGETSTYLEOFFSET"></item>
+	<item code="2552" name="SCI_RELEASEALLEXTENDEDSTYLES"></item>
+	<item code="2553" name="SCI_ALLOCATEEXTENDEDSTYLES" syntax="(int numberStyles,NULL)"></item>
+	<item code="1" name="UNDO_MAY_COALESCE" syntax="(int numberStyles,NULL)"></item>
+	<item code="2560" name="SCI_ADDUNDOACTION" syntax="(int token,int flags)"></item>
+	<item code="2561" name="SCI_CHARPOSITIONFROMPOINT" syntax="(int x,int y)"></item>
+	<item code="2562" name="SCI_CHARPOSITIONFROMPOINTCLOSE" syntax="(int x,int y)"></item>
+	<item code="2668" name="SCI_SETMOUSESELECTIONRECTANGULARSWITCH" syntax="(bool mouseSelectionRectangularSwitch,NULL)"></item>
+	<item code="2669" name="SCI_GETMOUSESELECTIONRECTANGULARSWITCH"></item>
+	<item code="2563" name="SCI_SETMULTIPLESELECTION" syntax="(bool multipleSelection,NULL)"></item>
+	<item code="2564" name="SCI_GETMULTIPLESELECTION"></item>
+	<item code="2565" name="SCI_SETADDITIONALSELECTIONTYPING" syntax="(bool additionalSelectionTyping,NULL)"></item>
+	<item code="2566" name="SCI_GETADDITIONALSELECTIONTYPING"></item>
+	<item code="2567" name="SCI_SETADDITIONALCARETSBLINK" syntax="(bool additionalCaretsBlink,NULL)"></item>
+	<item code="2568" name="SCI_GETADDITIONALCARETSBLINK"></item>
+	<item code="2608" name="SCI_SETADDITIONALCARETSVISIBLE" syntax="(bool additionalCaretsBlink,NULL)"></item>
+	<item code="2609" name="SCI_GETADDITIONALCARETSVISIBLE"></item>
+	<item code="2570" name="SCI_GETSELECTIONS"></item>
+	<item code="2650" name="SCI_GETSELECTIONEMPTY"></item>
+	<item code="2571" name="SCI_CLEARSELECTIONS"></item>
+	<item code="2572" name="SCI_SETSELECTION" syntax="(position pos,NULL)"></item>
+	<item code="2573" name="SCI_ADDSELECTION" syntax="(int caret,int anchor)"></item>
+	<item code="2574" name="SCI_SETMAINSELECTION" syntax="(int selection,NULL)"></item>
+	<item code="2575" name="SCI_GETMAINSELECTION"></item>
+	<item code="2576" name="SCI_SETSELECTIONNCARET" syntax="(int selection,position pos)"></item>
+	<item code="2577" name="SCI_GETSELECTIONNCARET" syntax="(int selection,NULL)"></item>
+	<item code="2578" name="SCI_SETSELECTIONNANCHOR" syntax="(int selection,position posAnchor)"></item>
+	<item code="2579" name="SCI_GETSELECTIONNANCHOR" syntax="(int selection,NULL)"></item>
+	<item code="2580" name="SCI_SETSELECTIONNCARETVIRTUALSPACE" syntax="(int selection,int space)"></item>
+	<item code="2581" name="SCI_GETSELECTIONNCARETVIRTUALSPACE" syntax="(int selection,NULL)"></item>
+	<item code="2582" name="SCI_SETSELECTIONNANCHORVIRTUALSPACE" syntax="(int selection,int space)"></item>
+	<item code="2583" name="SCI_GETSELECTIONNANCHORVIRTUALSPACE" syntax="(int selection,NULL)"></item>
+	<item code="2584" name="SCI_SETSELECTIONNSTART" syntax="(int selection,position pos)"></item>
+	<item code="2585" name="SCI_GETSELECTIONNSTART" syntax="(int selection,NULL)"></item>
+	<item code="2586" name="SCI_SETSELECTIONNEND" syntax="(int selection,position pos)"></item>
+	<item code="2587" name="SCI_GETSELECTIONNEND" syntax="(int selection,NULL)"></item>
+	<item code="2588" name="SCI_SETRECTANGULARSELECTIONCARET" syntax="(position pos,NULL)"></item>
+	<item code="2589" name="SCI_GETRECTANGULARSELECTIONCARET"></item>
+	<item code="2590" name="SCI_SETRECTANGULARSELECTIONANCHOR" syntax="(position posAnchor,NULL)"></item>
+	<item code="2591" name="SCI_GETRECTANGULARSELECTIONANCHOR"></item>
+	<item code="2592" name="SCI_SETRECTANGULARSELECTIONCARETVIRTUALSPACE" syntax="(int space,NULL)"></item>
+	<item code="2593" name="SCI_GETRECTANGULARSELECTIONCARETVIRTUALSPACE"></item>
+	<item code="2594" name="SCI_SETRECTANGULARSELECTIONANCHORVIRTUALSPACE" syntax="(int space,NULL)"></item>
+	<item code="2595" name="SCI_GETRECTANGULARSELECTIONANCHORVIRTUALSPACE"></item>
+	<item code="1" name="SCVS_RECTANGULARSELECTION" syntax="(position pos,NULL)"></item>
+	<item code="2" name="SCVS_USERACCESSIBLE" syntax="(position pos,NULL)"></item>
+	<item code="2596" name="SCI_SETVIRTUALSPACEOPTIONS" syntax="(int virtualSpaceOptions,NULL)"></item>
+	<item code="2597" name="SCI_GETVIRTUALSPACEOPTIONS"></item>
+	<item code="2598" name="SCI_SETRECTANGULARSELECTIONMODIFIER" syntax="(int modifier,NULL)"></item>
+	<item code="2599" name="SCI_GETRECTANGULARSELECTIONMODIFIER"></item>
+	<item code="2600" name="SCI_SETADDITIONALSELFORE" syntax="(colour fore,NULL)"></item>
+	<item code="2601" name="SCI_SETADDITIONALSELBACK" syntax="(colour back,NULL)"></item>
+	<item code="2602" name="SCI_SETADDITIONALSELALPHA" syntax="(int alpha,NULL)"></item>
+	<item code="2603" name="SCI_GETADDITIONALSELALPHA"></item>
+	<item code="2604" name="SCI_SETADDITIONALCARETFORE" syntax="(colour fore,NULL)"></item>
+	<item code="2605" name="SCI_GETADDITIONALCARETFORE"></item>
+	<item code="2606" name="SCI_ROTATESELECTION"></item>
+	<item code="2607" name="SCI_SWAPMAINANCHORCARET"></item>
+	<item code="2617" name="SCI_CHANGELEXERSTATE" syntax="(position start,position end)"></item>
+	<item code="2618" name="SCI_CONTRACTEDFOLDNEXT" syntax="(int lineStart,NULL)"></item>
+	<item code="2619" name="SCI_VERTICALCENTRECARET"></item>
+	<item code="2620" name="SCI_MOVESELECTEDLINESUP"></item>
+	<item code="2621" name="SCI_MOVESELECTEDLINESDOWN"></item>
+	<item code="2622" name="SCI_SETIDENTIFIER" syntax="(int identifier,NULL)"></item>
+	<item code="2623" name="SCI_GETIDENTIFIER"></item>
+	<item code="2624" name="SCI_RGBAIMAGESETWIDTH" syntax="(int width,NULL)"></item>
+	<item code="2625" name="SCI_RGBAIMAGESETHEIGHT" syntax="(int height,NULL)"></item>
+	<item code="2651" name="SCI_RGBAIMAGESETSCALE" syntax="(int scalePercent,NULL)"></item>
+	<item code="2626" name="SCI_MARKERDEFINERGBAIMAGE" syntax="(int markerNumber,string pixels)"></item>
+	<item code="2627" name="SCI_REGISTERRGBAIMAGE" syntax="(int type,string pixels)"></item>
+	<item code="2628" name="SCI_SCROLLTOSTART"></item>
+	<item code="2629" name="SCI_SCROLLTOEND"></item>
+	<item code="1" name="SC_TECHNOLOGY_DIRECTWRITE"></item>
+	<item code="2630" name="SCI_SETTECHNOLOGY" syntax="(int technology,NULL)"></item>
+	<item code="2631" name="SCI_GETTECHNOLOGY"></item>
+	<item code="2632" name="SCI_CREATELOADER" syntax="(int bytes,NULL)"></item>
+	<item code="2640" name="SCI_FINDINDICATORSHOW" syntax="(position start,position end)"></item>
+	<item code="2641" name="SCI_FINDINDICATORFLASH" syntax="(position start,position end)"></item>
+	<item code="2642" name="SCI_FINDINDICATORHIDE"></item>
+	<item code="2652" name="SCI_VCHOMEDISPLAY"></item>
+	<item code="2653" name="SCI_VCHOMEDISPLAYEXTEND"></item>
+	<item code="2654" name="SCI_GETCARETLINEVISIBLEALWAYS"></item>
+	<item code="2655" name="SCI_SETCARETLINEVISIBLEALWAYS" syntax="(bool alwaysVisible,NULL)"></item>
+	<item code="2665" name="SCI_SETREPRESENTATION" syntax="(string encodedCharacter,string representation)"></item>
+	<item code="2666" name="SCI_GETREPRESENTATION" syntax="(string encodedCharacter,stringresult representation)"></item>
+	<item code="2667" name="SCI_CLEARREPRESENTATION" syntax="(string encodedCharacter,NULL)"></item>
+	<item code="3001" name="SCI_STARTRECORD"></item>
+	<item code="3002" name="SCI_STOPRECORD"></item>
+	<item code="4001" name="SCI_SETLEXER" syntax="(int lexer,NULL)"></item>
+	<item code="4002" name="SCI_GETLEXER"></item>
+	<item code="4003" name="SCI_COLOURISE"></item>
+	<item code="4004" name="SCI_SETPROPERTY" syntax="(string key,string value)"></item>
+	<item code="8" name="KEYWORDSET_MAX" syntax="(string key,string value)"></item>
+	<item code="4005" name="SCI_SETKEYWORDS" syntax="(string key,string value)"></item>
+	<item code="4006" name="SCI_SETLEXERLANGUAGE" syntax="(NULL,string language)"></item>
+	<item code="4007" name="SCI_LOADLEXERLIBRARY" syntax="(NULL,string path)"></item>
+	<item code="4008" name="SCI_GETPROPERTY" syntax="(string key,stringresult buf)"></item>
+	<item code="4009" name="SCI_GETPROPERTYEXPANDED" syntax="(string key,stringresult buf)"></item>
+	<item code="4010" name="SCI_GETPROPERTYINT" syntax="(string key,NULL)"></item>
+	<item code="4011" name="SCI_GETSTYLEBITSNEEDED"></item>
+	<item code="4012" name="SCI_GETLEXERLANGUAGE" syntax="(NULL,stringresult text)"></item>
+	<item code="4013" name="SCI_PRIVATELEXERCALL" syntax="(int operation,int pointer)"></item>
+	<item code="4014" name="SCI_PROPERTYNAMES" syntax="(NULL,stringresult names)"></item>
+	<item code="1" name="SC_TYPE_INTEGER" syntax="(&lt;param&gt;,&lt;param&gt;)"></item>
+	<item code="2" name="SC_TYPE_STRING" syntax="(&lt;param&gt;,&lt;param&gt;)"></item>
+	<item code="4015" name="SCI_PROPERTYTYPE" syntax="(string name,NULL)"></item>
+	<item code="4016" name="SCI_DESCRIBEPROPERTY" syntax="(string name,stringresult description)"></item>
+	<item code="4017" name="SCI_DESCRIBEKEYWORDSETS" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x1" name="SC_MOD_INSERTTEXT" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x2" name="SC_MOD_DELETETEXT" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x4" name="SC_MOD_CHANGESTYLE" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x8" name="SC_MOD_CHANGEFOLD" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x10" name="SC_PERFORMED_USER" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x20" name="SC_PERFORMED_UNDO" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x40" name="SC_PERFORMED_REDO" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x80" name="SC_MULTISTEPUNDOREDO" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x100" name="SC_LASTSTEPINUNDOREDO" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x200" name="SC_MOD_CHANGEMARKER" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x400" name="SC_MOD_BEFOREINSERT" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x800" name="SC_MOD_BEFOREDELETE" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x1000" name="SC_MULTILINEUNDOREDO" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x2000" name="SC_STARTACTION" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x4000" name="SC_MOD_CHANGEINDICATOR" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x8000" name="SC_MOD_CHANGELINESTATE" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x10000" name="SC_MOD_CHANGEMARGIN" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x20000" name="SC_MOD_CHANGEANNOTATION" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x40000" name="SC_MOD_CONTAINER" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x80000" name="SC_MOD_LEXERSTATE" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0xFFFFF" name="SC_MODEVENTMASKALL" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x1" name="SC_UPDATE_CONTENT" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x2" name="SC_UPDATE_SELECTION" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x4" name="SC_UPDATE_V_SCROLL" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="0x8" name="SC_UPDATE_H_SCROLL" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="768" name="SCEN_CHANGE" syntax="(NULL,stringresult descriptions)"></item>
+	<item code="512" name="SCEN_SETFOCUS" syntax="(bool focus,NULL)"></item>
+	<item code="256" name="SCEN_KILLFOCUS" syntax="(bool focus,NULL)"></item>
+	<item code="300" name="SCK_DOWN" syntax="(bool focus,NULL)"></item>
+	<item code="301" name="SCK_UP" syntax="(bool focus,NULL)"></item>
+	<item code="302" name="SCK_LEFT" syntax="(bool focus,NULL)"></item>
+	<item code="303" name="SCK_RIGHT" syntax="(bool focus,NULL)"></item>
+	<item code="304" name="SCK_HOME"></item>
+	<item code="305" name="SCK_END"></item>
+	<item code="306" name="SCK_PRIOR"></item>
+	<item code="307" name="SCK_NEXT"></item>
+	<item code="308" name="SCK_DELETE"></item>
+	<item code="309" name="SCK_INSERT"></item>
+	<item code="7" name="SCK_ESCAPE"></item>
+	<item code="8" name="SCK_BACK"></item>
+	<item code="9" name="SCK_TAB"></item>
+	<item code="13" name="SCK_RETURN" syntax="(&lt;param&gt;,&lt;param&gt;)"></item>
+	<item code="310" name="SCK_ADD" syntax="(&lt;param&gt;,&lt;param&gt;)"></item>
+	<item code="311" name="SCK_SUBTRACT" syntax="(&lt;param&gt;,&lt;param&gt;)"></item>
+	<item code="312" name="SCK_DIVIDE" syntax="(default: 5,NULL)"></item>
+	<item code="313" name="SCK_WIN" syntax="(default: 5,NULL)"></item>
+	<item code="314" name="SCK_RWIN" syntax="(default: 5,NULL)"></item>
+	<item code="315" name="SCK_MENU" syntax="(default: 5,NULL)"></item>
+	<item code="1" name="SCMOD_SHIFT" syntax="(default: 5,NULL)"></item>
+	<item code="2" name="SCMOD_CTRL" syntax="(default,NULL)"></item>
+	<item code="4" name="SCMOD_ALT" syntax="(default,NULL)"></item>
+	<item code="8" name="SCMOD_SUPER" syntax="(default,NULL)"></item>
+	<item code="16" name="SCMOD_META" syntax="(default,NULL)"></item>
+	<item code="2000" name="SCN_STYLENEEDED" syntax="(int position,NULL)"></item>
+	<item code="2001" name="SCN_CHARADDED" syntax="(int ch,NULL)"></item>
+	<item code="2002" name="SCN_SAVEPOINTREACHED" syntax="(void,NULL)"></item>
+	<item code="2003" name="SCN_SAVEPOINTLEFT" syntax="(void,NULL)"></item>
+	<item code="2004" name="SCN_MODIFYATTEMPTRO" syntax="(void,NULL)"></item>
+	<item code="2005" name="SCN_KEY" syntax="(void,NULL)"></item>
+	<item code="2006" name="SCN_DOUBLECLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2007" name="SCN_UPDATEUI" syntax="(int updated,NULL)"></item>
+	<item code="2008" name="SCN_MODIFIED" syntax="(int position,int modificationType)"></item>
+	<item code="2009" name="SCN_MACRORECORD" syntax="(int message,int wParam)"></item>
+	<item code="2010" name="SCN_MARGINCLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2011" name="SCN_NEEDSHOWN" syntax="(int position,int length)"></item>
+	<item code="2013" name="SCN_PAINTED" syntax="(void,NULL)"></item>
+	<item code="2014" name="SCN_USERLISTSELECTION" syntax="(int listType,string text)"></item>
+	<item code="2015" name="SCN_URIDROPPED" syntax="(string text,NULL)"></item>
+	<item code="2016" name="SCN_DWELLSTART" syntax="(int position,int x)"></item>
+	<item code="2017" name="SCN_DWELLEND" syntax="(int position,int x)"></item>
+	<item code="2018" name="SCN_ZOOM"></item>
+	<item code="2019" name="SCN_HOTSPOTCLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2020" name="SCN_HOTSPOTDOUBLECLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2021" name="SCN_CALLTIPCLICK" syntax="(int position,NULL)"></item>
+	<item code="2022" name="SCN_AUTOCSELECTION" syntax="(string text,int position)"></item>
+	<item code="2023" name="SCN_INDICATORCLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2024" name="SCN_INDICATORRELEASE" syntax="(int modifiers,int position)"></item>
+	<item code="2025" name="SCN_AUTOCCANCELLED" syntax="(void,NULL)"></item>
+	<item code="2026" name="SCN_AUTOCCHARDELETED" syntax="(void,NULL)"></item>
+	<item code="2027" name="SCN_HOTSPOTRELEASECLICK" syntax="(int modifiers,int position)"></item>
+	<item code="2028" name="SCN_FOCUSIN" syntax="(void,NULL)"></item>
+	<item code="2029" name="SCN_FOCUSOUT" syntax="(void,NULL)"></item>
+	<item code="1" name="SC_LINE_END_TYPE_UNICODE" syntax="(void,NULL)"></item>
+	<item code="2656" name="SCI_SETLINEENDTYPESALLOWED" syntax="(int lineEndBitSet,NULL)"></item>
+	<item code="2657" name="SCI_GETLINEENDTYPESALLOWED"></item>
+	<item code="2658" name="SCI_GETLINEENDTYPESACTIVE"></item>
+	<item code="4018" name="SCI_GETLINEENDTYPESSUPPORTED"></item>
+	<item code="4020" name="SCI_ALLOCATESUBSTYLES" syntax="(int styleBase,int numberStyles)"></item>
+	<item code="4021" name="SCI_GETSUBSTYLESSTART" syntax="(int styleBase,NULL)"></item>
+	<item code="4022" name="SCI_GETSUBSTYLESLENGTH" syntax="(int styleBase,NULL)"></item>
+	<item code="4027" name="SCI_GETSTYLEFROMSUBSTYLE" syntax="(int subStyle,NULL)"></item>
+	<item code="4028" name="SCI_GETPRIMARYSTYLEFROMSTYLE" syntax="(int style,NULL)"></item>
+	<item code="4023" name="SCI_FREESUBSTYLES"></item>
+	<item code="4024" name="SCI_SETIDENTIFIERS" syntax="(int style,string identifiers)"></item>
+	<item code="4025" name="SCI_DISTANCETOSECONDARYSTYLES"></item>
+	<item code="4026" name="SCI_GETSUBSTYLEBASES" syntax="(NULL,stringresult styles)"></item>
+	<item code="Sci_CharacterRange" name="CharacterRange" syntax="(NULL,stringresult styles)"></item>
+	<item code="Sci_TextRange" name="TextRange" syntax="(NULL,stringresult styles)"></item>
+	<item code="Sci_TextToFind" name="TextToFind" syntax="(NULL,stringresult styles)"></item>
+	<item code="Sci_RangeToFormat" name="RangeToFormat" syntax="(NULL,stringresult styles)"></item>
+	<item code="Sci_NotifyHeader" name="NotifyHeader" syntax="(NULL,stringresult styles)"></item>
+	<item code="1" name="SC_CP_DBCS" syntax="(NULL,stringresult styles)"></item>
+	<item code="2039" name="SCI_SETUSEPALETTE" syntax="(bool usePalette,NULL)"></item>
+	<item code="2139" name="SCI_GETUSEPALETTE"></item>
+</scintilla>

@@ -1,6 +1,6 @@
 ﻿filecheck(){
-	commandsdate:=20140405
-	menusdate:=20140404
+	commandsdate:=201404062100
+	menusdate:=20140407
 	scilexerdate:=20140405000004
 	if !settings.ssn("//autoadd")
 		for a,b in {60:62,123:125,34:34,39:39,91:93,40:41}

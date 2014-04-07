@@ -6,8 +6,11 @@
 		return updated:=[]
 	if (info="get")
 		return [update,updated]
-	if (info.file&&info.text)
-		return update[info.file]:=info.text
+	if (info.file){
+		update[info.file]:=info.text
+		updated[info.file]:=1
+		return 
+	}
 	if (info.get)
 		return update[info.get]
 	if (info.sc){

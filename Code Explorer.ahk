@@ -10,7 +10,7 @@
 	codes:=update("get").1
 	while,out:=ssn(file.item[a_index-1],"@file"){
 		code:=codes[out.text],pos:=1
-		for type,find in {hotkeys:"([#|!|^|\+]+?\w+)::",labels:"(\w+):[\s+;]"}{
+		for type,find in {hotkeys:"(([#|!|^|\+|~|$|&|<|>|*]+)?\w+)::",labels:"(\w+):[\s+;]"}{
 			pos:=1
 			while,pos:=RegExMatch(code,"OUim`n)^[\s+]?" find,fun,pos){
 				explore[TV_Add(fun.value(1),%type%,"Sort")]:={file:out.text,pos:fun.Pos(1)-1}

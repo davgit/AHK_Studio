@@ -131,7 +131,7 @@
 	onoff:=settings.ssn("//Auto_Indent/@ " A_ThisLabel).text?0:1
 	att:=[],att[A_ThisLabel]:=onoff
 	settings.add({path:"Auto_Indent",att:att})
-	Menu,%A_ThisMenu%,ToggleCheck,%A_ThisMenuItem%
+	togglemenu(A_ThisLabel)
 	v.options[A_ThisLabel]:=onoff
 	return
 }

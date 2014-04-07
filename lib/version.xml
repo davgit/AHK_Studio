@@ -1,3 +1,621 @@
 <?xml version="1.0"?>
 <version>
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio\AHK Studio.ahk" gistversion="0" increment="16" server="files.maestrith.com" upver="0" version="0.001" versstyle="0">0.001.16
+Added: Option to have it off suggested by Run1e
+-Options/Center Caret
+0.001.15
+Changed:
+-Special Menu/Split Code: You can select Multiples
+0.001.14
+Fixed:
+-It is no longer required to re-start the program to publish, or upload your scripts.  Sorry about that.
+0.001.13
+Added:
+-Split Code: Helps with splitting code
+0.001.12
+Changed: Suggested by tomoe_uehara
+-Slight GUI Changes for Help/About and Edit/Menu Editor
+-Improved hotkey detection
+0.001.11
+Changed: Suggested by tomoe_uehara
+-Hotkeys pick up the modifier keys
+0.001.10
+Added: Suggested by Sanctus
+-Variable colors %variable% are different to normal text colors, and if you do not define a variable properly there is now an error state
+NOTICE!!!
+-Scilexer will re-download as I had to update it to get the variable coloring to work :)
+0.001.9
+Added: Suggested by joedf
+-Display Style At Caret: Edit/Theme under Options.
+0.001.8
+Added: Suggested by GeekDude
+-Selecting Edit file before the program is open now works.
+0.001.7
+Fixed:
+-Code Vault: Was not pasting into the script.
+0.001.6
+Added:
+-Code Explorer: Displays functions, labels, hotkeys, and classes in a treeview to the right
+Fixed:
+-Multiple edit window issue
+-Flashing gui on resize
+0.001.5
+Changed: Suggested by Don Corleon
+-Code vault saves when you close the window.
+0.001.4
+Changed: Suggested by tomoe_uehara
+-Brace Highlight is done before and after ({&lt;[
+0.001.3
+Added: Suggested by tomoe_uehara
+-Download Error Checking
+0.001.2
+Fixed:
+-When adding a { on a line by itself it was causing an issue.
+0.001.1
+Added: Suggested by budRich
+-Notification when exporting themes.
+0.001.0
+Moving from Alpha to Beta:
+-I think it is time.  Let me know if you find any issues
+0.000.001.71
+Changed: Suggested by GeekDude
+-Quick Find requires an enter to do the search
+0.000.001.70
+Changed:
+-Special Menu/Code Vault: Resized the window a bit
+0.000.001.69
+Fixed: Reported by GeekDude
+-Using arrow keys while using Quick Find was causing an issue
+0.000.001.68
+Added: Suggested by tomoe_uehara
+-Matching Brace Highlighting
+-Highlight Nearest Brace
+0.000.001.67
+Added:
+-Exporting of themes
+-Importing of themes
+0.000.001.66
+Added:
+-Special Menu/Code Vault: A place to store your code snippets
+0.000.001.65
+Added: Suggested by halfblake
+-Double Clicking on the Systray Icon will show the main GUI
+0.000.001.64
+Re-Ordered:
+-Changed the way that the code is layed out.
+0.000.001.63
+Added:
+-Special/Sort Selected: Select some text, tell it how to sort it, and replace the selected when you have it the way you want it.
+Fixed:
+-Commands were not showing up in the drop down lists
+0.000.001.62
+Changed:
+-Highlight Colors
+0.000.001.61
+Fixed:
+-Quick Search will work if your search area starts at 0
+-Renamed Quick Search to Quick Find
+-Edit/Replace Selected will now convery `r,`n,\r,\n to actual Chr(13)
+0.000.001.60
+Fixed:
+-Remove Current Segment working again.
+0.000.001.59
+Fixed:
+-Publish works faster now
+0.000.001.58
+Added:
+-Scratch Pad has all of the features that the main editors have.
+0.000.001.57
+Added:
+-MsgBox Creator
+0.000.001.56
+Changed: Reported by GeekDude
+-Main files will not have the includes stripped from them to load the files
+0.000.001.55
+Added: Thanks to GeekDude
+-The ability to set AHK Studio as Default Editor (Must run the program as Admin though)
+0.000.001.54
+Added:
+-Options/Small Icons to change the size of the toolbar icons
+0.000.001.53
+Added:
+-Run Selected Text
+0.000.001.52
+Fixed: Reported by GeekDude
+-You could try to move top level menu items up higher
+0.000.001.51
+Added: With a lot of input from GeekDude
+-Scratch Pad
+0.000.001.50
+Fixed:
+-Menu Creator
+0.000.001.49
+Fixed:
+-Debugging was not cleanly disconnecting from scripts
+0.000.001.48
+Fixed:
+NOTICE!
+SciLexer.dll will download
+-AutoComplete was coming up at position 0 and causing issues
+-Folding Issues
+0.000.001.47
+Fixed: Reported by Ex0r
+-Theme options need to be clicked or press enter to activate
+0.000.001.46
+Fixed:
+-File Loading too many files
+0.000.001.45
+Fixed:
+-Find
+0.000.001.44
+Added:
+Using left and right with multiple Selections will adjust the other selections.
+0.000.001.43
+Fixed: Reported by GeekDude
+-Separators were not re-loading
+0.000.001.42
+NOTICE!
+-There has been an update to the SciLexer.dll file
+--It will be downloading a new version.
+Changed:
+-Auto-Indent was not quite as good as I had hoped
+0.000.001.41
+Fixed: Reported by GeekDude
+-Restoring from backups works with Unicode
+0.000.001.40
+Added: Suggested by budRich
+-Hex Code Color Editing.
+0.000.001.39
+Fixed:
+-When downloading themes it will update with the name of the theme and author in the theme window
+0.000.001.38
+Fixed: Reported by GeekDude
+-Unicode Errors
+0.000.001.37
+Fixed:
+-Debugging will select the error in your script
+0.000.001.36
+Fixed: Reported by budRich
+-File opening errors
+0.000.001.35
+Added:
+-Debugging will select an error when present (most of the time.)
+0.000.001.34
+Fixed:
+-Rebar bands will remember where they were and what size they were
+0.000.001.33
+Fixed:
+-issue with Context Sensitive Help
+0.000.001.32
+Added:
+-Debugging
+0.000.001.31
+Changed:
+-When using the quick find hotkey or menu item it will automatically set the selection that is current
+0.000.001.30
+Added:
+-Icon in the dll
+0.000.001.29
+Fixed: Reported by GeekDude
+-Toggled menu items were not functioning properly
+0.000.001.28
+Added:
+-Clear selection
+0.000.001.27
+Added:
+-The ability to add Menu Functions as buttons
+0.000.001.26
+Added:
+-The ability to add Quick Launch icons
+0.000.001.25
+Changed: Suggested by GeekDude
+-Multi-line variables using () do not indent when using auto-indent
+Fixed:
+-Changing theme will also fix the file explorer
+0.000.001.24
+Fixed: reported by GeekDude
+-Could not type { in the quick search bar
+0.000.001.23
+Added:
+-Download Theme
+0.000.001.22
+Added: Requested by GeekDude
+-Show White Space
+0.000.001.21
+Added:
+-Restore Current File
+0.000.001.20
+Fixed: Reported by GeekDude
+-Exit
+0.000.001.19
+Added:
+-Custom Highlight Text
+Fixed: reported by GeekDude
+-Icon Browser was not resetting properly
+-Added -refresh for the icon browser
+0.000.001.18
+Added:
+-Control+Click on a toolbar button to change its icon. Can be images, or icons from other files.
+-Personal Variable List
+0.000.001.17
+Fixed: Repored by GeekDude
+-Toolbar causing instability issues.
+0.000.001.16
+Fixed: Repored by GeekDude
+-Unicode.
+0.000.001.15
+Fixed: reported by GeekDude
+-Show caret line was not displaying in the theme editor
+0.000.001.14
+Added:
+-Gist Posting.
+0.000.001.13
+Added:
+NOTE!! you will need to go to Edit/Theme and click on  reset to default for EOL colors to work properly.
+-Options menu for a few quick set options.
+0.000.001.12
+Added:
+-Partial theme editing.
+0.000.001.11
+Added:
+-Fix Indent on delete of a { or }
+-Uploads :)
+0.000.001.10
+Added:
+-When using Move Selected Lines Up/Down I added a timer when using Full Auto because it was causing issues.
+0.000.001.9
+Added:
+-Create Segment From Selected
+0.000.001.8
+Changed: Suggested by GeekDude
+-Indentation
+0.000.001.7
+Added:
+-Auto-Indent
+-lots of bug fixes...and some bugs I am sure
+0.000.001.6
+Changed:
+0.000.001.5
+Changed:
+-Check for update=Auto update
+0.000.001.4
+Fixed:
+-Menus getting doubled after move
+0.000.001.3
+Fixed: suggested by GeekDude
+-Settings were not saved on auto-update
+-Menu editing advice
+0.000.001.2
+Fixed:
+-Menu editor was jumpy.
+-Menu items are moved above the parent when Ctrl+Left
+-Height of the Quick Search band is variable
+0.000.001.1
+Added:
+-Quick Search
+0.000.001.0
+-Pre-Pre-Pre-Alpha</info>
+	<info compile="0" dir="" file="D:\AHK Studio\Projects\FTP Dropbox\ftp dropbox.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="" file="D:\AHK Studio\Projects\First official\First Official.ahk" gistversion="0" increment="1" server="Choose a server..." upver="0" version="1" versstyle="0">1.1
+hi</info>
+	<info compile="0" dir="alpha/debugger" file="D:\AHK Studio\Projects\AHK Studio\AHK Studio.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0">Super Alpha</info>
+	<info compile="0" dir="" file="D:\AHK Studio\Remaps.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="alpha/TextLauncher" file="D:\AHK Studio\Projects\Text Launcher\Text Launcher.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="" file="C:\Users\maestrith\Desktop\testig.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="alpha/gog" file="C:\Users\maestrith\Desktop\Don Corleon\GoG.ahk" gistversion="0" increment="1" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.1
+Scrunched code.</info>
+	<info compile="0" dir="Don Corleon" file="C:\Users\maestrith\Desktop\Don Corleon\Progress.ahk" gistversion="0" increment="0" server="118.209.166.49" upver="0" version="0.1" versstyle="0">0.1.0
+Writing stuff is fun.</info>
+	<info compile="0" dir="list" file="D:\AHK Studio\Projects\Commands\commands.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="/updater" file="C:\Users\maestrith\Desktop\GOG DL\GoG Updater.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="alpha/funcclass" file="D:\AHK Studio\Projects\Split Script\Split Script.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
+Currently it just displays classes and functions</info>
+	<info compile="0" dir="" file="D:\AHK Studio\AHK Studio\AHK Studio.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="alpha/youtube" file="D:\Projects\Youtube Downloader\download.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
+Initial Upload</info>
+	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
+Initial Upload
+</info>
+	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="18" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.18
+Added: Suggested by Run1e (but not complete as of yet)
+-Hotkeys are Control+Alt+O for the Omni Search,Alt+Shift+O for the Menu Search, and Alt+Shift+O for the File Search
+-Special Menu/Omni Search,Menu Search,File Search:Type in a search query for a @menu item or a ^filename and it will find it for you
+0.001.17
+Merged this project with GitHub. I hope to keep it up to date.
+0.001.16
+Added: Option to have it off suggested by Run1e
+-Options/Center Caret
+0.001.15
+Changed:
+-Special Menu/Split Code: You can select Multiples
+0.001.14
+Fixed:
+-It is no longer required to re-start the program to publish, or upload your scripts.  Sorry about that.
+0.001.13
+Added:
+-Split Code: Helps with splitting code
+0.001.12
+Changed: Suggested by tomoe_uehara
+-Slight GUI Changes for Help/About and Edit/Menu Editor
+-Improved hotkey detection
+0.001.11
+Changed: Suggested by tomoe_uehara
+-Hotkeys pick up the modifier keys
+0.001.10
+Added: Suggested by Sanctus
+-Variable colors %variable% are different to normal text colors, and if you do not define a variable properly there is now an error state
+NOTICE!!!
+-Scilexer will re-download as I had to update it to get the variable coloring to work :)
+0.001.9
+Added: Suggested by joedf
+-Display Style At Caret: Edit/Theme under Options.
+0.001.8
+Added: Suggested by GeekDude
+-Selecting Edit file before the program is open now works.
+0.001.7
+Fixed:
+-Code Vault: Was not pasting into the script.
+0.001.6
+Added:
+-Code Explorer: Displays functions, labels, hotkeys, and classes in a treeview to the right
+Fixed:
+-Multiple edit window issue
+-Flashing gui on resize
+0.001.5
+Changed: Suggested by Don Corleon
+-Code vault saves when you close the window.
+0.001.4
+Changed: Suggested by tomoe_uehara
+-Brace Highlight is done before and after ({&lt;[
+0.001.3
+Added: Suggested by tomoe_uehara
+-Download Error Checking
+0.001.2
+Fixed:
+-When adding a { on a line by itself it was causing an issue.
+0.001.1
+Added: Suggested by budRich
+-Notification when exporting themes.
+0.001.0
+Moving from Alpha to Beta:
+-I think it is time.  Let me know if you find any issues
+0.000.001.71
+Changed: Suggested by GeekDude
+-Quick Find requires an enter to do the search
+0.000.001.70
+Changed:
+-Special Menu/Code Vault: Resized the window a bit
+0.000.001.69
+Fixed: Reported by GeekDude
+-Using arrow keys while using Quick Find was causing an issue
+0.000.001.68
+Added: Suggested by tomoe_uehara
+-Matching Brace Highlighting
+-Highlight Nearest Brace
+0.000.001.67
+Added:
+-Exporting of themes
+-Importing of themes
+0.000.001.66
+Added:
+-Special Menu/Code Vault: A place to store your code snippets
+0.000.001.65
+Added: Suggested by halfblake
+-Double Clicking on the Systray Icon will show the main GUI
+0.000.001.64
+Re-Ordered:
+-Changed the way that the code is layed out.
+0.000.001.63
+Added:
+-Special/Sort Selected: Select some text, tell it how to sort it, and replace the selected when you have it the way you want it.
+Fixed:
+-Commands were not showing up in the drop down lists
+0.000.001.62
+Changed:
+-Highlight Colors
+0.000.001.61
+Fixed:
+-Quick Search will work if your search area starts at 0
+-Renamed Quick Search to Quick Find
+-Edit/Replace Selected will now convery `r,`n,\r,\n to actual Chr(13)
+0.000.001.60
+Fixed:
+-Remove Current Segment working again.
+0.000.001.59
+Fixed:
+-Publish works faster now
+0.000.001.58
+Added:
+-Scratch Pad has all of the features that the main editors have.
+0.000.001.57
+Added:
+-MsgBox Creator
+0.000.001.56
+Changed: Reported by GeekDude
+-Main files will not have the includes stripped from them to load the files
+0.000.001.55
+Added: Thanks to GeekDude
+-The ability to set AHK Studio as Default Editor (Must run the program as Admin though)
+0.000.001.54
+Added:
+-Options/Small Icons to change the size of the toolbar icons
+0.000.001.53
+Added:
+-Run Selected Text
+0.000.001.52
+Fixed: Reported by GeekDude
+-You could try to move top level menu items up higher
+0.000.001.51
+Added: With a lot of input from GeekDude
+-Scratch Pad
+0.000.001.50
+Fixed:
+-Menu Creator
+0.000.001.49
+Fixed:
+-Debugging was not cleanly disconnecting from scripts
+0.000.001.48
+Fixed:
+NOTICE!
+SciLexer.dll will download
+-AutoComplete was coming up at position 0 and causing issues
+-Folding Issues
+0.000.001.47
+Fixed: Reported by Ex0r
+-Theme options need to be clicked or press enter to activate
+0.000.001.46
+Fixed:
+-File Loading too many files
+0.000.001.45
+Fixed:
+-Find
+0.000.001.44
+Added:
+Using left and right with multiple Selections will adjust the other selections.
+0.000.001.43
+Fixed: Reported by GeekDude
+-Separators were not re-loading
+0.000.001.42
+NOTICE!
+-There has been an update to the SciLexer.dll file
+--It will be downloading a new version.
+Changed:
+-Auto-Indent was not quite as good as I had hoped
+0.000.001.41
+Fixed: Reported by GeekDude
+-Restoring from backups works with Unicode
+0.000.001.40
+Added: Suggested by budRich
+-Hex Code Color Editing.
+0.000.001.39
+Fixed:
+-When downloading themes it will update with the name of the theme and author in the theme window
+0.000.001.38
+Fixed: Reported by GeekDude
+-Unicode Errors
+0.000.001.37
+Fixed:
+-Debugging will select the error in your script
+0.000.001.36
+Fixed: Reported by budRich
+-File opening errors
+0.000.001.35
+Added:
+-Debugging will select an error when present (most of the time.)
+0.000.001.34
+Fixed:
+-Rebar bands will remember where they were and what size they were
+0.000.001.33
+Fixed:
+-issue with Context Sensitive Help
+0.000.001.32
+Added:
+-Debugging
+0.000.001.31
+Changed:
+-When using the quick find hotkey or menu item it will automatically set the selection that is current
+0.000.001.30
+Added:
+-Icon in the dll
+0.000.001.29
+Fixed: Reported by GeekDude
+-Toggled menu items were not functioning properly
+0.000.001.28
+Added:
+-Clear selection
+0.000.001.27
+Added:
+-The ability to add Menu Functions as buttons
+0.000.001.26
+Added:
+-The ability to add Quick Launch icons
+0.000.001.25
+Changed: Suggested by GeekDude
+-Multi-line variables using () do not indent when using auto-indent
+Fixed:
+-Changing theme will also fix the file explorer
+0.000.001.24
+Fixed: reported by GeekDude
+-Could not type { in the quick search bar
+0.000.001.23
+Added:
+-Download Theme
+0.000.001.22
+Added: Requested by GeekDude
+-Show White Space
+0.000.001.21
+Added:
+-Restore Current File
+0.000.001.20
+Fixed: Reported by GeekDude
+-Exit
+0.000.001.19
+Added:
+-Custom Highlight Text
+Fixed: reported by GeekDude
+-Icon Browser was not resetting properly
+-Added -refresh for the icon browser
+0.000.001.18
+Added:
+-Control+Click on a toolbar button to change its icon. Can be images, or icons from other files.
+-Personal Variable List
+0.000.001.17
+Fixed: Repored by GeekDude
+-Toolbar causing instability issues.
+0.000.001.16
+Fixed: Repored by GeekDude
+-Unicode.
+0.000.001.15
+Fixed: reported by GeekDude
+-Show caret line was not displaying in the theme editor
+0.000.001.14
+Added:
+-Gist Posting.
+0.000.001.13
+Added:
+NOTE!! you will need to go to Edit/Theme and click on  reset to default for EOL colors to work properly.
+-Options menu for a few quick set options.
+0.000.001.12
+Added:
+-Partial theme editing.
+0.000.001.11
+Added:
+-Fix Indent on delete of a { or }
+-Uploads :)
+0.000.001.10
+Added:
+-When using Move Selected Lines Up/Down I added a timer when using Full Auto because it was causing issues.
+0.000.001.9
+Added:
+-Create Segment From Selected
+0.000.001.8
+Changed: Suggested by GeekDude
+-Indentation
+0.000.001.7
+Added:
+-Auto-Indent
+-lots of bug fixes...and some bugs I am sure
+0.000.001.6
+Changed:
+0.000.001.5
+Changed:
+-Check for update=Auto update
+0.000.001.4
+Fixed:
+-Menus getting doubled after move
+0.000.001.3
+Fixed: suggested by GeekDude
+-Settings were not saved on auto-update
+-Menu editing advice
+0.000.001.2
+Fixed:
+-Menu editor was jumpy.
+-Menu items are moved above the parent when Ctrl+Left
+-Height of the Quick Search band is variable
+0.000.001.1
+Added:
+-Quick Search
+0.000.001.0
+-Pre-Pre-Pre-Alpha</info>
 </version>

@@ -1,6 +1,6 @@
 ﻿brace(){
 	brace:
-	sc:=csc(),cp:=sc.2008,line:=sc.2166(cp),min:=posinfo() ;,min:=mm(sc)
+	sc:=csc(),cp:=sc.2008,line:=sc.2166(cp),min:=posinfo()
 	v.lastbrace:=A_ThisHotkey
 	if sc.2102
 		sc.2104

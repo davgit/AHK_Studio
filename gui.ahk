@@ -120,46 +120,25 @@
 			rr.ParentNode.RemoveChild(rr)
 	}
 	last:=settings.sn("//last/*")
-	for a,b in s.main{
-		tv:=files.ssn("//file[@file='" last.item[a-1].text "']/@tv").text
-		if (A_Index=1){
-			bstv:=tv
+	/*
+		for a,b in s.main{
+			tv:=files.ssn("//file[@file='" last.item[a-1].text "']/@tv").text
+			if (A_Index=1){
+				bstv:=tv
+			}
+			csc({hwnd:b.sc})
+			tv(tv)
 		}
-		csc({hwnd:b.sc})
-		tv(tv)
-	}
+	*/
 	if !last.length
 		new(1)
 	Resize()
 	WinSet,Redraw,,% hwnd([1])
 	if v.tv
 		tv(v.tv)
+	Else
+		TV_Modify(files.ssn("//file[@file='" last.item[0].text "']/@tv").text)
 	csc("Scintilla1")
-	TV_Modify(bstv,"Select Vis Focus")
 	bracesetup(),options(),traymenu()
 	Gui,1:TreeView,SysTreeView321
-}
-Default(){
-	m("You clicked a button")
-}
-newwin(info){
-	DetectHiddenWindows,On
-	Gui,%info%:Default
-	Gui,+hwndnewwin
-	hwnd(info,newwin)
-	Gui,Margin,0,0
-	Gui,Add,edit,y0 y2 w100 gqf
-	case:=settings.ssn("//Quick_Search/@case").text?"Checked":""
-	regex:=settings.ssn("//Quick_Search/@regex").text?"Checked":""
-	greed:=settings.ssn("//Quick_Search/@greed").text?"Checked":""
-	Gui,Add,Checkbox,xm  gcase %case%,Case
-	Gui,Add,Checkbox,gregex %regex%,Regex
-	Gui,Add,Checkbox,x+5 gcase %greed%,Greed
-	Gui,Add,Button,xm gnext,Next
-	Gui,Add,Button,x+5 gsetselection,Set Search Area
-	Gui,-Caption
-	Gui,%info%:+parent1
-	Gui,Show,NA AutoSize
-	WinGetPos,,,w,h,% "ahk_id" newwin
-	return {h:h,w:w,hwnd:newwin}
 }

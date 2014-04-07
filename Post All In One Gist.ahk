@@ -35,5 +35,5 @@
 		TrayTip,AHK Studio,Gist URL coppied to Clipboard,1
 	}
 	else
-	m("Something went wrong.  Here is what the server sent back","","",codes)
+		m("Something went wrong.  Here is what the server sent back","","",codes)
 }

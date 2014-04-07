@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<vault>
+	<code name="t">t(x*){
+	for a,b in x
+		list.=b "`n"
+	ToolTip,%list%
+}</code>
+	<code name="m">m(x*){
+	for a,b in x
+		list.=b "`n"
+	msgbox %list%
+}</code>
+	<code name="xml"></code>
+	<code name="m&amp;t">m(x*){
+	for a,b in x
+	list.=b "`n"
+	msgbox %list%
+}
+t(x*){
+	for a,b in x
+	list.=b "`n"
+	tooltip %list%
+}</code>
+</vault>

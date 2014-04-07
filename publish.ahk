@@ -18,5 +18,10 @@
 		return publish
 	StringReplace,publish,publish,`n,`r`n,All
 	Clipboard:=publish
-	MsgBox,,AHK Studio,Project compiled and coppied to your clipboard,.6	
+	MsgBox,,AHK Studio,Project compiled and coppied to your clipboard,.6
+	/*
+		Loop,2
+			files.Transform()
+		t(current(1).xml)
+	*/
 }

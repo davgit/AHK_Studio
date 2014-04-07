@@ -57,7 +57,7 @@
 			{
 				ff:=DllCall("wininet\FtpDeleteFile",UPtr,this.connect,UPtr,&a,"cdecl")
 				this.file:=DllCall("wininet\FtpOpenFile",UPtr,this.connect,UPtr,&a,UInt,0x40000000,UInt,0x2,UPtr,0,"cdecl")
-				Progress,0,uploading,%a%,Uploading,Tahoma ;% cfont().font
+				Progress,0,uploading,%a%,Uploading,Tahoma
 				if !this.file
 					this.cleanup(A_LastError)
 				length:=b.length,totalsize:=0
@@ -114,7 +114,7 @@
 	;http://msdn.microsoft.com/en-us/library/ms679351
 	GetLastError(error){
 		size:=VarSetCapacity(buffer,1024)
-		if (error = 12003){  ;ERROR_INTERNET_EXTENDED_ERROR
+		if (error = 12003){
 			VarSetCapacity(ErrorMsg,4)
 			DllCall("wininet\InternetGetLastResponseInfo","UIntP",&ErrorMsg,"PTR",&buffer,"UIntP",&size)
 			Return StrGet(&buffer,size)
