@@ -60,7 +60,7 @@
 		<menu name="&amp;Special Menu" clean="Special_Menu">
 			<menu name="Show Menu" clean="Show_Menu"></menu>
 			<menu name="Hide Menu" clean="Hide_Menu"></menu>
-			<menu name="Menu Search" hotkey="+^O" clean="Menu_Search"></menu>
+			<menu name="Menu Search" hotkey="!M" clean="Menu_Search"></menu>
 			<menu name="File Search" hotkey="+!O" clean="File_Search"></menu>
 			<menu name="Omni Search" hotkey="^!O" clean="Omni_Search"></menu>
 			<menu name="Split Code" hotkey="!I" clean="Split_Code"></menu>

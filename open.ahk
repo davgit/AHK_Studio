@@ -32,10 +32,10 @@
 	Gui,1:Default
 	SplitPath,filename,fn,dir
 	top:=files.add({path:"main",att:{file:filename},dup:1})
+	v.filelist[filename]:=1
 	pos:=1
 	Gui,1:TreeView,SysTreeView321
 	root:=TV_Add(fn)
-	;file:=file1:=RegExReplace(file1,"(\r|\r\n)","`n")
 	StringReplace,file,file,`r`n,`n,All
 	StringReplace,file,file,`r,`n,All
 	file1:=file
@@ -58,12 +58,13 @@
 		child:=TV_Add(fn,root,"Sort")
 		top:=files.ssn("//main[@file='" filename "']")
 		files.under({under:top,node:"file",att:{file:newfn,include:b,tv:child,filename:fn}})
+		v.filelist[newfn]:=1
 		ffff:=FileOpen(newfn,"RW","utf-8")
 		text:=ffff.read(ffff.length)
 		StringReplace,text,text,`r`n,`n,All
-		update({file:newfn,text:text})
+		update({file:newfn,text:text,load:1})
 	}
-	update({file:filename,text:Trim(file,"`r`n")})
+	update({file:filename,text:Trim(file,"`r`n"),load:1})
 	ff:=files.sn("//file")
 	if !settings.ssn("//open/file[text()='" filename "']")
 		settings.add({path:"open/file",text:filename,dup:1})

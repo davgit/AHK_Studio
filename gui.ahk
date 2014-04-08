@@ -1,13 +1,13 @@
 ﻿gui(){
 	Gui,+Resize +hwndhwnd
-	hwnd(1,hwnd),ComObjError(0)
+	OnMessage(0x18,"close_window"),OnMessage(5,"Resize"),hwnd(1,hwnd),ComObjError(0)
+	;OnMessage(0x135,"btn") ;maybe look into this later for custom buttons
 	Hotkey,IfWinActive,% hwnd([1])
 	Hotkey,~Enter,checkqf,On
 	for a,b in ["+","!","^"]
 		Hotkey,%b%Enter,next,On
 	hotkeys([1],{"^v":"paste","bs":"backspace","Del":"backspace"})
 	hotkeys([1],{"+left":"+left","+right":"+right",left:"left","right":"right"})
-	OnMessage(5,"Resize")
 	SysGet,Border,33
 	SysGet,Caption,4
 	v.border:=border,v.caption:=caption
@@ -107,8 +107,8 @@
 	open:=settings.sn("//open/*")
 	Gui,1:Add,TreeView,Background0 c0xAAAAAA AltSubmit gtv hwndtv
 	Gui,1:Add,TreeView,Background0 c0xAAAAAA AltSubmit gcej hwndtv2
-	hwnd(100,tv),hwnd(101,tv2),refreshthemes()
-	Gui,1:TreeView,% hwnd(100)
+	hwnd("fe",tv),hwnd("ce",tv2),refreshthemes()
+	Gui,1:TreeView,% hwnd("fe")
 	debug(0)
 	Gui,1:Show,%pos% %max%,AHK Studio
 	while,oo:=open.item[A_Index-1]

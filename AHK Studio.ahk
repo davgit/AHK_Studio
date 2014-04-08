@@ -5,7 +5,7 @@
 	Omni_Search(){
 		:label
 		$class
-		#function       
+		#function
 		&hotkey 
 		background updates of functions, labels, hotkeys, 
 		pre-fetch fun,lab,hk,class info and store it
@@ -18,7 +18,7 @@
 */
 DetectHiddenWindows,On
 OnMessage(0x4a,"WM_COPYDATA")
-Sleep,1
+;Sleep,1
 if (AID:=OtherInstance()){
 	File=%1%
 	Send_WM_COPYDATA(AID,File)
@@ -218,3 +218,4 @@ return
 #Include window.ahk
 #Include WM COPYDATA.ahk
 #Include D:\AHK Studio Git\AHK_Studio\add spaces before and after commas.ahk
+#Include D:\AHK Studio Git\AHK_Studio\center.ahk

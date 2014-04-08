@@ -12,7 +12,7 @@
 	fix_indent()
 	Loop,31
 		theme.2409(A_Index,1)
-	Gui,Show,,Theme Editor
+	Gui,Show,% Center(3),Theme Editor
 	theme.2246(0,1),theme.2400,theme.2563(0)
 	v.themelist:=[]
 	color:=TV_Add("Color")

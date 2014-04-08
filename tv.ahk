@@ -1,7 +1,7 @@
 ﻿tv(tv=0){
 	static lastcurrent
 	Gui,1:Default
-	Gui,1:TreeView,% hwnd(100)
+	Gui,1:TreeView,% hwnd("fe")
 	TV_Modify(tv,"Select Vis Focus")
 	return
 	tv:
@@ -41,6 +41,9 @@
 		if (current!=lastcurrent)
 			code_explorer()
 		GuiControl,1:+Redraw,% sc.sc
+		if !edited:=update("updated")[ssn(file,"@file").text]
+			sc.2014()
+		;t(sc.2159,update({edited:1})[ssn(file,"@file").Text])
 		lastcurrent:=current
 	}
 	return

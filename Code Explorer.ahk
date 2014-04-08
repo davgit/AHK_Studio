@@ -2,8 +2,8 @@
 	static
 	;global width
 	explore:=[]
-	Gui,1:TreeView,% hwnd(101)
-	GuiControl,-Redraw,% hwnd(101)
+	Gui,1:TreeView,% hwnd("ce")
+	GuiControl,-Redraw,% hwnd("ce")
 	TV_Delete()
 	file:=sn(current(1),"*")
 	functions:=TV_Add("Functions"),labels:=TV_Add("Labels"),hotkeys:=TV_Add("Hotkeys"),class:=TV_Add("Class")
@@ -21,14 +21,14 @@
 		Loop
 		{
 			fpos:=[]
-			for type,find in {class:"^([\s+]?class[\s+](\w*))(\s+)?{",functions:"^[\s*]?((\w|[^\x00-\x7F])+)\((.*)?\)[\s+;.*\s+]?[\s*]?{"}{
+			for type,find in {class:"^([\s+]?class[\s*](\w*))(\s*extends\s*(\w*)[\s*]?)?{",functions:"^[\s*]?((\w|[^\x00-\x7F])+)\((.*)?\)[\s+;.*\s+]?[\s*]?{"}{
 				if pp:=RegExMatch(code,"OUim`n)" find,fun,pos)
 					fpos[pp]:={type:type,fun:fun,pos:pp}
 			}
 			if !fpos.minindex()
 				break
 			findit:=SubStr(code,fpos[fpos.minindex()].pos)
-			left:="",count:=0,foundone:=0 ;,pos:=fun.Pos(1)+1
+			left:="",count:=0,foundone:=0
 			for a,b in StrSplit(findit,"`n"){
 				orig:=b
 				left.=orig "`n"
@@ -45,15 +45,14 @@
 			}
 			type:=fpos[fpos.MinIndex()].type
 			treeview:=fpos[fpos.MinIndex()].fun.value(1)
-			if (TreeView!=lastfun)
-				explore[TV_Add(treeview,%type%,"Sort")]:={file:out.text,pos:fpos[fpos.MinIndex()].Pos-1}
+			explore[TV_Add(treeview,%type%,"Sort")]:={file:out.text,pos:fpos[fpos.MinIndex()].Pos-1}
 			pos:=pos+StrLen(left)+1
 			lastfun:=TreeView
 		}
 	}
 	explore[TV_Add("Refresh")]:="Refresh"
-	GuiControl,+Redraw,% hwnd(101)
-	Gui,1:TreeView,% hwnd(100)
+	GuiControl,+Redraw,% hwnd("ce")
+	Gui,1:TreeView,% hwnd("fe")
 	return
 	cej:
 	if (explore[A_EventInfo]="refresh")

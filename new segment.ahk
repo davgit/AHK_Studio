@@ -16,6 +16,7 @@
 	Gui,1:Default
 	top:=TV_Add(file,ssn(current(1),"file/@tv").text,"Sort"),func:=clean(func)
 	select:=files.under({node:"file",att:{file:new,filename:file,include:Chr(35) "Include " new,tv:top},under:current(1)})
+	v.filelist[new]:=1
 	mainfile:=ssn(current(1),"@file").text
 	main:=update({get:mainfile}),main.="`n#Include " new
 	update({file:mainfile,text:main})

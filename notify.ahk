@@ -24,6 +24,11 @@
 	for a,b in {0:"Obj",2:"Code",3:"position",4:"ch",5:"mod",6:"modType",7:"text",8:"length",9:"linesadded",10:"msg",11:"wparam",12:"lparam",13:"line",14:"fold",22:"updated"}
 		fn[b]:=NumGet(Info+(A_PtrSize*a))
 	cpos:=sc.2008
+	if (fn.code=2002){
+		Gui,1:TreeView,% hwnd("fe")
+		ea:=xml.ea(current())
+		TV_Modify(ea.tv,"",ea.filename)
+	}
 	if (fn.code=2022){
 		actext:=StrGet(fn.text,"cp0")
 		selcount:=sc.2570
@@ -78,7 +83,7 @@
 	if (fn.code=2001){
 		if ((fn.ch=10||fn.ch=123||fn.ch=125)&&v.options.full_auto&&sc.2102=0){
 			if fn.ch=10
-				SetTimer,auto_indent,50
+				SetTimer,FullAuto,50
 			else
 				SetTimer,auto_delete,250
 		}else if (fn.ch=10&&v.options.fix_next_line){

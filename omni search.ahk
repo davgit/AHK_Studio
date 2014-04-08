@@ -10,14 +10,15 @@
 		if IsLabel(mm.text)
 			menulist.menu[RegExReplace(mm.text,"_"," ")]:="label"
 	}
-	fz:=files.sn("//@file")
-	while,fn:=fz.item[A_Index-1]
-		menulist.file[fn.text]:="file"
+	for filename in v.filelist{
+		SplitPath,filename,file,outdir
+		menulist.file[file]:={filename:filename,additional:outdir}
+	}
 	Gui,-Caption
 	Gui,Add,Edit,w500 gsortmenu,%start%
-	Gui,Add,ListView,w500 h200 -hdr -Multi,Menu Command|Rating
-	Gui,Add,Button,Default gmsgo w500,Execute Command
-	Gui,Show,,Menu Command
+	Gui,Add,ListView,w500 h200 -hdr -Multi,Menu Command|Additional|Rating
+	Gui,Add,Button,Default gmsgo w500 Hide,Execute Command
+	Gui,Show,% Center(20),Omni-Search
 	ControlSend,Edit1,^{End},% hwnd([20])
 	goto sortmenu
 	return
@@ -32,7 +33,7 @@
 		}else
 		%menu%()
 	}else if (file:=menulist.file[menu])
-	tv(files.ssn("//*[@file='" menu "']/@tv").text)
+	tv(files.ssn("//*[@file='" file.filename "']/@tv").text)
 	hwnd({rem:20})
 	return
 	sortmenu:
@@ -54,29 +55,33 @@
 	fff:=RegExReplace(find,"(.)","$1|"),rated:=[]
 	ffff:=searchin="menu"?[menulist.menu]:searchin="file"?[menulist.file]:[menulist.menu,menulist.file]
 	for q,b in ffff{
-		for a in b{
+		for a,r in b{
 			rating:=0
 			for c,d in search{
 				RegExReplace(a,"i)" c,"",count)
 				if (d>count)
 					continue 2
 				if count
-					rating+=1
+					rating+=count
 			}
 			if InStr(a,find)
 				rating+=10
 			if RegExMatch(a,"i)^" find)
 				rating+=200
-			rated.Insert({rating:rating,value:a})
+			if (find=""&&files.ssn("//main[@file='" r.additional "\" a "']"))
+				rating+=100
+			rated.Insert({rating:rating,value:a,additional:r.additional})
 		}
 	}
 	for a,b in rated
-		LV_Add("",b.value,b.rating)
-	LV_ModifyCol(1,470),LV_ModifyCol(2,0),LV_ModifyCol(2,"SortDesc Logical"),LV_Modify(1,"Select Vis Focus")
+		LV_Add("",b.value,b.additional,b.rating)
+	Loop,2
+		LV_ModifyCol(A_Index,"AutoHDR")
+	LV_ModifyCol(3,0),LV_ModifyCol(3,"SortDesc Logical"),LV_Modify(1,"Select Vis Focus")
 	GuiControl,20:+Redraw,SysListView321
 	Return
 	20GuiEscape:
-	20GuiClose:
+	Gui,20:Destroy
 	hwnd({rem:20})
 	return
 	omniup:

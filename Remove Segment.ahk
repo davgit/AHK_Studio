@@ -10,6 +10,7 @@
 	MsgBox,308,Delete this file from the computer?,Permanently delete this file?
 	IfMsgBox,Yes
 		FileDelete,% ssn(current,"@file").text
+	v.filelist.remove(ssn(current,"@file").text)
 	mainfile:=update({get:filename})
 	StringReplace,mainfile,mainfile,%include%,,All
 	update({file:filename,text:mainfile})

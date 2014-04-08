@@ -15,6 +15,7 @@
 		if ea.sc
 			sc.2377(0,ea.sc)
 		udf.Remove(ea.file)
+		v.filelist.remove(ea.file) ;[filename]:=1
 	}
 	TV_Modify(TV_GetNext(0),"Select Vis Focus")
 	main.ParentNode.RemoveChild(main)

@@ -5,7 +5,7 @@
 	if !sc
 		sc:=csc()
 	cpos:=sc.2008,begin:=cpos-sc.2128(sc.2166(cpos))
-	auto_indent:
+	fullauto:
 	fix_paste:
 	settimer,%A_ThisLabel%,off
 	next:=0,cpos:=0,indent:=0,add:=0
@@ -20,7 +20,7 @@
 		b:=Trim(b),start:=0
 		if (SubStr(b,1,1)="(")
 			v.skip:=1
-		if (SubStr(b,0,1)=")"&&v.skip){
+		if (SubStr(b,1,1)=")"&&v.skip){
 			v.skip:=0
 			continue
 		}
@@ -74,8 +74,8 @@
 	else
 		t()
 	line:=sc.2166(sc.2008)
-	if (A_ThisLabel="auto_indent"){
-		begin:=A_ThisLabel="auto_indent"?sc.2128(line):begin+sc.2128(line)
+	if (A_ThisLabel="fullauto"){
+		begin:=A_ThisLabel="fullauto"?sc.2128(line):begin+sc.2128(line)
 		sc.2160(begin,begin)
 	}
 	sc.2079
