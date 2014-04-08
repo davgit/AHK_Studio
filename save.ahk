@@ -11,7 +11,7 @@
 		StringReplace,text,text,`n,`r`n,All
 		FileAppend,%text%,%filename%,utf-8
 		Gui,1:TreeView,% hwnd("fe")
-		ea:=xml.ea(files.ssn("//*[@file='" filename "']"))
+		ea:=xml.ea(files.ssn("//file[@file='" filename "']"))
 		TV_Modify(ea.tv,"",ea.filename)
 	}
 	getpos(),savegui(),positions.save(1),vversion.save(1)

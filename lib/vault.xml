@@ -21,4 +21,17 @@ t(x*){
 	list.=b "`n"
 	tooltip %list%
 }</code>
+	<code name="dlg_color">Dlg_Color(Color){
+	VarSetCapacity(CHOOSECOLOR,0x24,0),VarSetCapacity(CUSTOM,64,0)
+	,NumPut(0x24,CHOOSECOLOR,0),NumPut(WinActive(),CHOOSECOLOR,4)
+	,NumPut(color,CHOOSECOLOR,12),NumPut(&amp;CUSTOM,CHOOSECOLOR,16)
+	,NumPut(0x00000103,CHOOSECOLOR,20)
+	nRC:=DllCall("comdlg32\ChooseColorA", str,CHOOSECOLOR)
+	if !nrc
+	Exit
+	setformat,integer,H
+	clr := NumGet(CHOOSECOLOR,12)
+	setformat,integer,D
+	return %clr%
+}</code>
 </vault>

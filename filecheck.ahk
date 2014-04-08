@@ -40,8 +40,8 @@
 		menus.save(1)
 		FileDelete,lib\temp.xml
 	}
-	if !FileExist("lib")
-		FileCreateDir,lib
+	if !FileExist(A_ScriptDir "\lib")
+		FileCreateDir,%A_ScriptDir%\lib
 	FileGetTime,time,scilexer.dll,C
 	if (scilexerdate>time)
 		FileDelete,scilexer.dll

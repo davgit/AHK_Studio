@@ -13,7 +13,7 @@
 	}
 	Gui,5:Add,Button,gsearch Default,% " Search "
 	;snapshot(hwfind,4,{SysTreeView321:["w","h"],Button1:["y"],Button2:["y"],Button3:["y"],Button5:["y"],Button5:["y"],Edit1:["w"]})
-	Gui,5:Show
+	Gui,5:Show,% Center(5)
 	for a,b in ea
 		if b
 			GuiControl,,%a%,%b%

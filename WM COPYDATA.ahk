@@ -5,8 +5,9 @@
 	if (file){
 		open(file)
 		v.tv:=files.ssn("//main[@file='" file "']/file/@tv").text
-		tv(v.tv)
 		WinActivate,% hwnd([1])
+		WinWaitActive,% hwnd([1])
+		tv(v.tv)
 	}
 	return true
 }

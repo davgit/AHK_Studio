@@ -41,9 +41,6 @@
 		if (current!=lastcurrent)
 			code_explorer()
 		GuiControl,1:+Redraw,% sc.sc
-		if !edited:=update("updated")[ssn(file,"@file").text]
-			sc.2014()
-		;t(sc.2159,update({edited:1})[ssn(file,"@file").Text])
 		lastcurrent:=current
 	}
 	return

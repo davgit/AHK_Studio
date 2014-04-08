@@ -1,8 +1,8 @@
 ﻿class xml{
 	keep:=[]
 	__New(param*){
-		if !FileExist(lib)
-			FileCreateDir,lib
+		if !FileExist(A_ScriptDir "\lib")
+			FileCreateDir,%A_ScriptDir%\lib
 		root:=param.1,file:=param.2
 		file:=file?file:root ".xml"
 		temp:=ComObjCreate("MSXML2.DOMDocument"),temp.setProperty("SelectionLanguage","XPath")

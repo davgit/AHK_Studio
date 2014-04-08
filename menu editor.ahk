@@ -194,7 +194,6 @@
 	main:=top.ParentNode
 	new:=menus.under({under:main,node:"separator",att:{name:"-------",last:1}})
 	main.insertbefore(new,top)
-	main.insertbefore(top,new)
 	menu_editor(1)
 	return
 }
