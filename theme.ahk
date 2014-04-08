@@ -17,7 +17,7 @@
 	v.themelist:=[]
 	color:=TV_Add("Color")
 	for a,b in ["Background","Default Background Color","Default Font Style","Caret","Caret Line Background","End Of Line Color","Reset To Default","Indent Guide","Multiple Selection Foreground","Multiple Selection Background"
-		,"Main Selection Foreground","Main Selection Background"]
+		,"Main Selection Foreground","Main Selection Background","Brace Match Color"]
 	v.themelist[TV_Add(b,color,"Sort")]:=b
 	options:=TV_Add("Theme Options")
 	for a,b in ["Edit Theme Name","Edit Author","Download Themes","Export Theme","Import Theme","Save Theme","Display Style Number At Caret"]
@@ -37,6 +37,17 @@
 		return
 	if (event="Display Style Number At Caret"){
 		return m("Style=" csc().2010(csc().2008))
+	}
+	if (event="Brace Match Color"){
+		color:=settings.ssn("//fonts/font[@code='2082']/@color").text
+		color:=dlg_color(color,hwnd(3))
+		if ErrorLevel
+			return
+		if !clr:=settings.ssn("//fonts/font[@code='2082']")
+			settings.Add({path:"fonts/font",att:{code:2082,color:color},dup:1})
+		else
+			clr.SetAttribute("color",color)
+		refreshthemes()
 	}
 	if (event="Themes List"){
 		TV_GetText(theme,TV_GetSelection())

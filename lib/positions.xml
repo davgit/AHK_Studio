@@ -133,7 +133,7 @@
 	<main file="D:\AHK Studio\Projects\Untitled\Untitled16\Untitled.ahk">
 		<file end="9" file="D:\AHK Studio\Projects\Untitled\Untitled16\Untitled.ahk" scroll="0" start="9"></file></main>
 	<main file="D:\AHK Studio\AHK Studio.ahk" search="omni" id="9945432">
-		<file end="99" file="D:\AHK Studio\AHK Studio.ahk" scroll="0" start="99"></file>
+		<file end="91" file="D:\AHK Studio\AHK Studio.ahk" scroll="0" start="91"></file>
 		<file end="872" file="D:\AHK Studio\fix indent.ahk" scroll="29" start="872"></file>
 		<file end="0" file="D:\AHK Studio\automenu.ahk" scroll="0" start="8"></file>
 		<file end="0" file="D:\AHK Studio\msgbox.ahk" scroll="0" start="0"></file>
@@ -230,7 +230,9 @@
 		<file end="0" file="D:\AHK Studio\update2.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio\split code3.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio\split code4.ahk" scroll="0" start="0"></file>
-		<file end="0" file="D:\AHK Studio\split code5.ahk" scroll="0" start="0"></file></main>
+		<file end="0" file="D:\AHK Studio\split code5.ahk" scroll="0" start="0"></file>
+		<file end="0" file="D:\AHK Studio\On Dropfiles.ahk" scroll="0" start="0"></file>
+		<file end="0" file="D:\AHK Studio\setpos.ahk" scroll="0" start="0"></file></main>
 	<main file="C:\Users\maestrith\Desktop\reddit.ahk">
 		<file end="62" file="C:\Users\maestrith\Desktop\reddit.ahk" scroll="136" start="62"></file></main>
 	<main file="D:\AHK Studio\Projects\Untitled\Untitled17\Untitled.ahk">
@@ -349,8 +351,8 @@
 		<file end="113" file="D:\AHK Studio Git\addbutton.ahk" scroll="0" start="113"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\Projects\Untitled\Untitled3\Untitled.ahk">
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Projects\Untitled\Untitled3\Untitled.ahk" scroll="0" start="0"></file></main>
-	<main file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" search="98guies">
-		<file end="301" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" scroll="0" start="301"></file>
+	<main file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" search="version">
+		<file end="51" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" scroll="0" start="51"></file>
 		<file end="0" file="D:\AHK Studio\forum.ahk" scroll="0" start="0"></file>
 		<file end="582" file="D:\AHK Studio Git\AHK_Studio\Menu Shortcut.ahk" scroll="10" start="582"></file>
 		<file end="304" file="D:\AHK Studio\menu.ahk" scroll="0" start="322"></file>
@@ -372,9 +374,9 @@
 		<file end="0" file="D:\AHK Studio\automenu.ahk" scroll="0" start="0"></file>
 		<file end="993" file="D:\AHK Studio\Scintilla Code Lookup.ahk" scroll="0" start="1038"></file>
 		<file end="0" file="D:\AHK Studio\auto update.ahk" scroll="0" start="0"></file>
-		<file end="1919" file="D:\AHK Studio Git\AHK_Studio\omni search.ahk" scroll="52" start="1919"></file>
+		<file end="202" file="D:\AHK Studio Git\AHK_Studio\omni search.ahk" scroll="0" start="202"></file>
 		<file end="56" file="D:\AHK Studio Git\AHK_Studio\about.ahk" scroll="0" start="56"></file>
-		<file end="9" file="D:\AHK Studio Git\AHK_Studio\Add Spaces After Commas.ahk" scroll="0" start="9"></file>
+		<file end="166" file="D:\AHK Studio Git\AHK_Studio\Add Spaces After Commas.ahk" scroll="0" start="166"></file>
 		<file end="9" file="D:\AHK Studio Git\AHK_Studio\Add Spaces Before Commas.ahk" scroll="0" start="9"></file>
 		<file end="1371" file="D:\AHK Studio Git\AHK_Studio\addbutton.ahk" scroll="18" start="1371"></file>
 		<file end="17" file="D:\AHK Studio Git\AHK_Studio\arrows.ahk" scroll="0" start="17"></file>
@@ -393,7 +395,7 @@
 		<file end="436" file="D:\AHK Studio Git\AHK_Studio\compilebox.ahk" scroll="0" start="436"></file>
 		<file end="1586" file="D:\AHK Studio Git\AHK_Studio\context.ahk" scroll="31" start="1586"></file>
 		<file end="603" file="D:\AHK Studio Git\AHK_Studio\Create Segment From Selection.ahk" scroll="0" start="603"></file>
-		<file end="531" file="D:\AHK Studio Git\AHK_Studio\csc.ahk" scroll="0" start="531"></file>
+		<file end="513" file="D:\AHK Studio Git\AHK_Studio\csc.ahk" scroll="0" start="513"></file>
 		<file end="124" file="D:\AHK Studio Git\AHK_Studio\current.ahk" scroll="0" start="124"></file>
 		<file end="4439" file="D:\AHK Studio Git\AHK_Studio\debug.ahk" scroll="105" start="4439"></file>
 		<file end="1632" file="D:\AHK Studio Git\AHK_Studio\defaultfont.ahk" scroll="1" start="1632"></file>
@@ -404,7 +406,7 @@
 		<file end="31" file="D:\AHK Studio Git\AHK_Studio\Duplicate Line.ahk" scroll="0" start="31"></file>
 		<file end="1636" file="D:\AHK Studio Git\AHK_Studio\DynaRun.ahk" scroll="5" start="1636"></file>
 		<file end="1215" file="D:\AHK Studio Git\AHK_Studio\edit replacements.ahk" scroll="0" start="1215"></file>
-		<file end="67" file="D:\AHK Studio Git\AHK_Studio\filecheck.ahk" scroll="0" start="67"></file>
+		<file end="677" file="D:\AHK Studio Git\AHK_Studio\filecheck.ahk" scroll="0" start="677"></file>
 		<file end="3653" file="D:\AHK Studio Git\AHK_Studio\find.ahk" scroll="87" start="3653"></file>
 		<file end="283" file="D:\AHK Studio Git\AHK_Studio\Find Nearest Brace.ahk" scroll="0" start="283"></file>
 		<file end="174" file="D:\AHK Studio Git\AHK_Studio\fix after.ahk" scroll="0" start="174"></file>
@@ -435,12 +437,12 @@
 		<file end="18558" file="D:\AHK Studio Git\AHK_Studio\temp.ahk" scroll="568" start="15577"></file>
 		<file end="2980" file="D:\AHK Studio Git\AHK_Studio\class rebar.ahk" scroll="66" start="2980"></file>
 		<file end="5891" file="D:\AHK Studio Git\AHK_Studio\class toolbar.ahk" scroll="149" start="5891"></file>
-		<file end="1293" file="D:\AHK Studio Git\AHK_Studio\color.ahk" scroll="3" start="1293"></file>
+		<file end="538" file="D:\AHK Studio Git\AHK_Studio\color.ahk" scroll="3" start="538"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\menu search.ahk" scroll="0" start="0"></file>
 		<file end="826" file="D:\AHK Studio Git\AHK_Studio\new.ahk" scroll="0" start="826"></file>
 		<file end="216" file="D:\AHK Studio Git\AHK_Studio\New Scintilla Window.ahk" scroll="0" start="216"></file>
 		<file end="1075" file="D:\AHK Studio Git\AHK_Studio\new segment.ahk" scroll="0" start="1075"></file>
-		<file end="4208" file="D:\AHK Studio Git\AHK_Studio\notify.ahk" scroll="103" start="4208"></file>
+		<file end="485" file="D:\AHK Studio Git\AHK_Studio\notify.ahk" scroll="3" start="485"></file>
 		<file end="2000" file="D:\AHK Studio Git\AHK_Studio\open.ahk" scroll="39" start="2000"></file>
 		<file end="1048" file="D:\AHK Studio Git\AHK_Studio\options.ahk" scroll="3" start="1048"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\paste.ahk" scroll="0" start="0"></file>
@@ -458,13 +460,13 @@
 		<file end="51" file="D:\AHK Studio Git\AHK_Studio\run selected text.ahk" scroll="0" start="51"></file>
 		<file end="1830" file="D:\AHK Studio Git\AHK_Studio\scintilla code lookup.ahk" scroll="24" start="1830"></file>
 		<file end="205" file="D:\AHK Studio Git\AHK_Studio\Send WM COPYDATA.ahk" scroll="0" start="205"></file>
-		<file end="30" file="D:\AHK Studio Git\AHK_Studio\set.ahk" scroll="0" start="30"></file>
+		<file end="0" file="D:\AHK Studio Git\AHK_Studio\set.ahk" scroll="0" start="0"></file>
 		<file end="497" file="D:\AHK Studio Git\AHK_Studio\setup.ahk" scroll="0" start="497"></file>
 		<file end="700" file="D:\AHK Studio Git\AHK_Studio\show scintilla code in line.ahk" scroll="0" start="700"></file>
 		<file end="37" file="D:\AHK Studio Git\AHK_Studio\social.ahk" scroll="0" start="37"></file>
 		<file end="2368" file="D:\AHK Studio Git\AHK_Studio\split code.ahk" scroll="50" start="2368"></file>
 		<file end="33" file="D:\AHK Studio Git\AHK_Studio\testing.ahk" scroll="0" start="33"></file>
-		<file end="9247" file="D:\AHK Studio Git\AHK_Studio\Theme.ahk" scroll="262" start="9247"></file>
+		<file end="1963" file="D:\AHK Studio Git\AHK_Studio\Theme.ahk" scroll="37" start="1963"></file>
 		<file end="126" file="D:\AHK Studio Git\AHK_Studio\traymenu.ahk" scroll="0" start="126"></file>
 		<file end="1058" file="D:\AHK Studio Git\AHK_Studio\tv.ahk" scroll="13" start="1058"></file>
 		<file end="458" file="D:\AHK Studio Git\AHK_Studio\update.ahk" scroll="0" start="458"></file>
@@ -472,13 +474,15 @@
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\window.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\WM COPYDATA.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\file search.ahk" scroll="0" start="0"></file>
-		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Dlg Color.ahk" scroll="0" start="0"></file>
+		<file end="343" file="D:\AHK Studio Git\AHK_Studio\Dlg Color.ahk" scroll="0" start="343"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\set as default editor.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Default.ahk" scroll="0" start="0"></file>
 		<file end="13" file="D:\AHK Studio Git\AHK_Studio\hide menu.ahk" scroll="0" start="24"></file>
 		<file end="4959" file="D:\AHK Studio Git\AHK_Studio\menu editor.ahk" scroll="95" start="4959"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\show menu.ahk" scroll="0" start="0"></file>
-		<file end="9" file="D:\AHK Studio Git\AHK_Studio\add spaces before and after commas.ahk" scroll="0" start="9"></file></main>
+		<file end="9" file="D:\AHK Studio Git\AHK_Studio\add spaces before and after commas.ahk" scroll="0" start="9"></file>
+		<file end="0" file="D:\AHK Studio Git\AHK_Studio\compile.ahk" scroll="0" start="0"></file>
+		<file end="0" file="D:\AHK Studio Git\AHK_Studio\refreshthemes.ahk" scroll="0" start="0"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\asdf.ahk">
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\asdf.ahk" scroll="0" start="0"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\flan.ahk">
@@ -503,4 +507,12 @@
 		<file end="52" file="D:\Projects\t.ahk" scroll="0" start="52"></file>
 		<file end="0" file="D:\Projects\undo.ahk" scroll="0" start="0"></file>
 		<file end="146" file="D:\Projects\class image.ahk" scroll="66" start="146"></file></main>
+	<main file="C:\Users\maestrith\AppData\Local\Microsoft\Windows\INetCache\IE\O8I1S2JJ\Dark[1].xml">
+		<file end="0" file="C:\Users\maestrith\AppData\Local\Microsoft\Windows\INetCache\IE\O8I1S2JJ\Dark[1].xml" scroll="0" start="0"></file></main>
+	<main file="C:\Users\maestrith\AppData\Local\Microsoft\Windows\INetCache\IE\ESGM6LNB\Dark[1].xml">
+		<file end="0" file="C:\Users\maestrith\AppData\Local\Microsoft\Windows\INetCache\IE\ESGM6LNB\Dark[1].xml" scroll="0" start="0"></file></main>
+	<main file="D:\AHK Studio\backup\20140407011807\On Dropfiles.ahk">
+		<file end="0" file="D:\AHK Studio\backup\20140407011807\On Dropfiles.ahk" scroll="0" start="0"></file></main>
+	<main file="D:\Projects\Adabo\process id.ahk">
+		<file end="175" file="D:\Projects\Adabo\process id.ahk" scroll="0" start="175"></file></main>
 </positions>

@@ -319,6 +319,9 @@ Initial Upload</info>
 	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="20" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.20
 Added:
 -Duplicate hotkeys will show a messagebox
+Changed:
+-Color entry in hex mode using RGB rather than BGR
+-Change Brace Highlight Color
 0.100.19
 Fixed: Reminded by joedf
 -Default font has been updated to work with the new scheme

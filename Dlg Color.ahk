@@ -1,9 +1,11 @@
 ﻿Dlg_Color(Color,hwnd){
 	static
 	if settings.ssn("//colorinput").text{
-		InputBox,color,Color Code,Input your color code,,,,,,,,%color%
+		InputBox,color,Color Code,Input your color code in RGB,,,,,,,,% RGB(color)
+		if !InStr(color,"0x")
+			color:="0x" color
 		if !ErrorLevel
-			return color
+			return RGB(color)
 		return
 	}
 	if !cc{

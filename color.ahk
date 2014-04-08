@@ -4,6 +4,10 @@
 	nodes:=settings.sn("//fonts/*")
 	while,n:=nodes.item(A_Index-1){
 		ea:=settings.ea(n)
+		if (ea.code=2082){
+			con.2082(7,ea.color)
+			Continue
+		}
 		if (ea.style=33)
 			for a,b in [2290,2291]
 				con[b](1,ea.Background)
@@ -26,7 +30,8 @@
 	con.2056(38,"Tahoma")
 	con.4006(0,"asm"),con.2212,con.2371
 	con.2080(7,6)
-	con.2082(7,0xff00ff)
+	if !settings.ssn("//fonts/font[@code='2082']")
+		con.2082(7,0xff00ff)
 	con.2498(1,7)
 	for a,b in options
 		if v.options[a]

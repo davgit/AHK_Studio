@@ -3,6 +3,10 @@
 /*
 	Ideas:
 	Omni_Search(){
+		:label
+		$class
+		#function       
+		&hotkey 
 		background updates of functions, labels, hotkeys, 
 		pre-fetch fun,lab,hk,class info and store it
 		Add timestamps to update() stuff so it knows which files
