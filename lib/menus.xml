@@ -20,6 +20,7 @@
 			<menu name="Chec&amp;k For Update" clean="Check_For_Update"></menu>
 			<menu name="E&amp;xit" clean="Exit"></menu></menu>
 		<menu name="&amp;Edit" clean="Edit">
+			<menu name="Auto Insert" clean="Auto_Add" hotkey=""></menu>
 			<menu name="&amp;Menu Editor" func="flan" clean="Menu_Editor"></menu>
 			<menu name="&amp;Restore Current File" clean="Restore_Current_File"></menu>
 			<menu name="Personal &amp;Variable List" clean="Personal_Variable_List"></menu>
@@ -83,5 +84,5 @@
 			<menu name="&amp;Help" clean="Help"></menu></menu>
 		<menu name="Scratch &amp;Pad" clean="Scratch_Pad"></menu>
 	</main>
-	<date>20140407150000</date>
+	<date>20140408</date>
 </menus>

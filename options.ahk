@@ -32,6 +32,7 @@
 	att:=[],att[A_ThisLabel]:=onoff
 	settings.add({path:"options",att:att})
 	togglemenu(A_ThisLabel)
-	m("Requires a reboot to take effect.")
+	if (A_ThisLabel="small_icons")
+		Return m("Requires a reboot to take effect.")
 	return
 }

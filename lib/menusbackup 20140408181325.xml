@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<menus>
+	<main>
+		<menu name="&amp;File" clean="File" tv="2921464">
+			<menu name="New Se&amp;gment" clean="New_Segment" hotkey="" tv="2921392"></menu>
+			<menu name="Create S&amp;egment From Selection" hotkey="+^N" clean="Create_Segment_From_Selection" tv="2920456"></menu>
+			<menu name="Remove Segmen&amp;t" hotkey="" clean="Remove_Segment" tv="2921896"></menu>
+			<menu name="&amp;Open" clean="Open" hotkey="^O" tv="2920744"></menu>
+			<menu name="Open Fol&amp;der" clean="Open_Folder" tv="2921536"></menu>
+			<menu name="Co&amp;mpile" clean="Compile" hotkey="" tv="2922472"></menu>
+			<menu name="&amp;Save" hotkey="^S" clean="Save" tv="2920528"></menu>
+			<menu name="&amp;New" hotkey="^N" clean="New" tv="2920600"></menu>
+			<menu name="&amp;Full Backup" clean="Full_Backup" tv="2920672"></menu>
+			<menu name="&amp;Publish" clean="Publish" tv="2920816"></menu>
+			<menu name="Run Se&amp;lected Text" clean="Run_Selected_Text" tv="2921248"></menu>
+			<menu name="&amp;Run" clean="Run" tv="2921320"></menu>
+			<menu name="&amp;Upload" clean="Upload" tv="2920888"></menu>
+			<menu name="&amp;Close" clean="Close" tv="2921968"></menu>
+			<menu name="Set &amp;As Default Editor" clean="Set_As_Default_Editor" tv="2922328"></menu>
+			<menu name="Chec&amp;k For Update" clean="Check_For_Update" tv="2920960"></menu>
+			<menu name="E&amp;xit" clean="Exit" tv="2922040"></menu></menu>
+		<menu name="&amp;Edit" clean="Edit" tv="2920384">
+			<menu name="Auto Insert" clean="Auto_Add" hotkey="" tv="2922256"></menu>
+			<menu name="&amp;Menu Editor" func="flan" clean="Menu_Editor" tv="2922112"></menu>
+			<menu name="&amp;Restore Current File" clean="Restore_Current_File" tv="2921032"></menu>
+			<menu name="Personal &amp;Variable List" clean="Personal_Variable_List" tv="2920312"></menu>
+			<menu name="&amp;Theme" clean="Theme" tv="2922184"></menu>
+			<menu name="&amp;Find" clean="Find" hotkey="^F" tv="2922400"></menu>
+			<menu name="&amp;Next Found" hotkey="F3" clean="Next_Found" tv="2921104"></menu>
+			<menu name="Ft&amp;p Servers" clean="Ftp_Servers" tv="2920240"></menu>
+			<menu name="Ed&amp;it Replacements" clean="Edit_Replacements" tv="2921608"></menu>
+			<menu name="Togg&amp;le Comment Line" hotkey="^J" clean="Toggle_Comment_Line" tv="2921176"></menu>
+			<menu name="&amp;Duplicate Line" hotkey="F2" clean="Duplicate_Line" tv="2921680"></menu>
+			<menu name="&amp;Undo" clean="Undo" tv="2921824"></menu>
+			<menu name="Red&amp;o" clean="Redo" tv="2916568"></menu>
+			<menu name="Replace &amp;Selected" hotkey="F1" clean="Replace_Selected" tv="2916712"></menu>
+			<menu name="&amp;Quick Find" hotkey="!q" clean="Quick_Find" tv="2916856"></menu>
+			<menu name="Jump to Proj&amp;ect" clean="Jump_to_Project" hotkey="!S" tv="2920096"></menu>
+			<menu name="&amp;Jump to Segment" hotkey="!j" clean="Jump_to_Segment" tv="2920024"></menu>
+			<menu name="Fi&amp;x Indent" hotkey="^F1" clean="Fix_Indent" tv="2918800"></menu></menu>
+		<menu name="&amp;Options" clean="Options" tv="2918440">
+			<menu name="Center Caret" clean="Center_Caret" tv="2918512"></menu>
+			<menu name="&amp;Word Wrap" clean="Word_Wrap" tv="2918584"></menu>
+			<menu name="Small &amp;Icons" clean="Small_Icons" tv="2918368"></menu>
+			<menu name="Show WhiteSpace" clean="Show_WhiteSpace" tv="2918080"></menu>
+			<menu name="Show Caret Line" clean="Show_Caret_Line" tv="2918728"></menu>
+			<menu name="Show EOL" clean="Show_EOL" tv="2919304"></menu></menu>
+		<menu name="Q&amp;uick Find Settings" clean="Quick_Find_Settings" tv="2918008">
+			<menu name="&amp;Case Sensitive" clean="Case_Sensitive" tv="2918656"></menu>
+			<menu name="&amp;Regex" clean="Regex" tv="2919088"></menu>
+			<menu name="&amp;Greed" clean="Greed" tv="2918872"></menu>
+			<menu name="&amp;Set Selection" clean="Set_Selection" tv="2919664"></menu>
+			<menu name="Cle&amp;ar Selection" clean="Clear_Selection" tv="2920168"></menu></menu>
+		<menu name="&amp;Auto Indent" clean="Auto_Indent" tv="2918944">
+			<menu name="&amp;Full Auto" clean="Full_Auto" tv="2918224"></menu>
+			<menu name="F&amp;ix Next Line" clean="Fix_Next_Line" tv="2919016"></menu></menu>
+		<menu name="&amp;Tools" clean="Tools" tv="2917936">
+			<menu name="Ms&amp;gBox Creator" clean="MsgBox_Creator" tv="2918152"></menu>
+			<menu name="Post &amp;All In One Gist" clean="Post_All_In_One_Gist" tv="2919232"></menu>
+			<menu name="Post &amp;Multiple Segment Gist" clean="Post_Multiple_Segment_Gist" tv="2918296"></menu></menu>
+		<menu name="&amp;Special Menu" clean="Special_Menu" tv="2919376">
+			<menu name="Show Menu" clean="Show_Menu" tv="2919448"></menu>
+			<menu name="Hide Menu" clean="Hide_Menu" tv="2919808"></menu>
+			<menu name="Menu Search" hotkey="!M" clean="Menu_Search" tv="2919952"></menu>
+			<menu name="File Search" hotkey="+!O" clean="File_Search" tv="2919592"></menu>
+			<menu name="Omni Search" hotkey="^!O" clean="Omni_Search" tv="2919880"></menu>
+			<menu name="Split Code" hotkey="!I" clean="Split_Code" tv="2950288"></menu>
+			<menu name="Add Space Before Commas" clean="Add_Space_Before_Commas" tv="2949712"></menu>
+			<menu name="Add Space Before And After Commas" clean="Add_Space_Before_And_After_Commas" tv="2950216"></menu>
+			<menu name="Add Space After Commas" clean="Add_Space_After_Commas" tv="2951152"></menu>
+			<menu name="Remove Spaces From Selected" hotkey="^!U" clean="Remove_Spaces_From_Selected" tv="2950144"></menu>
+			<menu name="Code &amp;Vault" clean="Code_Vault" tv="2950864"></menu>
+			<menu name="&amp;Find Nearest Brace" clean="Find_Nearest_Brace" hotkey="^!N" tv="2949784"></menu>
+			<menu name="S&amp;ort Selected" clean="Sort_Selected" tv="2950720"></menu>
+			<menu name="Toggle &amp;Multiple Line Comment" hotkey="+F1" clean="Toggle_Multiple_Line_Comment" tv="2950360"></menu>
+			<menu name="Sho&amp;w Scintilla Code In Line" hotkey="F4" clean="Show_Scintilla_Code_In_Line" tv="2949856"></menu>
+			<menu name="Move Selected Lines Down" hotkey="+^Down" clean="Move_Selected_Lines_Down" tv="2951440"></menu>
+			<menu name="Move Selected Lines Up" hotkey="+^Up" clean="Move_Selected_Lines_Up" tv="2950792"></menu>
+			<menu name="&amp;Scintilla Code Lookup" hotkey="F6" clean="Scintilla_Code_Lookup" tv="2950504"></menu></menu>
+		<menu name="&amp;Help" clean="Help" tv="2951512">
+			<menu name="&amp;Forum" clean="Forum" tv="2951584"></menu>
+			<menu name="&amp;Social" clean="Social" tv="2951656"></menu>
+			<menu name="&amp;About" clean="About" tv="2951728"></menu>
+			<menu name="&amp;Help" clean="Help" tv="2950000"></menu></menu>
+		<menu name="Scratch &amp;Pad" clean="Scratch_Pad" tv="2951800"></menu>
+	</main>
+	<date>20140408</date>
+</menus>

@@ -1,6 +1,6 @@
 ﻿Check_For_Update(){
 	static version
-	version=0.100.18
+	version=;auto_version
 	Gui,55:Destroy
 	Gui,55:Default
 	Gui,Add,Edit,w500 h500,% URLDownloadToVar("http://files.maestrith.com/alpha/Studio/AHK Studio.text")
@@ -8,7 +8,7 @@
 	Gui,Show,,AHK Studio Version %version%
 	return
 	autoupdate:
-	version=0.100.18
+	version=;auto_version
 	save(),settings.save(1)
 	SplitPath,A_ScriptName,,,ext,name
 	if !InStr(ext,"exe"){

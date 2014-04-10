@@ -45,7 +45,8 @@
 			}
 			type:=fpos[fpos.MinIndex()].type
 			treeview:=fpos[fpos.MinIndex()].fun.value(1)
-			explore[TV_Add(treeview,%type%,"Sort")]:={file:out.text,pos:fpos[fpos.MinIndex()].Pos-1}
+			if (treeview!=lastfun)
+				explore[TV_Add(treeview,%type%,"Sort")]:={file:out.text,pos:fpos[fpos.MinIndex()].Pos-1}
 			pos:=pos+StrLen(left)+1
 			lastfun:=TreeView
 		}

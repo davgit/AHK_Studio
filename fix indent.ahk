@@ -9,6 +9,7 @@
 	fix_paste:
 	settimer,%A_ThisLabel%,off
 	next:=0,cpos:=0,indent:=0,add:=0
+	lock:=[]
 	if !sc
 		sc:=csc()
 	sc.2078
@@ -34,41 +35,40 @@
 				break
 			}
 		}
-		add:=0
-		if (pos:=RegExMatch(lastb,"iUA)(\b(" v.indentregex ")(.+)?)\b",found)&&(SubStr(b,0,1)!="{")){
-			if InStr(v.color.indent,found)
-				add+=1
-			if (SubStr(lastb,0,1)="{")
-				add:=0
-		}
-		if (SubStr(b,1,1)="}"){
-			indent:=indent>0?indent-1:0
-			if (indent*5!=sc.2127(a-1))
-				sc.2126(a-1,indent*5)
-		}
-		if (SubStr(b,1,2)="*/"){
-			indent:=indent>0?indent-1:0
-			if (indent*5!=sc.2127(a-1))
-				sc.2126(a-1,indent*5)
-		}
+		RegExMatch(lastb,"iUA)\b(" v.indentregex ")\b",found)
+		if (found&&SubStr(lastb,0,1)!="{")
+			add++
+		if (add&&found&&SubStr(b,0,1)="{")
+			add--
+		if (add&&b="{")
+			lock.Insert(add)
+		if (lock.MaxIndex()=""&&add&&found="")
+			add:=0
+		if (SubStr(b,1,1)="}")
+			indent--
+		if (SubStr(b,1,2)="*/")
+			indent--
 		if (SubStr(b,1,2)="/*"){
 			if (indent*5!=sc.2127(a-1))
 				sc.2126(a-1,indent*5)
 			indent++
 		}else if (SubStr(b,0,1)="{"){
-			if (indent*5!=sc.2127(a-1))
-				sc.2126(a-1,indent*5)
+			if ((indent+add)*5!=sc.2127(a-1))
+				sc.2126(a-1,(indent+add)*5)
 			indent++
 		}else{
-			if (add){
-				prev:=sc.2127(a-2)
-				if (prev+5!=sc.2127(a-1))
-					sc.2126(a-1,prev+5)
-			}else if (indent*5!=sc.2127(a-1))
-			sc.2126(a-1,indent*5)
+			if (SubStr(b,1,1)="}"||SubStr(b,1,2)="*/"){
+				dd:=lock.MaxIndex()?lock[lock.MaxIndex()]:add
+				lock.remove(lock.MaxIndex())
+			}
+			else
+				dd:=add
+			if ((indent+dd)*5!=sc.2127(a-1))
+				sc.2126(a-1,(indent+dd)*5)
 		}
 		lastb:=b
 	}
+	
 	if indent
 		ToolTip,Segment Open,0,0
 	else
@@ -79,5 +79,6 @@
 		sc.2160(begin,begin)
 	}
 	sc.2079
+	lastb:=""
 	return
 }

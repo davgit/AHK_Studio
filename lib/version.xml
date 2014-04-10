@@ -316,7 +316,16 @@ Initial Upload</info>
 	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
 Initial Upload</info>
 	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
-	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="21" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.21
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="23" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.23
+Edited: Reported by Andy Anderson
+-Version number: I accidently hard coded the version number. Sorry
+0.100.22
+Changed: Suggested by GeekDude
+-Treeview selecting files was acting odd
+-Auto indent was happening without full auto
+Added: Suggested by GeekDude (and others)
+-Edit/Auto Insert: Setup which keys will automatically add another eg () {} &lt;&gt; "" ''
+0.100.21
 Fixed:
 -%variables% after a , were not coloring correctly
 Added: Suggested by GeekDude
@@ -637,4 +646,6 @@ Added:
 -Pre-Pre-Pre-Alpha</info>
 	<info compile="0" dir="" file="D:\Projects\Capture Screen.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
 	<info compile="0" dir="" file="D:\Projects\Crop.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="" file="D:\Newest Scintilla\scintilla\lexers\LexAsm.cxx" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="geekdude/json" file="D:\Projects\GeekDude\URI Decode\decode uri.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0">For Geekdude</info>
 </version>

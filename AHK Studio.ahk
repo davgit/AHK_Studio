@@ -217,5 +217,6 @@ return
 #Include URLDownloadToVar.ahk
 #Include window.ahk
 #Include WM COPYDATA.ahk
-#Include D:\AHK Studio Git\AHK_Studio\add spaces before and after commas.ahk
-#Include D:\AHK Studio Git\AHK_Studio\center.ahk
+#Include add spaces before and after commas.ahk
+#Include center.ahk
+#Include auto insert.ahk

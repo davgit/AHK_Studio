@@ -5,9 +5,11 @@
 	TV_Modify(tv,"Select Vis Focus")
 	return
 	tv:
-	if (A_GuiEvent="+"||A_EventInfo=0)
-		return
-	if ((A_GuiEvent="S"||A_GuiEvent="Normal")){
+	;if (A_GuiEvent="+"||A_GuiEvent="-"){
+	;return
+	;}else if (A_GuiEvent=0)
+	;Return
+	if ((A_GuiEvent="S")){
 		getpos(),count:=0
 		ei:=a_eventinfo,sc:=csc()
 		file:=files.ssn("//*[@tv='" ei "']")

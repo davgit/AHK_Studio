@@ -105,7 +105,7 @@
 	for a,b in s.main
 		b.2242(0,20),b.2242(1,0),b.2181(0,msg[A_Index])
 	open:=settings.sn("//open/*")
-	Gui,1:Add,TreeView,Background0 c0xAAAAAA AltSubmit gtv hwndtv
+	Gui,1:Add,TreeView,Background0 c0xAAAAAA gtv hwndtv
 	Gui,1:Add,TreeView,Background0 c0xAAAAAA AltSubmit gcej hwndtv2
 	hwnd("fe",tv),hwnd("ce",tv2),refreshthemes()
 	Gui,1:TreeView,% hwnd("fe")
