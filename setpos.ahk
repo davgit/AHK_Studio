@@ -9,7 +9,7 @@
 	posinfo:=positions.ssn("//main[@file='" parent "']/file[@file='" file "']")
 	doc:=ssn(node,"@sc").text
 	ea:=xml.ea(posinfo),fold:=ea.fold
-	if ea.start
+	if ea.start&&ea.end
 		sc.2613(ea.scroll),sc.2160(ea.start,ea.end)
 	Loop,Parse,fold,`,
 		if A_LoopField is number

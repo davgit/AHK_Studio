@@ -18,7 +18,7 @@
 		InputBox,newvalue,% "Current value for " value.variable,% "Change value for " value.variable,,,,,,,,% value.value
 		if ErrorLevel
 			return
-		debug("send","property_set -n " value.variable " -- " debug("encode",newvalue))
+		debug.send("property_set -n " value.variable " -- " debug.encode(newvalue))
 		TV_Modify(ei,"",value.variable " = " newvalue)
 	}
 	return

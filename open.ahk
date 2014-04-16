@@ -15,6 +15,10 @@
 		gosub,addfile
 		Gui,1:TreeView,SysTreeView321
 		TV_Modify(root,"Select Vis Focus")
+		filelist:=files.sn("//main[@file='" filename "']/*")
+		while,filename:=filelist.item[A_Index-1]
+			code_explorer.scan(filename)
+		code_explorer.Refresh_Code_Explorer()
 	}else{
 		for a,b in StrSplit(filelist,"`n"){
 			if files.ssn("//main[@file='" b "']")
@@ -23,6 +27,9 @@
 			file1:=file:=fff.read(fff.length)
 			filename:=b
 			gosub,addfile
+			filelist:=files.sn("//main[@file='" filename "']/*")
+			while,fn:=filelist.item[A_Index-1]
+				code_explorer.scan(fn)
 			if show
 				tv(root)
 		}

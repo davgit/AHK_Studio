@@ -7,9 +7,9 @@
 	tempscript:="SetWorkingDir," A_ScriptDir "\temp`r`n" tempscript
 	StringReplace,TempScript,TempScript,`r`n,`n,All
 	if (debug=1){
-		if debug("check")
-			return m("Program running already"),debug("disconnect")
-		sock:=debug("new")
+		if debug.socket
+			return m("Program running already"),debug.disconnect()
+		sock:=new debug()
 		if sock<0
 			return m("something happened")
 		for process in ComObjGet("winmgmts:").ExecQuery("Select * from Win32_Process")

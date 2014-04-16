@@ -4,7 +4,7 @@
 	restore:=setup(16)
 	Gui,+Resize
 	Gui,Add,ListView,x0 y0 w350 h480 altsubmit grestore,Backup
-	Gui,Add,Edit,x+10 w550 h480
+	Gui,Add,Edit,x+10 w550 h480 -Wrap
 	Gui,Add,Button,x0 grestorefile Default,Restore selected file
 	SplashTextOn,,50,Collecting backup files,Please wait...
 	loop,% dir "\backup\" filename,1,1
@@ -33,8 +33,6 @@
 	contents1:=fff.read(fff.length)
 	length:=VarSetCapacity(text,strput(contents,"utf-8"))
 	StrPut(contents1,&text,length,"utf-8")
-	;sc.2037(65001),sc.2181(0,&text),set(),sc.2175
-	
 	csc().2181(0,&text)
 	16GuiClose:
 	16GuiEscape:

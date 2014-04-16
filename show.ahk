@@ -1,3 +1,3 @@
-﻿	show(){
-		GuiControl,+Show,% this.sc
-	}	
+﻿show(){
+	GuiControl,+Show,% this.sc
+}	

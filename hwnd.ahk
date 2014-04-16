@@ -5,8 +5,10 @@
 	if (win.rem){
 		Gui,1:-Disabled
 		Gui,1:Default
-		if (WinExist("ahk_id" window[win.rem])&&window[win.rem]),remove:=win.rem
-			SetTimer,Destroy,10
+		if !window[win.rem]
+			Gui,% win.rem ":Destroy"
+		Else
+			DllCall("DestroyWindow",uptr,window[win.rem])
 		window.remove(win.rem)
 	}
 	if IsObject(win)
@@ -15,13 +17,4 @@
 		return window[win]
 	window[win]:=hwnd
 	return
-	destroy:
-	SetTimer,Destroy,Off
-	Gui,%remove%:Destroy
-	return
-}
-close_window(a*){
-	if (a.1=0)
-		hwnd({rem:A_Gui})
-	return 0
 }

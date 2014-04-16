@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Commands>
 	<Version>
-		<Date>20140407</Date>
+		<Date>20140414</Date>
 	</Version>
 	<Commands>
 		<commands>if</commands>
@@ -341,6 +341,7 @@
 		<commands syntax="(key) \n[AutoHotkey_L]">_HasKey</commands>
 		<commands syntax="(obj) \n[AutoHotkey_L]">ObjClone</commands>
 		<commands syntax="() \n[AutoHotkey_L]">_Clone</commands>
+		<commands syntax="([params...]) \n[AutoHotkey_L]">__New</commands>
 		<commands syntax="([params...]) \n[AutoHotkey_L]">__Get</commands>
 		<commands syntax="([params...,] value) \n[AutoHotkey_L]">__Set</commands>
 		<commands syntax="([params...]) \n[AutoHotkey_L]">__Call</commands>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<fonts>
+	<author>Maestrith</author>
+	<font background="1250065" bold="1" color="11258827" font="Consolas" size="12" style="5" italic="0" strikeout="0" underline="0"></font>
+	<font background="0x333333" style="33" color="15000804"></font>
+	<font code="2069" color="16777215"></font>
+	<name>NotHatOfGod</name>
+	<font style="11" color="0xBBBBBB" font="Consolas" italic="1" bold="0"></font>
+	<font style="13" color="255" font="Consolas" italic="0" bold="0"></font>
+	<font style="3" color="0xBBBBBB" font="Consolas" bold="0"></font>
+	<font style="1" color="0x888888" font="Consolas" italic="1" size="12" bold="0"></font>
+	<font style="2" color="0x1F97FD" bold="1" font="Consolas"></font>
+	<font style="4" color="12623600"></font>
+	<font style="15" color="0xEBC097"></font>
+	<font bool="1" code="2067" color="0"></font>
+	<font style="17" color="5741559"></font>
+	<font style="18" color="7939839"></font>
+</fonts>

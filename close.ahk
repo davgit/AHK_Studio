@@ -1,5 +1,6 @@
 ﻿close(){
 	sc:=csc(),save()
+	code_explorer.remove(current(1))
 	main:=files.ssn("//*[@sc='" sc.2357 "']..")
 	rem:=settings.sn("//file[text()='" ssn(main,"@file").text "']")
 	while,rr:=rem.item[A_Index-1]
@@ -21,4 +22,5 @@
 	main.ParentNode.RemoveChild(main)
 	if files.sn("//*").length=1
 		new(1)
+	code_explorer.Refresh_Code_Explorer()
 }

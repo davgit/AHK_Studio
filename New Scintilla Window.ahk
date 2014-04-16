@@ -6,9 +6,8 @@
 	if file{
 		newdoc:=files.ssn("//*[@file='" file "']")
 		m(newdoc.xml)
-	}else{
-		sc.2358(0,doc)
-	}
+	}else
+	sc.2358(0,doc)
 	Resize()
 	sc.show()
 }

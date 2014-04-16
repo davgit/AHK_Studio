@@ -1,7 +1,7 @@
 ﻿filecheck(){
-	commandsdate:=20140407
-	menusdate:=20140408
-	scilexerdate:=20140408143200
+	commandsdate:=20140414
+	menusdate:=2014041128
+	scilexerdate:=20140413000000
 	if !settings.ssn("//autoadd")
 		for a,b in {60:62,123:125,34:34,39:39,91:93,40:41}
 			settings.add({path:"autoadd/key",att:{trigger:a,add:b},dup:1})
@@ -24,7 +24,6 @@
 			while,mm:=menu.item[A_Index-1]{
 				parent:=mm.nodename!="menu"?mm:parent
 				name:=ssn(mm,"@name").text
-				SplashTextOff
 				check:=RegExReplace(name,"&")
 				if !RegExMatch(list,"i)\b" check "\b"){
 					if !menus.ssn("//" mm.nodename "[@name='" name "']"){
@@ -36,6 +35,7 @@
 				}
 			}
 		}
+		SplashTextOff
 		menus.add({path:"date",text:menusdate})
 		menus.save(1)
 		FileDelete,lib\temp.xml

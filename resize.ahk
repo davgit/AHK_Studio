@@ -16,7 +16,7 @@
 	x:=0,max:=s.main.MaxIndex()
 	GuiControl,1:Move,SysTreeView321,x0 y%h% w200 h%hh%
 	x+=200
-	widths:=(width-350)/max
+	widths:=(width-400)/max
 	for a,b in s.main{
 		GuiControl,-Redraw,% b.sc
 		GuiControl,1:Move,% b.sc,% "x" x " y" h "w" widths " h" hh

@@ -31,10 +31,6 @@
 	if f.Error
 		return
 	r:=f.put(file,w.dir,w.compile)
-	/*
-		if w.gistversion
-			gist_post_version()
-	*/
 	if r
 		m("Transfer complete")
 	return

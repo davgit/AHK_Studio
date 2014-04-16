@@ -1,4 +1,4 @@
-﻿compile(){
+﻿compile(main=""){
 	main:=ssn(current(1),"@file").Text
 	SplitPath,main,,dir,,name
 	SplitPath,A_AhkPath,file,dirr

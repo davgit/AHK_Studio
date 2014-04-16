@@ -1,11 +1,11 @@
 ﻿gui(){
 	Gui,+Resize +hwndhwnd
-	OnMessage(0x18,"close_window"),OnMessage(5,"Resize"),hwnd(1,hwnd),ComObjError(0)
+	OnMessage(5,"Resize"),hwnd(1,hwnd),ComObjError(0)
 	;OnMessage(0x135,"btn") ;maybe look into this later for custom buttons
 	Hotkey,IfWinActive,% hwnd([1])
 	Hotkey,~Enter,checkqf,On
 	for a,b in ["+","!","^"]
-		Hotkey,%b%Enter,next,On
+		Hotkey,%b%Enter,checkqf,On
 	hotkeys([1],{"^v":"paste","bs":"backspace","Del":"backspace"})
 	hotkeys([1],{"+left":"+left","+right":"+right",left:"left","right":"right"})
 	SysGet,Border,33
@@ -109,27 +109,18 @@
 	Gui,1:Add,TreeView,Background0 c0xAAAAAA AltSubmit gcej hwndtv2
 	hwnd("fe",tv),hwnd("ce",tv2),refreshthemes()
 	Gui,1:TreeView,% hwnd("fe")
-	debug(0)
+	debug.off()
 	Gui,1:Show,%pos% %max%,AHK Studio
-	while,oo:=open.item[A_Index-1]
-		if FileExist(oo.text)
+	while,oo:=open.item[A_Index-1]{
+		if FileExist(oo.text){
 			open(oo.text),last:=oo.text
-	else{
-		rem:=settings.sn("//file[text()='" oo.text "']")
-		while,rr:=rem.item[A_Index-1]
-			rr.ParentNode.RemoveChild(rr)
+		}else{
+			rem:=settings.sn("//file[text()='" oo.text "']")
+			while,rr:=rem.item[A_Index-1]
+				rr.ParentNode.RemoveChild(rr)
+		}
 	}
 	last:=settings.sn("//last/*")
-	/*
-		for a,b in s.main{
-			tv:=files.ssn("//file[@file='" last.item[a-1].text "']/@tv").text
-			if (A_Index=1){
-				bstv:=tv
-			}
-			csc({hwnd:b.sc})
-			tv(tv)
-		}
-	*/
 	if !last.length
 		new(1)
 	Resize()
@@ -140,5 +131,8 @@
 		TV_Modify(files.ssn("//file[@file='" last.item[0].text "']/@tv").text)
 	csc("Scintilla1")
 	bracesetup(),options(),traymenu()
+	SplashTextOn,200,50,Indexing Files,Please Wait...
+	code_explorer.populate()
+	SplashTextOff
 	Gui,1:TreeView,SysTreeView321
 }

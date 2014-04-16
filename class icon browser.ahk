@@ -84,7 +84,7 @@
 		this.create()
 		LV_SetImageList(this.il)
 		loop,50
-		LV_Add("Icon" IL_Add(this.il,this.file,A_Index+this.start),A_Index+this.start)
+			LV_Add("Icon" IL_Add(this.il,this.file,A_Index+this.start),A_Index+this.start)
 		this.start+=50
 		GuiControl,85:+Redraw,SysListView321
 		return

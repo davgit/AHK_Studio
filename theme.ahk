@@ -1,13 +1,11 @@
 ﻿Theme(info=""){
 	if info
 		goto returnedinfo
-	hwnd({rem:3})
-	setup(3),hotkeys([3],{Esc:"3GuiClose"}),v.themelist:=[]
+	setup(3,1),hotkeys([3],{Esc:"3GuiClose"}),v.themelist:=[]
 	Gui,3:Default
 	Gui,+hwndhwnd Owner1
 	Gui,Add,TreeView,w200 h500 gthemetv AltSubmit
-	theme:=new s(3,{pos:"x+10 w500 h500"}),v.theme:=theme
-	theme.2181(0,themetext()),csc({hwnd:theme.sc}),hotkeys([3],{Delete:"themedelete"})
+	theme:=v.theme:=new s(3,{pos:"x+10 w500 h500"}),hotkeys([3],{Delete:"themedelete"})
 	Gui,Add,Button,Hidden x0 y0 gthemetv Default,go
 	fix_indent()
 	Loop,31
@@ -23,16 +21,22 @@
 	for a,b in ["Edit Theme Name","Edit Author","Download Themes","Export Theme","Import Theme","Save Theme","Display Style Number At Caret"]
 		v.themelist[TV_Add(b,options,"Sort")]:=b
 	v.themelist[TV_Add("Color Input Method")]:="Color Input Method"
-	themes:=TV_Add("Themes"),v.themetv:=themes
-	tlist:=preset.sn("//preset/fonts/name")
-	while,n:=tlist.item(A_Index-1)
-		v.themelist[TV_Add(n.text,themes)]:="themes list"
+	tlist:=preset.sn("//fonts/name")
+	tl:=TV_Add("Themes")
+	v.themetv:=tl
+	while,tt:=tlist.item[A_Index-1]
+		v.themelist[TV_Add(tt.text,tl)]:="themes list"
 	TV_Add("More Coming Soon...")
-	for a,b in [color,options,themes]
+	for a,b in [color,options,themes,tl]
 		TV_Modify(b,"Expand")
+	TV_Modify(color,"Vis")
+	csc({hwnd:v.theme.sc})
+	csc().2181(0,themetext())
 	return event:=""
 	themetv:
 	event:=v.themelist[TV_GetSelection()]
+	if (v.themetv=A_EventInfo)
+		return
 	if (A_GuiEvent!="normal"&&A_GuiEvent!="K")
 		return
 	if (event="Display Style Number At Caret"){
@@ -224,7 +228,7 @@
 	return
 	3GuiEscape:
 	3GuiClose:
-	hwnd({rem:3}),csc("Scintilla1").2400
+	hwnd({rem:3}),csc("Scintilla1"),csc().2400
 	return
 	returnedinfo:
 	if (info.style){

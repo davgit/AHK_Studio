@@ -35,6 +35,7 @@
 	LV_Add("",enter,add)
 	Loop,2
 		ControlSetText,Edit%A_Index%,,% hwnd([20])
+	ControlFocus,Edit1,% hwnd([20])
 	bracesetup()
 	return
 	remkey:

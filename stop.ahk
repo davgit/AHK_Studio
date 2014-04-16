@@ -1,11 +1,10 @@
 ﻿stop(){
-	return debug("detach")
-	if !debug("check")
-		return m("Currently no file being debugged"),debug(0)
-	debug("send","detach")
+	if !debug.socket
+		return m("Currently no file being debugged"),debug.off()
+	debug.send("detach")
 	sleep,500
-	hwnd({rem:99}),debug("disconnect")
+	hwnd({rem:99}),debug.disconnect()
 	WinWaitClose,% hwnd
-	debug(0)
+	debug.off()
 	csc("Scintilla1")
 }

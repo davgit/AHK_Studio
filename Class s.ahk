@@ -23,14 +23,10 @@
 		if info.main
 			s.main.Insert(this)
 		this.2052(32,0),this.2051(32,0xaaaaaa),this.2050,this.2052(33,0x222222)
-		;for a,b in [[2036,5],[2029,0],[2124,1],[2260,1]]
-		;this.2029(0)
-		;this.2356(1) ;view EOL on
 		this.2069(0xAAAAAA),this.2067(1,0),this.2601(0xaa88aa)
 		this.2563(1),this.2614(1),this.2565(1)
 		this.2660(1),this.2458(0)
 		this.2036(5),this.2124(1),this.2260(1),this.2122(5),this.2132(1)
-		;this.2359(0x13)
 		color(this)
 		return this
 	}

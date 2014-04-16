@@ -1,3 +1,3 @@
 ﻿detach(){
-	debug("send","detach"),debug(0)
+	debug.send("detach"),debug.off()
 }

@@ -1,9 +1,9 @@
 ﻿connect(){
 	ScriptPath:=A_ScriptDir
-	if debug("check"){
-		debug("send","detatch")
+	if debug.socket{
+		debug.Send("detatch")
 		sleep,500
-		debug("disconnect")
+		debug.disconnect()
 		sleep,500
 	}
 	setup(13)
@@ -21,7 +21,8 @@
 	LV_GetText(scriptpath,A_EventInfo)
 	ifWinExist %ScriptPath% ahk_class AutoHotkey
 	{
-		socket:=debug("new")
+		socket:=new debug()
+		v.connect:=1
 		PostMessage,DllCall("RegisterWindowMessage","str","AHK_ATTACH_DEBUGGER")
 	}
 	13GuiClose:

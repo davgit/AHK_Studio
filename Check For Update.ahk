@@ -1,11 +1,24 @@
 ﻿Check_For_Update(){
 	static version
 	version=;auto_version
-	Gui,55:Destroy
-	Gui,55:Default
-	Gui,Add,Edit,w500 h500,% URLDownloadToVar("http://files.maestrith.com/alpha/Studio/AHK Studio.text")
-	Gui,Add,Button,gautoupdate,Update
+	sub:=A_NowUTC
+	sub-=A_Now,hh
+	FileGetTime,time,%A_ScriptFullPath%
+	time+=%sub%,hh
+	url:="http://files.maestrith.com/alpha/Studio/AHK%20Studio.text"
+	http:=ComObjCreate("WinHttp.WinHttpRequest.5.1")
+	http.Open("GET",url)
+	FormatTime,time,%time%,ddd, dd MMM yyyy HH:mm:ss
+	http.setRequestHeader("If-Modified-Since",time " GMT")
+	http.Send()
+	setup(55)
+	info:=http.responsetext?http.responsetext:"Nothing new to download"
+	Gui,Add,Edit,w500 h500 ReadOnly,%info%
+	if (http.status)
+		Gui,Add,Button,gautoupdate,Update
 	Gui,Show,,AHK Studio Version %version%
+	sleep,200
+	ControlSend,55:Edit1,^{Home}
 	return
 	autoupdate:
 	version=;auto_version
@@ -33,6 +46,6 @@
 	return
 	55GuiEscape:
 	55GuiClose:
-	Gui,55:Destroy
+	hwnd({rem:55})
 	return
 }

@@ -12,7 +12,6 @@
 			current:=s.ctrl[hwnd]
 		current.2400
 		return current
-		return 
 	}
 	if InStr(set,"Scintilla"){
 		ControlGet,hwnd,hwnd,,%set%,% hwnd([1])

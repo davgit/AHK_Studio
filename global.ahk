@@ -1,3 +1,3 @@
 ﻿global(){
-	debug("send","context_get -c 1")
+	debug.send("context_get -c 1")
 }

@@ -1,13 +1,18 @@
 ﻿qf(){
-	static quickfind:=[],find
+	static quickfind:=[],find,lastfind
 	qf:
+	sc:=csc()
 	ControlGetText,find,Edit1,% hwnd([1])
+	if (find=lastfind&&sc.2570>1){
+		if (GetKeyState("Shift","P"))
+			return previous_found()
+		return sc.2606,sc.2169()
+	}
 	pre:="O",find1:=""
 	find1:=v.options.regex?find:"\Q" find "\E"
 	pre.=v.options.greed?"":"U"
 	pre.=v.options.case_sensitive?"":"i"
 	find1:=pre ")(" find1 ")"
-	sc:=csc()
 	if (find=""||find="."||find=".*"||find="\"){
 		sc.2571
 		return
@@ -30,6 +35,7 @@
 	}
 	sc.2574(0)
 	sc.2169
+	lastfind:=find
 	return
 	next:
 	sc:=csc()
@@ -42,7 +48,7 @@
 	return
 	clear_selection:
 	sc:=csc(),sc.2505(0,sc.2006)
-	quickfind.remove(sc.2357),qf()
+	quickfind.remove(sc.2357)
 	return
 	set_selection:
 	sc:=csc()
@@ -54,13 +60,14 @@
 	for a,b in s.main
 		b.2080(0,8),b.2082(0,0xff00ff)
 	quickfind[sc.2357]:=MinMax.MinIndex()
-	sc.2504(MinMax.MinIndex(),MinMax.MaxIndex()-MinMax.MinIndex()),sc.2571,qf()
+	sc.2504(MinMax.MinIndex(),MinMax.MaxIndex()-MinMax.MinIndex()),sc.2571
 	return
 	quick_find:
-	gosub,set_selection
+	;gosub,set_selection
 	ControlFocus,Edit1,% hwnd([1])
+	Sleep,200
 	Send,^A
-	qf()
+	;qf()
 	return
 	Case_Sensitive:
 	Regex:

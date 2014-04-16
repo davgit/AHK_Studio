@@ -316,7 +316,58 @@ Initial Upload</info>
 	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
 Initial Upload</info>
 	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
-	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="23" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.23
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="32" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.32
+Changed:
+-Quick Find:Now all you need to do is enter a search term and press Enter to skip to the next found. Shift+Enter jumps to the previous found.
+Added:
+-OutputDebug support: Not quite as stable as I would like it, but I need some feedback to see if it works for others
+0.100.31
+Added:
+-StdOut support (I hope)
+0.100.30
+Changed:
+-Omni-Search: Search improvements.
+-Check For Update:Should only allow updates if there is an update.
+0.100.29
+Re-Added:
+-Code Explorer: with new features: Right Click to Refresh
+0.100.28
+Added: Suggested by GeekDude
+-Edit/Previous Found:
+0.100.27
+Fixed: Reported by Run1e
+-Launching Omni-Search from Omni-Search was causing an issue.
+-Themes were messed up.
+Added: Suggested by Run1e
+-Control+Backspace in Omni-Search deletes back a word
+0.100.26
+Added: Suggested by Run1e
+-Special Menu/Create Launcher: Creates an exe that you can add to your taskbar.
+0.100.25
+Removed:
+-Code Explorer
+Replaced with:
+Omni Search:
+Hotkeys for Omni Search:
+-Control+Alt+O
+-Alt+J brings up with ^ preset
+-Alt+S brings up with ^ preset (for backward compatability from Jump To Project)
+--If your search term starts with a:
+---{ it will filter to classes
+---( it will filter to functions
+---[ it will filter to methods
+---@ it will filter to menu items
+---^ it will filter to files
+---&amp; it will filter to hotkeys
+0.100.24
+Where to begin:
+Fixed: Reported by GeekDude
+-Auto Add: was not adding at all.(sorry)
+Fixed:
+-Edit/Find:Without regex was causing an issue
+Added:
+-Methods to Classes: Code Explorer now has methods under the classes
+0.100.23
 Edited: Reported by Andy Anderson
 -Version number: I accidently hard coded the version number. Sorry
 0.100.22
@@ -648,4 +699,7 @@ Added:
 	<info compile="0" dir="" file="D:\Projects\Crop.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
 	<info compile="0" dir="" file="D:\Newest Scintilla\scintilla\lexers\LexAsm.cxx" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
 	<info compile="0" dir="geekdude/json" file="D:\Projects\GeekDude\URI Decode\decode uri.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0">For Geekdude</info>
+	<info compile="0" dir="alpha/irc" file="D:\AHK\Projects\New IRC\irc.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="" versstyle="0">alpha</info>
+	<info compile="0" dir="" file="D:\AHK Studio Git\AHK_Studio\Projects\Scratch Pad.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
+	<info compile="0" dir="" file="D:\AHK Studio Git\AHK_Studio\Projects\Untitled\Untitled2\Untitled.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
 </version>

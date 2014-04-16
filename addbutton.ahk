@@ -17,12 +17,6 @@
 	this.add({icon:4,file:"shell32.dll",text:"flap",func:"flan",id:11100,state:4})
 	this.addbutton(11100)
 	return
-	/*
-		12GuiEscape:
-		12GuiClose:
-		hwnd({rem:12})
-		return
-	*/
 	abrun:
 	abmenu:
 	newid:=11099

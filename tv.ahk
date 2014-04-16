@@ -5,11 +5,7 @@
 	TV_Modify(tv,"Select Vis Focus")
 	return
 	tv:
-	;if (A_GuiEvent="+"||A_GuiEvent="-"){
-	;return
-	;}else if (A_GuiEvent=0)
-	;Return
-	if ((A_GuiEvent="S")){
+	if (A_GuiEvent="S"){
 		getpos(),count:=0
 		ei:=a_eventinfo,sc:=csc()
 		file:=files.ssn("//*[@tv='" ei "']")
@@ -40,8 +36,8 @@
 		setpos(ei),marginwidth(sc)
 		current(1).SetAttribute("last",ssn(file,"@file").text)
 		current:=ssn(current(1),"@file").text
-		if (current!=lastcurrent)
-			code_explorer()
+		;if (current!=lastcurrent)
+		;code_explorer()
 		GuiControl,1:+Redraw,% sc.sc
 		lastcurrent:=current
 	}

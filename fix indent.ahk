@@ -1,5 +1,5 @@
 ﻿fix_indent(sc=""){
-	critical
+	Critical
 	move_selected:
 	auto_delete:
 	if !sc
@@ -8,8 +8,9 @@
 	fullauto:
 	fix_paste:
 	settimer,%A_ThisLabel%,off
+	Critical
 	next:=0,cpos:=0,indent:=0,add:=0
-	lock:=[]
+	lock:=[],track:=[]
 	if !sc
 		sc:=csc()
 	sc.2078
@@ -27,27 +28,25 @@
 		}
 		if v.skip
 			continue
-		if InStr(b,";")
-		while,start:=RegExMatch(b,"\;",found,++start){
-			linestart:=sc.2128(a-1)
-			if (sc.2010(linestart+start-1)=1){
-				b:=Trim(SubStr(b,1,start-1))
-				break
-			}
-		}
-		RegExMatch(lastb,"iUA)\b(" v.indentregex ")\b",found)
-		if (found&&SubStr(lastb,0,1)!="{")
+		if found:=RegExMatch(b,"\s\" Chr(59),flan,1)
+			b:=Trim(SubStr(b,1,found))
+		RegExMatch(b,"iUA)\b(" v.indentregex ")\b",found)
+		if (lastfound&&SubStr(lastb,0,1)!="{")
 			add++
-		if (add&&found&&SubStr(b,0,1)="{")
+		if (add&&lastfound&&SubStr(b,0,1)="{")
 			add--
 		if (add&&b="{")
-			lock.Insert(add)
-		if (lock.MaxIndex()=""&&add&&found="")
+			lock.Insert({add:add,line:a})
+		if (lock.MaxIndex()=""&&add&&lastfound="")
 			add:=0
 		if (SubStr(b,1,1)="}")
 			indent--
 		if (SubStr(b,1,2)="*/")
 			indent--
+		if (lock.MinIndex()){
+			if (track[a-2]&&track[a-1]="")
+				add--
+		}
 		if (SubStr(b,1,2)="/*"){
 			if (indent*5!=sc.2127(a-1))
 				sc.2126(a-1,indent*5)
@@ -58,7 +57,7 @@
 			indent++
 		}else{
 			if (SubStr(b,1,1)="}"||SubStr(b,1,2)="*/"){
-				dd:=lock.MaxIndex()?lock[lock.MaxIndex()]:add
+				dd:=lock.MaxIndex()?lock[lock.MaxIndex()].add:add
 				lock.remove(lock.MaxIndex())
 			}
 			else
@@ -67,8 +66,10 @@
 				sc.2126(a-1,(indent+dd)*5)
 		}
 		lastb:=b
+		lastfound:=found
+		if lock.MinIndex()
+			track[a]:=found
 	}
-	
 	if indent
 		ToolTip,Segment Open,0,0
 	else

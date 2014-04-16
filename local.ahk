@@ -1,3 +1,3 @@
 ﻿local(){
-	debug("send","context_get -c 0")
+	debug.send("context_get -c 0")
 }
