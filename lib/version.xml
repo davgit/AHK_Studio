@@ -316,9 +316,17 @@ Initial Upload</info>
 	<info compile="0" dir="alpha/listview" file="D:\Projects\Listview Colors\Listview Colors.ahk" gistversion="0" increment="0" server="files.maestrith.com" upver="0" version="0.1" versstyle="0">0.1.0
 Initial Upload</info>
 	<info compile="0" dir="" file="D:\ztesting\youtube\youtube.ahk" gistversion="0" increment="0" server="Choose a server..." upver="0" version="" versstyle="0"></info>
-	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="32" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.32
+	<info compile="0" dir="alpha/Studio" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" gistversion="0" increment="34" server="files.maestrith.com" upver="0" version="0.100" versstyle="0">0.100.34
+Added:
+-Set Breakpoint: Click to the right of the line number to add/remove a breakpoint for debugging.
+0.100.33
+Fixed:
+-Adding buttons to the toolbars was causing an issue
+-Omni_Search:Re-added in the path for ^file search
+0.100.32
 Changed:
 -Quick Find:Now all you need to do is enter a search term and press Enter to skip to the next found. Shift+Enter jumps to the previous found.
+-Debugging:Added some functionality
 Added:
 -OutputDebug support: Not quite as stable as I would like it, but I need some feedback to see if it works for others
 0.100.31

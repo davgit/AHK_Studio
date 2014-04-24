@@ -1,4 +1,5 @@
 ﻿gui(){
+	v.startup:=1
 	Gui,+Resize +hwndhwnd
 	OnMessage(5,"Resize"),hwnd(1,hwnd),ComObjError(0)
 	;OnMessage(0x135,"btn") ;maybe look into this later for custom buttons
@@ -126,7 +127,7 @@
 	Resize()
 	WinSet,Redraw,,% hwnd([1])
 	if v.tv
-		tv(v.tv)
+		tv(v.tv),setpos(v.tv)
 	Else
 		TV_Modify(files.ssn("//file[@file='" last.item[0].text "']/@tv").text)
 	csc("Scintilla1")
@@ -134,5 +135,6 @@
 	SplashTextOn,200,50,Indexing Files,Please Wait...
 	code_explorer.populate()
 	SplashTextOff
+	v.startup:=0
 	Gui,1:TreeView,SysTreeView321
 }

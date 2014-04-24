@@ -1,13 +1,11 @@
 ﻿#SingleInstance,Off
 ;download complete
 /*
-	OutputDebug
-	Selection(){
-		when selecting in any way make sure to update getpos()
+	breakpoints(){
+		user defined, in includes as well.
 	}
-	code_explorer(){
-		right click to refresh
-		sort by main filename
+	Previous_Scripts(){
+		History for scripts, user defined.
 	}
 	Help(){
 		Context Sensitive Help for individual windows

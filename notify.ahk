@@ -113,8 +113,16 @@
 			return theme({margin:margin,mod:fn.mod})
 		scpos:=NumGet(info+12)
 		modifier:=NumGet(info+20)
-		if margin=2
+		if margin=3
 			sc.2231(sc.2166(scpos))
+		if (Margin=2){
+			line:=sc.2166(scpos)
+			if sc.2046(line)
+				sc.2044(line,0)
+			else
+				sc.2043(line,0)
+			getpos()
+		}
 	}
 	if (fn.code=2001){
 		width:=sc.2276(32,"aaa")

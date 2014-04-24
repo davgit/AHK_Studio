@@ -27,7 +27,7 @@
 			}
 	for filename in v.filelist{
 		SplitPath,filename,file,outdir
-		menulist.file[A_Index]:={filename:filename,additional:outdir,name:file,type:"file",sort:filename}
+		menulist.file[A_Index]:={filename:filename,additional1:outdir,name:file,type:"file",sort:filename}
 	}
 	Gui,-Caption
 	WinGetPos,x,y,w,h,% hwnd([1])

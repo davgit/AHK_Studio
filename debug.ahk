@@ -36,7 +36,8 @@
 		SetTimer,runn,Off
 		filename:=v.debugfilename
 		SplitPath,filename,,dir
-		Run,"%A_AhkPath%" /debug "%filename%",%dir%,UseErrorLevel,pid
+		Run,"D:\AutoHotkey_L-master\bin\Win32w_debug\AutoHotkey.exe" /debug "%filename%",%dir%,,pid
+		;Run,"%A_AhkPath%" /debug "%filename%",%dir%,,pid
 		v.pid:=pid
 		SetTimer,cee,200
 		return

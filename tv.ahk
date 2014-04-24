@@ -6,7 +6,8 @@
 	return
 	tv:
 	if (A_GuiEvent="S"){
-		getpos(),count:=0
+		if !v.startup
+			getpos(),count:=0
 		ei:=a_eventinfo,sc:=csc()
 		file:=files.ssn("//*[@tv='" ei "']")
 		if !ssn(file,"@tv").text
@@ -33,12 +34,13 @@
 			file.SetAttribute("sc",doc)
 		}else
 		sc.2358(0,doc.text)
-		setpos(ei),marginwidth(sc)
+		marginwidth(sc)
 		current(1).SetAttribute("last",ssn(file,"@file").text)
 		current:=ssn(current(1),"@file").text
 		;if (current!=lastcurrent)
 		;code_explorer()
 		GuiControl,1:+Redraw,% sc.sc
+		setpos(ei)
 		lastcurrent:=current
 	}
 	return

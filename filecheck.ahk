@@ -1,5 +1,5 @@
 ﻿filecheck(){
-	commandsdate:=20140414
+	commandsdate:=20140416
 	menusdate:=2014041128
 	scilexerdate:=20140413000000
 	if !settings.ssn("//autoadd")

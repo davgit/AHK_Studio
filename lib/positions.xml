@@ -273,17 +273,18 @@
 	<main file="D:\AHK Studio\Projects\Reddit\reddit.ahk">
 		<file end="589" file="D:\AHK Studio\Projects\Reddit\reddit.ahk" scroll="0" start="589"></file>
 		<file end="75" file="D:\AHK Studio\Projects\Reddit\go.ahk" scroll="0" start="125"></file></main>
-	<main file="D:\AHK\Projects\Picture Sort\Picture Sort.ahk" search="docume">
-		<file end="140" file="D:\AHK\Projects\Picture Sort\Picture Sort.ahk" scroll="0" start="140"></file>
-		<file end="1054" file="D:\AHK\Projects\Picture Sort\gui.ahk" scroll="29" start="1054"></file>
-		<file end="150" file="D:\AHK\Projects\Picture Sort\treeview.ahk" scroll="0" start="150"></file>
-		<file end="210" file="D:\AHK\Projects\Picture Sort\listview.ahk" scroll="0" start="210"></file>
+	<main file="D:\AHK\Projects\Picture Sort\Picture Sort.ahk" search="lv_getcount">
+		<file end="169" file="D:\AHK\Projects\Picture Sort\Picture Sort.ahk" scroll="0" start="169"></file>
+		<file end="345" file="D:\AHK\Projects\Picture Sort\gui.ahk" scroll="0" start="345"></file>
+		<file end="220" file="D:\AHK\Projects\Picture Sort\treeview.ahk" scroll="0" start="220"></file>
+		<file end="498" file="D:\AHK\Projects\Picture Sort\listview.ahk" scroll="0" start="498"></file>
 		<file end="0" file="D:\AHK\Projects\Picture Sort\image.ahk" scroll="0" start="5"></file>
 		<file end="0" file="D:\AHK\Projects\Picture Sort\msgbox.ahk" scroll="0" start="1"></file>
-		<file end="0" file="D:\AHK\Projects\Picture Sort\populate.ahk" scroll="0" start="8"></file>
+		<file end="164" file="D:\AHK\Projects\Picture Sort\populate.ahk" scroll="0" start="164"></file>
 		<file end="0" file="D:\AHK\Projects\Picture Sort\setup.ahk" scroll="0" start="5"></file>
 		<file end="21" file="D:\AHK\Projects\Picture Sort\assignhotkey.ahk" scroll="0" start="21"></file>
-		<file end="726" file="D:\AHK\Projects\Picture Sort\xml.ahk" scroll="13" start="739"></file></main>
+		<file end="120" file="D:\AHK\Projects\Picture Sort\xml.ahk" scroll="0" start="120"></file>
+		<file end="167" file="D:\AHK\Projects\Picture Sort\Directory Class.ahk" scroll="50" start="167"></file></main>
 	<main file="C:\Users\maestrith\Desktop\download.ahk">
 		<file end="16" file="C:\Users\maestrith\Desktop\download.ahk" scroll="0" start="16"></file></main>
 	<main file="C:\Users\maestrith\Desktop\flan.ahk">
@@ -352,8 +353,8 @@
 		<file end="113" file="D:\AHK Studio Git\addbutton.ahk" scroll="0" start="113"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\Projects\Untitled\Untitled3\Untitled.ahk">
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Projects\Untitled\Untitled3\Untitled.ahk" scroll="0" start="0"></file></main>
-	<main file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" search="/*">
-		<file end="5164" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" scroll="75" start="5164"></file>
+	<main file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" search="&quot;stop&quot;">
+		<file end="1233" file="D:\AHK Studio Git\AHK_Studio\AHK Studio.ahk" scroll="24" start="1233"></file>
 		<file end="0" file="D:\AHK Studio\forum.ahk" scroll="0" start="0"></file>
 		<file end="582" file="D:\AHK Studio Git\AHK_Studio\Menu Shortcut.ahk" scroll="10" start="582"></file>
 		<file end="304" file="D:\AHK Studio\menu.ahk" scroll="0" start="322"></file>
@@ -375,20 +376,20 @@
 		<file end="0" file="D:\AHK Studio\automenu.ahk" scroll="0" start="0"></file>
 		<file end="993" file="D:\AHK Studio\Scintilla Code Lookup.ahk" scroll="0" start="1038"></file>
 		<file end="0" file="D:\AHK Studio\auto update.ahk" scroll="0" start="0"></file>
-		<file end="3376" file="D:\AHK Studio Git\AHK_Studio\omni search.ahk" scroll="91" start="3376"></file>
+		<file end="3928" file="D:\AHK Studio Git\AHK_Studio\omni search.ahk" scroll="98" start="3935"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\about.ahk" scroll="0" start="5"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Add Spaces After Commas.ahk" scroll="0" start="0"></file>
 		<file end="167" file="D:\AHK Studio Git\AHK_Studio\Add Spaces Before Commas.ahk" scroll="0" start="167"></file>
-		<file end="524" file="D:\AHK Studio Git\AHK_Studio\addbutton.ahk" scroll="3" start="524"></file>
+		<file end="531" file="D:\AHK Studio Git\AHK_Studio\addbutton.ahk" scroll="19" start="531"></file>
 		<file end="339" file="D:\AHK Studio Git\AHK_Studio\arrows.ahk" scroll="3" start="339"></file>
 		<file end="8" file="D:\AHK Studio Git\AHK_Studio\automenu.ahk" scroll="0" start="0"></file>
 		<file end="752" file="D:\AHK Studio Git\AHK_Studio\brace.ahk" scroll="17" start="756"></file>
 		<file end="174" file="D:\AHK Studio Git\AHK_Studio\bracesetup.ahk" scroll="0" start="174"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\changehotkey.ahk" scroll="0" start="12"></file>
-		<file end="1450" file="D:\AHK Studio Git\AHK_Studio\Check For Update.ahk" scroll="18" start="1462"></file>
+		<file end="215" file="D:\AHK Studio Git\AHK_Studio\Check For Update.ahk" scroll="0" start="226"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\checkerror.ahk" scroll="0" start="0"></file>
-		<file end="262" file="D:\AHK Studio Git\AHK_Studio\class ftp.ahk" scroll="0" start="262"></file>
-		<file end="287" file="D:\AHK Studio Git\AHK_Studio\class s.ahk" scroll="0" start="287"></file>
+		<file end="804" file="D:\AHK Studio Git\AHK_Studio\class ftp.ahk" scroll="18" start="1283"></file>
+		<file end="965" file="D:\AHK Studio Git\AHK_Studio\class s.ahk" scroll="12" start="965"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\clean.ahk" scroll="0" start="5"></file>
 		<file end="691" file="D:\AHK Studio Git\AHK_Studio\Code Explorer.ahk" scroll="8" start="691"></file>
 		<file end="788" file="D:\AHK Studio Git\AHK_Studio\Code Vault.ahk" scroll="8" start="788"></file>
@@ -398,24 +399,24 @@
 		<file end="509" file="D:\AHK Studio Git\AHK_Studio\Create Segment From Selection.ahk" scroll="0" start="509"></file>
 		<file end="282" file="D:\AHK Studio Git\AHK_Studio\csc.ahk" scroll="0" start="282"></file>
 		<file end="124" file="D:\AHK Studio Git\AHK_Studio\current.ahk" scroll="0" start="124"></file>
-		<file end="92" file="D:\AHK Studio Git\AHK_Studio\debug.ahk" scroll="0" start="92"></file>
+		<file end="72" file="D:\AHK Studio Git\AHK_Studio\debug.ahk" scroll="0" start="78"></file>
 		<file end="1732" file="D:\AHK Studio Git\AHK_Studio\defaultfont.ahk" scroll="5" start="1732"></file>
 		<file end="151" file="D:\AHK Studio Git\AHK_Studio\delete.ahk" scroll="0" start="151"></file>
-		<file end="21" file="D:\AHK Studio Git\AHK_Studio\detach.ahk" scroll="0" start="21"></file>
-		<file end="692" file="D:\AHK Studio Git\AHK_Studio\display.ahk" scroll="13" start="692"></file>
+		<file end="45" file="D:\AHK Studio Git\AHK_Studio\detach.ahk" scroll="0" start="45"></file>
+		<file end="15" file="D:\AHK Studio Git\AHK_Studio\display.ahk" scroll="0" start="15"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\Dlg Font.ahk" scroll="0" start="0"></file>
 		<file end="31" file="D:\AHK Studio Git\AHK_Studio\Duplicate Line.ahk" scroll="0" start="31"></file>
-		<file end="506" file="D:\AHK Studio Git\AHK_Studio\DynaRun.ahk" scroll="0" start="506"></file>
+		<file end="1135" file="D:\AHK Studio Git\AHK_Studio\DynaRun.ahk" scroll="6" start="1135"></file>
 		<file end="1166" file="D:\AHK Studio Git\AHK_Studio\edit replacements.ahk" scroll="0" start="1166"></file>
-		<file end="59" file="D:\AHK Studio Git\AHK_Studio\filecheck.ahk" scroll="0" start="59"></file>
+		<file end="1296" file="D:\AHK Studio Git\AHK_Studio\filecheck.ahk" scroll="26" start="1296"></file>
 		<file end="3516" file="D:\AHK Studio Git\AHK_Studio\find.ahk" scroll="88" start="3506"></file>
 		<file end="202" file="D:\AHK Studio Git\AHK_Studio\Find Nearest Brace.ahk" scroll="0" start="202"></file>
 		<file end="36" file="D:\AHK Studio Git\AHK_Studio\fix after.ahk" scroll="0" start="36"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\forum.ahk" scroll="0" start="5"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\full backup.ahk" scroll="0" start="11"></file>
-		<file end="119" file="D:\AHK Studio Git\AHK_Studio\getpos.ahk" scroll="0" start="348"></file>
+		<file end="39" file="D:\AHK Studio Git\AHK_Studio\getpos.ahk" scroll="0" start="39"></file>
 		<file end="173" file="D:\AHK Studio Git\AHK_Studio\google search selected.ahk" scroll="0" start="142"></file>
-		<file end="262" file="D:\AHK Studio Git\AHK_Studio\gui.ahk" scroll="0" start="262"></file>
+		<file end="1722" file="D:\AHK Studio Git\AHK_Studio\gui.ahk" scroll="13" start="1722"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\help.ahk" scroll="0" start="0"></file>
 		<file end="441" file="D:\AHK Studio Git\AHK_Studio\hotkeys.ahk" scroll="0" start="441"></file>
 		<file end="398" file="D:\AHK Studio Git\AHK_Studio\json.ahk" scroll="0" start="398"></file>
@@ -434,16 +435,16 @@
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\show.ahk" scroll="0" start="5"></file>
 		<file end="112" file="D:\AHK Studio Git\AHK_Studio\step.ahk" scroll="0" start="112"></file>
 		<file end="53" file="D:\AHK Studio Git\AHK_Studio\t.ahk" scroll="0" start="53"></file>
-		<file end="236" file="D:\AHK Studio Git\AHK_Studio\varbrowser.ahk" scroll="0" start="241"></file>
+		<file end="210" file="D:\AHK Studio Git\AHK_Studio\varbrowser.ahk" scroll="0" start="210"></file>
 		<file end="18558" file="D:\AHK Studio Git\AHK_Studio\temp.ahk" scroll="568" start="15577"></file>
-		<file end="2526" file="D:\AHK Studio Git\AHK_Studio\class rebar.ahk" scroll="64" start="2533"></file>
-		<file end="3544" file="D:\AHK Studio Git\AHK_Studio\class toolbar.ahk" scroll="89" start="3551"></file>
-		<file end="0" file="D:\AHK Studio Git\AHK_Studio\color.ahk" scroll="0" start="5"></file>
+		<file end="1490" file="D:\AHK Studio Git\AHK_Studio\class rebar.ahk" scroll="33" start="1497"></file>
+		<file end="3964" file="D:\AHK Studio Git\AHK_Studio\class toolbar.ahk" scroll="103" start="3964"></file>
+		<file end="646" file="D:\AHK Studio Git\AHK_Studio\color.ahk" scroll="14" start="646" breakpoint="32"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\menu search.ahk" scroll="0" start="0"></file>
 		<file end="826" file="D:\AHK Studio Git\AHK_Studio\new.ahk" scroll="0" start="826"></file>
 		<file end="189" file="D:\AHK Studio Git\AHK_Studio\New Scintilla Window.ahk" scroll="0" start="189"></file>
 		<file end="742" file="D:\AHK Studio Git\AHK_Studio\new segment.ahk" scroll="1" start="755"></file>
-		<file end="3990" file="D:\AHK Studio Git\AHK_Studio\notify.ahk" scroll="114" start="3990"></file>
+		<file end="3821" file="D:\AHK Studio Git\AHK_Studio\notify.ahk" scroll="0" start="3821" fold="87,109"></file>
 		<file end="604" file="D:\AHK Studio Git\AHK_Studio\open.ahk" scroll="4" start="604"></file>
 		<file end="821" file="D:\AHK Studio Git\AHK_Studio\options.ahk" scroll="8" start="821"></file>
 		<file end="16" file="D:\AHK Studio Git\AHK_Studio\paste.ahk" scroll="0" start="16"></file>
@@ -457,7 +458,7 @@
 		<file end="363" file="D:\AHK Studio Git\AHK_Studio\replace.ahk" scroll="0" start="363"></file>
 		<file end="332" file="D:\AHK Studio Git\AHK_Studio\replace selected.ahk" scroll="0" start="332"></file>
 		<file end="215" file="D:\AHK Studio Git\AHK_Studio\restore current file.ahk" scroll="0" start="215"></file>
-		<file end="216" file="D:\AHK Studio Git\AHK_Studio\run.ahk" scroll="0" start="216"></file>
+		<file end="171" file="D:\AHK Studio Git\AHK_Studio\run.ahk" scroll="0" start="171"></file>
 		<file end="51" file="D:\AHK Studio Git\AHK_Studio\run selected text.ahk" scroll="0" start="51"></file>
 		<file end="1597" file="D:\AHK Studio Git\AHK_Studio\scintilla code lookup.ahk" scroll="25" start="1601"></file>
 		<file end="205" file="D:\AHK Studio Git\AHK_Studio\Send WM COPYDATA.ahk" scroll="0" start="205"></file>
@@ -466,10 +467,10 @@
 		<file end="410" file="D:\AHK Studio Git\AHK_Studio\show scintilla code in line.ahk" scroll="0" start="410"></file>
 		<file end="37" file="D:\AHK Studio Git\AHK_Studio\social.ahk" scroll="0" start="37"></file>
 		<file end="117" file="D:\AHK Studio Git\AHK_Studio\split code.ahk" scroll="0" start="117"></file>
-		<file end="33" file="D:\AHK Studio Git\AHK_Studio\testing.ahk" scroll="0" start="33"></file>
-		<file end="7440" file="D:\AHK Studio Git\AHK_Studio\Theme.ahk" scroll="213" start="7449"></file>
+		<file end="61" file="D:\AHK Studio Git\AHK_Studio\testing.ahk" scroll="0" start="61"></file>
+		<file end="4020" file="D:\AHK Studio Git\AHK_Studio\Theme.ahk" scroll="97" start="4020"></file>
 		<file end="126" file="D:\AHK Studio Git\AHK_Studio\traymenu.ahk" scroll="0" start="126"></file>
-		<file end="992" file="D:\AHK Studio Git\AHK_Studio\tv.ahk" scroll="12" start="992"></file>
+		<file end="932" file="D:\AHK Studio Git\AHK_Studio\tv.ahk" scroll="11" start="963"></file>
 		<file end="546" file="D:\AHK Studio Git\AHK_Studio\update.ahk" scroll="0" start="546"></file>
 		<file end="107" file="D:\AHK Studio Git\AHK_Studio\URLDownloadToVar.ahk" scroll="0" start="107"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\window.ahk" scroll="0" start="0"></file>
@@ -495,7 +496,7 @@
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\flan.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\center.ahk" scroll="0" start="0"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\open folder.ahk" scroll="0" start="0"></file>
-		<file end="477" file="D:\AHK Studio Git\AHK_Studio\save.ahk" scroll="0" start="477"></file>
+		<file end="541" file="D:\AHK Studio Git\AHK_Studio\save.ahk" scroll="0" start="548"></file>
 		<file end="75" file="D:\AHK Studio Git\AHK_Studio\runit.ahk" scroll="0" start="158"></file>
 		<file end="23" file="D:\AHK Studio Git\AHK_Studio\Next Found.ahk" scroll="0" start="23"></file>
 		<file end="13" file="D:\AHK Studio Git\AHK_Studio\undo.ahk" scroll="0" start="13"></file>
@@ -525,13 +526,15 @@
 		<file end="31" file="D:\AHK Studio Git\AHK_Studio\Search Label.ahk" scroll="0" start="31"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\SocketEvent.ahk" scroll="0" start="0"></file>
 		<file end="131" file="D:\AHK Studio Git\AHK_Studio\Run Script.ahk" scroll="0" start="140"></file>
-		<file end="71" file="D:\AHK Studio Git\AHK_Studio\stop.ahk" scroll="0" start="71"></file>
-		<file end="310" file="D:\AHK Studio Git\AHK_Studio\setpos.ahk" scroll="0" start="310"></file>
+		<file end="102" file="D:\AHK Studio Git\AHK_Studio\stop.ahk" scroll="0" start="102"></file>
+		<file end="526" file="D:\AHK Studio Git\AHK_Studio\setpos.ahk" scroll="0" start="526" breakpoint="5,12"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\select.ahk" scroll="0" start="6"></file>
 		<file end="954" file="D:\AHK Studio Git\AHK_Studio\publish.ahk" scroll="0" start="954"></file>
 		<file end="296" file="D:\AHK Studio Git\AHK_Studio\Toggle Multiple Line Comment.ahk" scroll="0" start="296"></file>
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\toggle comment line.ahk" scroll="0" start="0"></file>
-		<file end="788" file="D:\AHK Studio Git\AHK_Studio\striperror.ahk" scroll="0" start="788"></file></main>
+		<file end="788" file="D:\AHK Studio Git\AHK_Studio\striperror.ahk" scroll="0" start="788"></file>
+		<file end="0" file="D:\AHK Studio Git\AHK_Studio\get access.ahk" scroll="0" start="0"></file>
+		<file end="0" file="D:\AHK Studio Git\AHK_Studio\global.ahk" scroll="0" start="0"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\asdf.ahk">
 		<file end="0" file="D:\AHK Studio Git\AHK_Studio\asdf.ahk" scroll="0" start="0"></file></main>
 	<main file="D:\AHK Studio Git\AHK_Studio\flan.ahk">
@@ -592,15 +595,18 @@
 		<file end="2637" file="D:\AHK Studio Git\AHK_Studio\Projects\xml.ahk" scroll="77" start="2639"></file></main>
 	<main file="D:\AHK\Projects\irc\next.ahk">
 		<file end="1401" file="D:\AHK\Projects\irc\next.ahk" scroll="35" start="1401"></file></main>
-	<main file="D:\AHK\Projects\New IRC\irc.ahk" search="sul">
-		<file end="0" file="D:\AHK\Projects\New IRC\irc.ahk" scroll="0" start="0"></file>
+	<main file="D:\AHK\Projects\New IRC\irc.ahk" search="onmessage">
+		<file end="207" file="D:\AHK\Projects\New IRC\irc.ahk" scroll="0" start="207"></file>
 		<file end="155" file="D:\AHK\Projects\New IRC\connect.ahk" scroll="0" start="155"></file>
 		<file end="482" file="D:\AHK\Projects\New IRC\gui.ahk" scroll="0" start="482"></file>
 		<file end="96" file="D:\AHK\Projects\New IRC\class users.ahk" scroll="0" start="96"></file>
-		<file end="1663" file="D:\AHK\Projects\New IRC\next.ahk" scroll="36" start="1663"></file>
+		<file end="307" file="D:\AHK\Projects\New IRC\next.ahk" scroll="0" start="307"></file>
 		<file end="514" file="D:\AHK\Projects\New IRC\display.ahk" scroll="1" start="514"></file>
 		<file end="82" file="D:\AHK\Projects\New IRC\add server.ahk" scroll="0" start="82"></file>
-		<file end="10" file="D:\AHK\Projects\New IRC\caption.ahk" scroll="0" start="10"></file></main>
+		<file end="10" file="D:\AHK\Projects\New IRC\caption.ahk" scroll="0" start="10"></file>
+		<file end="357" file="D:\AHK\Projects\New IRC\class socket.ahk" scroll="0" start="369"></file>
+		<file end="57" file="D:\AHK\Projects\New IRC\onrecv.ahk" scroll="0" start="57"></file>
+		<file end="127" file="D:\AHK\Projects\New IRC\socketeventproc.ahk" scroll="0" start="127"></file></main>
 	<main file="D:\testing\irc\irc.ahk">
 		<file end="33114" file="D:\testing\irc\irc.ahk" scroll="1200" start="33114"></file></main>
 	<main file="D:\Constants.W32.ini">
@@ -643,8 +649,8 @@
 	<main file="D:\MyRC-master\Settings.ini">
 		<file end="116" file="D:\MyRC-master\Settings.ini" scroll="0" start="116"></file></main>
 	<main file="D:\AHK Studio Git\Projects\Untitled\Untitled3\Untitled.ahk">
-		<file end="28" file="D:\AHK Studio Git\Projects\Untitled\Untitled3\Untitled.ahk" scroll="0" start="28"></file>
-		<file end="36" file="D:\AHK Studio Git\Projects\Untitled\Untitled3\flan.ahk" scroll="0" start="36"></file></main>
+		<file end="48" file="D:\AHK Studio Git\Projects\Untitled\Untitled3\Untitled.ahk" scroll="0" start="48"></file>
+		<file end="37" file="D:\AHK Studio Git\Projects\Untitled\Untitled3\flan.ahk" scroll="0" start="42"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\debug.h">
 		<file end="709" file="D:\AutoHotkey_L-master\source\debug.h" scroll="0" start="709"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\Debugger.cpp">
@@ -656,11 +662,36 @@
 	<main file="D:\AutoHotkey_L-master\source\stdafx.h">
 		<file end="315" file="D:\AutoHotkey_L-master\source\stdafx.h" scroll="53" start="315"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\search for error in.ahk">
-		<file end="245" file="D:\AutoHotkey_L-master\source\search for error in.ahk" scroll="0" start="245"></file></main>
+		<file end="48" file="D:\AutoHotkey_L-master\source\search for error in.ahk" scroll="0" start="48"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\hotkey.h">
 		<file end="10804" file="D:\AutoHotkey_L-master\source\hotkey.h" scroll="195" start="10809"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\script.cpp">
 		<file end="695351" file="D:\AutoHotkey_L-master\source\script.cpp" scroll="16501" start="695359"></file></main>
 	<main file="D:\AutoHotkey_L-master\source\script2.cpp">
 		<file end="68409" file="D:\AutoHotkey_L-master\source\script2.cpp" scroll="1537" start="68414"></file></main>
+	<main file="D:\scroll.ahk">
+		<file end="241" file="D:\scroll.ahk" scroll="0" start="241"></file></main>
+	<main file="D:\Projects\BigVent\navigation complete.ahk">
+		<file end="287" file="D:\Projects\BigVent\navigation complete.ahk" scroll="0" start="287"></file></main>
+	<main file="D:\Projects\julka\capture screen.ahk" search="GdiplusStartup">
+		<file end="62" file="D:\Projects\julka\capture screen.ahk" scroll="0" start="62"></file>
+		<file end="57541" file="D:\Projects\julka\gdip.ahk" scroll="1574" start="57518"></file></main>
+	<main file="D:\Projects\Elesar\ftp.ahk">
+		<file end="1178" file="D:\Projects\Elesar\ftp.ahk" scroll="14" start="1178"></file></main>
+	<main file="C:\Users\maestrith\Downloads\fuzzy_searcher.ahk">
+		<file end="14382" file="C:\Users\maestrith\Downloads\fuzzy_searcher.ahk" scroll="439" start="14382"></file></main>
+	<main file="D:\Projects\julka\gdip.ahk">
+		<file end="86212" file="D:\Projects\julka\gdip.ahk" scroll="2377" start="86212"></file></main>
+	<main file="C:\Program Files\AutoHotkey\SciTE\tools\find it.ahk">
+		<file end="189" file="C:\Program Files\AutoHotkey\SciTE\tools\find it.ahk" scroll="0" start="189"></file></main>
+	<main file="D:\Projects\Com Objects\wscript shell\wscript shell.ahk">
+		<file end="120" file="D:\Projects\Com Objects\wscript shell\wscript shell.ahk" scroll="0" start="447"></file></main>
+	<main file="D:\Projects\Com Objects\wscript shell\flan.ahk">
+		<file end="15" file="D:\Projects\Com Objects\wscript shell\flan.ahk" scroll="0" start="15"></file></main>
+	<main file="D:\AutoHotkey_L-master\bin\Win32w_debug\flan.ahk" search="detach">
+		<file end="77" file="D:\AutoHotkey_L-master\bin\Win32w_debug\flan.ahk" scroll="0" start="77"></file></main>
+	<main file="D:\Projects\Guild Wars 2\Xbox.ahk">
+		<file end="6513" file="D:\Projects\Guild Wars 2\Xbox.ahk" scroll="39" start="6513"></file></main>
+	<main file="C:\Users\maestrith\Desktop\Picture Sort.ahk - Shortcut.lnk">
+		<file end="0" file="C:\Users\maestrith\Desktop\Picture Sort.ahk - Shortcut.lnk" scroll="0" start="0"></file></main>
 </positions>

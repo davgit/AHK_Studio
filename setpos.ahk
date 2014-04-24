@@ -8,11 +8,12 @@
 	parent:=ssn(node,"../@file").text
 	posinfo:=positions.ssn("//main[@file='" parent "']/file[@file='" file "']")
 	doc:=ssn(node,"@sc").text
-	ea:=xml.ea(posinfo),fold:=ea.fold
+	ea:=xml.ea(posinfo),fold:=ea.fold,breakpoint:=ea.breakpoint
 	if ea.start&&ea.end
 		sc.2613(ea.scroll),sc.2160(ea.start,ea.end)
 	Loop,Parse,fold,`,
-		if A_LoopField is number
-			sc.2231(A_LoopField)
+		sc.2231(A_LoopField)
+	Loop,Parse,breakpoint,`,
+		sc.2043(A_LoopField,0)
 	GuiControl,+Redraw,% sc.sc
 }

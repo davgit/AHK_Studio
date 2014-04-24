@@ -17,11 +17,11 @@
 		GuiControl,99:,Edit1,%total%
 		ControlSend,Edit1,^{End},% hwnd([99])
 		in:=striperror(info,v.debugfilename)
-		sc:=csc()
-		if (in.file,in.line){
-			debug.Send("stop")
+		if (in.file&&in.line){
+			sc:=csc()
 			tv(files.ssn("//*[@file='" in.file "']/@tv").text)
 			sleep,400
+			debug.Send("stop"),m(in.file,in.line)
 			v.debugse:={start:sc.2128(in.line),end:sc.2136(in.line)}
 			settimer,selectdebug,10
 		}
@@ -36,6 +36,12 @@
 	if init:=recieve.ssn("//init"){
 		v.afterbug:=[]
 		ad:=["stdout -c 2","stderr -c 2"]
+		break:=positions.sn("//main[@file='" v.debugfilename "']/*/@breakpoint/..")
+		while,bb:=Break.item[A_Index-1]{
+			file:=ssn(bb,"@file").text,lines:=ssn(bb,"@breakpoint").Text
+			for a,b in StrSplit(lines,",")
+				ad.Insert("breakpoint_set -t line -n " ++b " -f" file)
+		}
 		if v.connect
 			ad.Insert("run"),v.connect:=0
 		for a,b in ad
@@ -78,22 +84,24 @@
 			m("more info")
 		ea:=recieve.ea(command)
 		if (ea.status="stopped"&&ea.command="run"&&ea.reason="ok")
-			debug.Off()
+			debug.Off(),m(recieve[])
+		/*
+			if (ea.status="break"){
+				
+			}
+		*/
 		disp:="Command:"
 		for a,b in ea
 			if (a&&b)
 				disp.="`r`n" a " = " Chr(34) b Chr(34)
 		info:=disp
 	}
-	;disp:=sc.2006?"`r`n" disp:disp
 	disp:=disp?disp:store
 	if (disp){
 		total.=disp "`n"
 		GuiControl,99:,Edit1,%total%
 		ControlSend,Edit1,^{End},% hwnd([99])
 	}
-	;sc.2003(sc.2006,disp)
-	;sc.2629
 	if (stream){
 		t("here")
 		stream:=0
@@ -103,6 +111,12 @@
 	disp:=recieve[]
 	store:=disp?disp:store
 	return sock
+	/*
+		sendstat:
+		SetTimer,sendstat,off
+		debug.Send("status"),m("here")
+		return
+	*/
 	99GuiEscape:
 	99GuiClose:
 	debug.send("detach")

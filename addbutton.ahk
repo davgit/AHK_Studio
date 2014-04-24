@@ -45,4 +45,8 @@
 	outside:
 	m(bar.ahkid)
 	return
+	12GuiClose:
+	12GuiEscape:
+	hwnd({rem:12})
+	return
 }
